@@ -32,7 +32,7 @@ export function PmHeroCentered() {
                 sales, all managed under one roof in Nagpur.
               </p>
             </div>
-            <div className="relative mt-8 flex flex-wrap items-center gap-3">
+            <div className="relative mt-8 flex flex-col gap-3 [&>*]:w-full [&>*]:justify-center sm:flex-row sm:flex-wrap sm:items-center sm:[&>*]:w-auto">
               <InPageAnchor
                 href="#contact"
                 className="group inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-[#171717] transition-transform hover:scale-[1.02]"

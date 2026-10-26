@@ -82,7 +82,7 @@ export default function BookADemoPage() {
               suits you, book instantly, and get reminders before the session. Prefer we reach
               out instead? Request a callback below.
             </p>
-            <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+            <div className="mt-8 flex flex-col gap-3 [&>*]:w-full [&>*]:justify-center sm:flex-row sm:flex-wrap sm:items-center sm:justify-center sm:[&>*]:w-auto">
               <a
                 href={BOOKING_URL}
                 target="_blank"

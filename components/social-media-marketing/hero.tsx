@@ -49,7 +49,7 @@ export function SmmHero() {
             <p className="mt-5 max-w-lg text-base leading-relaxed text-muted-foreground md:text-lg">
               {smm.hero.sub}
             </p>
-            <div className="mt-8 flex flex-wrap items-center gap-3">
+            <div className="mt-8 flex flex-col gap-3 [&>*]:w-full [&>*]:justify-center sm:flex-row sm:flex-wrap sm:items-center sm:[&>*]:w-auto">
               <Link
                 href={smm.hero.primaryCta.href}
                 className="group btn btn-primary inline-flex items-center gap-2 rounded-lg px-6 py-3 text-sm font-semibold text-brand-foreground"

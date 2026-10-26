@@ -101,7 +101,7 @@ function LandingHero() {
             thoughtful design and clean development.
           </motion.p>
 
-          <div className="mt-6 flex flex-wrap items-center gap-3 lg:mt-8">
+          <div className="mt-6 flex w-full flex-col gap-3 [&>*]:w-full [&>*]:justify-center sm:w-auto sm:flex-row sm:flex-wrap sm:items-center sm:[&>*]:w-auto lg:mt-8">
             <motion.button
               className="btn btn-primary inline-flex items-center gap-2 rounded-lg px-6 py-3 text-sm font-semibold"
               animate={{ opacity: 1, y: 0 }}
@@ -117,7 +117,7 @@ function LandingHero() {
               initial={{ opacity: 0, y: 20 }}
               transition={{ duration: 0.2, ease: "easeOut", delay: 0.7 }}
             >
-              <InPageAnchor href="#work" className="btn btn-outline inline-flex items-center gap-2 rounded-lg px-6 py-3 text-sm font-semibold">
+              <InPageAnchor href="#work" className="btn btn-outline inline-flex w-full items-center justify-center gap-2 rounded-lg px-6 py-3 text-sm font-semibold sm:w-auto">
                 Explore Our Work
               </InPageAnchor>
             </motion.div>

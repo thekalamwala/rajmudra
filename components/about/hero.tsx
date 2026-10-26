@@ -42,7 +42,7 @@ export function AboutHero() {
             are clear, modern, and built to grow.
           </p>
 
-          <div className="mt-8 flex flex-wrap items-center gap-3">
+          <div className="mt-8 flex flex-col gap-3 [&>*]:w-full [&>*]:justify-center sm:flex-row sm:flex-wrap sm:items-center sm:[&>*]:w-auto">
             <Link
               href="/contact"
               className="btn btn-primary group inline-flex items-center gap-2 rounded-lg px-7 py-3.5 text-sm font-semibold"

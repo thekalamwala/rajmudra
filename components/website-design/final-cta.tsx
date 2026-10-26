@@ -15,7 +15,7 @@ export function WdFinalCta() {
           </RevealHeading>
           <p className="mx-auto mt-5 max-w-xl text-lg text-white/70">{wd.finalCta.sub}</p>
 
-          <div className="mt-9 flex flex-wrap items-center justify-center gap-3">
+          <div className="mt-9 flex flex-col gap-3 [&>*]:w-full [&>*]:justify-center sm:flex-row sm:flex-wrap sm:items-center sm:justify-center sm:[&>*]:w-auto">
             <Link
               href={wd.finalCta.cta.href}
               className="group btn btn-primary inline-flex items-center gap-2 rounded-lg px-7 py-3.5 text-sm font-semibold"

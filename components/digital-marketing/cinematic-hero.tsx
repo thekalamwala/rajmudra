@@ -134,7 +134,7 @@ export function DmCinematicHero() {
             Nagpur.
           </p>
 
-          <div className="mt-7 flex flex-wrap items-center gap-3 lg:mt-8">
+          <div className="mt-7 flex flex-col gap-3 [&>*]:w-full [&>*]:justify-center sm:flex-row sm:flex-wrap sm:items-center sm:[&>*]:w-auto lg:mt-8">
             <InPageAnchor
               href="#contact"
               className="group btn btn-primary inline-flex items-center gap-2 rounded-lg px-7 py-3.5 text-sm font-semibold"

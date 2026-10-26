@@ -14,7 +14,7 @@ export function PostCta() {
         <p className="mt-3 text-sm text-muted-foreground md:text-base">
           Get a free AI + SEO audit that scores your visibility across Google and AI search — no obligation, no jargon.
         </p>
-        <div className="mt-5 flex flex-wrap gap-3">
+        <div className="mt-5 flex flex-col gap-3 [&>*]:w-full [&>*]:justify-center sm:flex-row sm:flex-wrap sm:[&>*]:w-auto">
           <Link
             href="/seo-company-in-nagpur"
             className="group btn btn-primary inline-flex items-center gap-2 rounded-lg px-5 py-2.5 text-sm font-semibold text-brand-foreground"

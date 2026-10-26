@@ -30,7 +30,7 @@ export function AcademyHero() {
             Build practical marketing skills, solve real business problems, and develop a portfolio that
             demonstrates what you can do. Start learning with Timewheel Digital Marketing Academy.
           </p>
-          <div className="mt-8 flex flex-wrap gap-3">
+          <div className="mt-8 flex flex-col gap-3 [&>*]:w-full [&>*]:justify-center sm:flex-row sm:flex-wrap sm:[&>*]:w-auto">
             <Link
               href="/academy/programs"
               className="group btn btn-primary inline-flex items-center gap-2 rounded-lg px-6 py-3.5 text-sm font-semibold"

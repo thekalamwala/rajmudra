@@ -62,7 +62,7 @@ export function ProgramDetail({ program, trail }: { program: Program; trail: Cru
               {program.title}
             </RevealHeading>
             <p className="mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">{program.summary}</p>
-            <div className="mt-7 flex flex-wrap gap-3">
+            <div className="mt-7 flex flex-col gap-3 [&>*]:w-full [&>*]:justify-center sm:flex-row sm:flex-wrap sm:[&>*]:w-auto">
               <InPageAnchor
                 href="#register"
                 className="group btn btn-primary inline-flex items-center gap-2 rounded-lg px-6 py-3.5 text-sm font-semibold"

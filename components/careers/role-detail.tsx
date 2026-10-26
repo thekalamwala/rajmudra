@@ -79,10 +79,10 @@ export function JobDetail({ job }: { job: Job }) {
             <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
               {job.intro}
             </p>
-            <div className="mt-7 flex flex-wrap gap-3">
+            <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <InPageAnchor
                 href="#apply"
-                className="btn btn-primary inline-flex items-center gap-2 rounded-lg px-6 py-3.5 text-sm font-semibold text-brand-foreground"
+                className="btn btn-primary inline-flex w-full items-center justify-center gap-2 rounded-lg px-6 py-3.5 text-sm font-semibold text-brand-foreground sm:w-auto"
               >
                 Apply for this role
                 <ArrowUpRight className="size-4" />
@@ -91,7 +91,7 @@ export function JobDetail({ job }: { job: Job }) {
                 href={`mailto:${site.contact.email}?subject=${encodeURIComponent(
                   `Application: ${job.title}`,
                 )}`}
-                className="btn btn-outline inline-flex items-center gap-2 rounded-lg px-6 py-3.5 text-sm font-semibold"
+                className="btn btn-outline inline-flex w-full items-center justify-center gap-2 rounded-lg px-6 py-3.5 text-sm font-semibold sm:w-auto"
               >
                 Send your CV by email
               </a>

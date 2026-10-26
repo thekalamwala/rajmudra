@@ -33,7 +33,7 @@ export function ContactHero() {
             </span>
           </div>
 
-          <div className="mt-9 flex flex-wrap justify-center gap-3.5">
+          <div className="mt-9 flex flex-col gap-3.5 [&>*]:w-full [&>*]:justify-center sm:flex-row sm:flex-wrap sm:justify-center sm:[&>*]:w-auto">
             <InPageAnchor
               href="#contact"
               className="group btn btn-primary inline-flex items-center gap-2 rounded-xl px-6 py-3.5 text-sm font-semibold text-brand-foreground"

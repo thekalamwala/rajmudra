@@ -57,7 +57,7 @@ export default function AcademyFaqPage() {
           <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
             Write to us and a person replies, usually within one business day.
           </p>
-          <div className="mt-5 flex flex-wrap gap-3">
+          <div className="mt-5 flex flex-col gap-3 [&>*]:w-full [&>*]:justify-center sm:flex-row sm:flex-wrap sm:[&>*]:w-auto">
             <a
               href={`mailto:${site.contact.email}?subject=${encodeURIComponent("Timewheel Academy question")}`}
               className="btn btn-primary inline-flex items-center gap-2 rounded-lg px-5 py-2.5 text-sm font-semibold"
