@@ -170,7 +170,7 @@ function ProductTile({
           )}
         >
           <div className="overflow-hidden">
-            <div className="relative h-full w-full overflow-hidden rounded-xl border border-border/70 bg-secondary/40">
+            <div className="relative h-full min-h-[8.5rem] w-full overflow-hidden rounded-xl border border-border/70 bg-secondary/40">
               <Image
                 src={image.src}
                 alt={image.alt}
