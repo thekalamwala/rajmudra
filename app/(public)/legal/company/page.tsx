@@ -5,7 +5,7 @@ import { SELLER } from "@/lib/admin/invoice-calc";
 
 const TITLE = "GST and Company Details | Timewheel";
 const DESC =
-  "Company details for Timewheel Internet Pvt. Ltd.: legal name, CIN, GSTIN, PAN, registered state and billing contact for invoices and vendor forms.";
+  "Company details for Timewheel Studios: legal name, CIN, GSTIN, PAN, registered state and billing contact for invoices and vendor forms.";
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 export default function CompanyPage() {
   const c = site.contact;
   const rows: [string, string][] = [
-    ["Legal name", "Timewheel Internet Private Limited"],
+    ["Legal name", "Timewheel Studios"],
     ["Brand name", "Timewheel"],
     ["CIN", process.env.COMPANY_CIN || SELLER.cin],
     ["GSTIN", process.env.INVOICE_GSTIN || SELLER.gstin],

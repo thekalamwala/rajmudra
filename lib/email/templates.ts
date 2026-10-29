@@ -192,7 +192,7 @@ export function academyInterest(o: { name: string; program: string; programUrl: 
       `The full curriculum and sample projects are here: [${o.programUrl.replace(/^https?:\/\//, "")}](${o.programUrl})`,
       "If you have a question, just reply to this email. A person reads every reply.",
     ],
-    signature: ["Thanks,", "Timewheel Digital Marketing Academy", "Timewheel Internet Private Limited, Nagpur"],
+    signature: ["Thanks,", "Timewheel Digital Marketing Academy", "Timewheel Studios, Nagpur"],
     footnote: "You're getting this because you registered on timewheel.co.in/academy. We only use your email for Academy updates; reply \"remove me\" and we'll delete your details.",
   });
 }

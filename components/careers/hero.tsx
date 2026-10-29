@@ -32,7 +32,7 @@ export function CareersHero() {
           className="mt-6 max-w-3xl text-[2.35rem] font-black leading-[1.08] tracking-tight sm:text-5xl"
         >
           <span className="block">Open roles at </span>
-          <span className="block text-brand">Timewheel Internet (P) Ltd.</span>
+          <span className="block text-brand">Timewheel Studios</span>
         </RevealHeading>
 
         <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">

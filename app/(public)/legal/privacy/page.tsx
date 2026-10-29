@@ -274,7 +274,7 @@ export default function PrivacyPage() {
             team@timewheel.co.in
           </a>
         </p>
-        <p>Timewheel Internet Pvt. Ltd. · timewheel.co.in</p>
+        <p>Timewheel Studios · timewheel.co.in</p>
       </section>
       </article>
     </div>

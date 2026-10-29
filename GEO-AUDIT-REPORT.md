@@ -13,7 +13,7 @@
 
 **Overall GEO Score: 69/100 (Fair) live today, ~72/100 projected once this PR deploys.**
 
-The on-site foundation is strong: every key page is server-rendered, all major AI crawlers are explicitly allowed, `llms.txt` and the sitemap are complete, and schema now links into a single Organization entity. The score is lower than last cycle's 78 because this audit was stricter in two places. First, the brand scan found that "Timewheel" on Wikipedia/Wikidata is a Budapest monument, so AI models have a competing entity and no Timewheel Internet entry to disambiguate it. Second, the content review found that `/about` was showing three invented team members with stock photos, a serious trust problem (now fixed). The remaining ceiling is almost entirely off-page: brand authority and Bing/AI-index discovery.
+The on-site foundation is strong: every key page is server-rendered, all major AI crawlers are explicitly allowed, `llms.txt` and the sitemap are complete, and schema now links into a single Organization entity. The score is lower than last cycle's 78 because this audit was stricter in two places. First, the brand scan found that "Timewheel" on Wikipedia/Wikidata is a Budapest monument, so AI models have a competing entity and no Timewheel Studios entry to disambiguate it. Second, the content review found that `/about` was showing three invented team members with stock photos, a serious trust problem (now fixed). The remaining ceiling is almost entirely off-page: brand authority and Bing/AI-index discovery.
 
 ### Score Breakdown
 
@@ -62,7 +62,7 @@ _None remaining._ (The invented team on `/about` was critical and is fixed in th
 
 ## High Priority Issues
 
-1. **Entity collision, no Wikidata item.** Wikipedia/Wikidata "Timewheel" (Q186596) is a Budapest monument. Create Wikidata items for Timewheel Internet Pvt. Ltd. (Nagpur, website, founder, CIN), Shubham N Datarkar, and Book A Sloth (linked as product), then add the Wikidata URLs to `sameAs` in `lib/site.ts`.
+1. **Entity collision, no Wikidata item.** Wikipedia/Wikidata "Timewheel" (Q186596) is a Budapest monument. Create Wikidata items for Timewheel Studios (Nagpur, website, founder, CIN), Shubham N Datarkar, and Book A Sloth (linked as product), then add the Wikidata URLs to `sameAs` in `lib/site.ts`.
 2. **No Bing verification / IndexNow.** Bing's index powers ChatGPT search and Copilot. Verify in Bing Webmaster Tools, submit the sitemap, add `metadata.verification.other["msvalidate.01"]` in `app/layout.tsx`, and add an IndexNow key file in `public/` with a post-deploy ping.
 3. **Zero third-party directory presence.** Not found on Clutch, GoodFirms, DesignRush, Justdial, IndiaMART, Sulekha. List with identical NAP.
 4. **Blog depth.** One post. Topical authority and the "Experience" signal need 3 to 5 first-hand posts (real project data from case studies and Book A Sloth).
@@ -92,7 +92,7 @@ _None remaining._ (The invented team on `/about` was critical and is fixed in th
 ### AI Citability (79 live, ~82 after)
 Homepage FAQ and `/seo-company-in-nagpur` are answer-first and highly quotable. Weak spots were slogan-only intros. Example rewrite on `/about`:
 - Before: "We combine strategy, design, and technology to create digital experiences..."
-- After (under "What is Timewheel?"): "Timewheel (Timewheel Internet Pvt. Ltd.) is a product studio and digital agency based in Nagpur, Maharashtra, founded and led by Shubham N Datarkar..."
+- After (under "What is Timewheel?"): "Timewheel Studios is a product studio and digital agency based in Nagpur, Maharashtra, founded and led by Shubham N Datarkar..."
 `/case-studies` remains the thinnest key page.
 
 ### Brand Authority (36)

@@ -11,7 +11,7 @@ import { jobs } from "@/lib/jobs";
 import { site } from "@/lib/site";
 
 const TITLE = "Careers at Timewheel | Open Roles in Nagpur";
-const DESC = `Open roles at Timewheel Internet (P) Ltd. in Nagpur: ${jobs
+const DESC = `Open roles at Timewheel Studios in Nagpur: ${jobs
   .map((j) => j.title)
   .join(", ")}. Freshers welcome, internships available. Apply online.`;
 

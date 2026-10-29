@@ -20,7 +20,7 @@ export function AboutIntro() {
         <Reveal delay={0.1}>
           <div className="max-w-xl space-y-5 text-base leading-relaxed text-muted-foreground md:text-lg">
             <p>
-              Timewheel (Timewheel Internet Pvt. Ltd.) is a product studio and
+              Timewheel Studios is a product studio and
               digital agency based in Nagpur, Maharashtra, founded and led by
               Shubham N Datarkar. We build websites, web apps, SEO and digital
               marketing systems for businesses across India, and we design,

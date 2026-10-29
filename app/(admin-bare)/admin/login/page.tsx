@@ -25,7 +25,7 @@ export default async function AdminLoginPage({ searchParams }: { searchParams: P
           </span>
         </div>
         <div className="relative">
-          <p className="text-[11px] font-semibold uppercase tracking-widest text-orange-300">Timewheel Internet Pvt. Ltd.</p>
+          <p className="text-[11px] font-semibold uppercase tracking-widest text-orange-300">Timewheel Studios</p>
           <p className="mt-3 max-w-sm font-heading text-3xl font-bold leading-tight">Invoices, leads, blog and members in one place.</p>
           <p className="mt-3 max-w-sm text-sm text-gray-300">Staff only. Every sign-in is rate limited and the session ends after 12 hours.</p>
         </div>

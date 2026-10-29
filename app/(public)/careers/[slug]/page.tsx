@@ -46,7 +46,7 @@ function jobPostingLd(job: (typeof jobs)[number]) {
     employmentType: job.employmentTypeSchema,
     hiringOrganization: {
       "@type": "Organization",
-      name: "Timewheel Internet Pvt. Ltd.",
+      name: "Timewheel Studios",
       sameAs: site.url,
     },
     jobLocationType: job.locationType,

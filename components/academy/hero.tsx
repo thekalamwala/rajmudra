@@ -48,8 +48,7 @@ export function AcademyHero() {
           </div>
           <p className="mt-8 max-w-xl text-sm text-muted-foreground">
             For college students, fresh graduates and beginners. Includes a Timewheel certificate, help with
-            Google, Meta, HubSpot and LinkedIn certifications, and internships. An initiative by Timewheel
-            Internet Private Limited, a digital marketing and web studio in Nagpur.
+            Google, Meta, HubSpot and LinkedIn certifications, and internships. An initiative by Timewheel Studios, a digital marketing and web studio in Nagpur.
           </p>
         </Reveal>
 

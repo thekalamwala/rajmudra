@@ -85,7 +85,7 @@ export function Footer() {
           {/* bottom bar */}
           <div className="mt-12 flex flex-col items-center justify-between gap-2 border-t border-border/60 pt-6 text-center text-sm text-muted-foreground sm:flex-row sm:text-left">
             <p>© {new Date().getFullYear()} Timewheel. All rights reserved.</p>
-            <p>Handcrafted by humans of TIPL</p>
+            <p>Handcrafted by humans of Timewheel Studios</p>
           </div>
         </div>
       </div>
