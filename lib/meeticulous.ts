@@ -29,9 +29,9 @@ export const shots = {
 export const bas = {
   meta: {
     title:
-      "Book A Sloth: Appointment Booking & Scheduling Software, Timewheel",
+      "Meeticulous: Appointment Booking & Scheduling Software, Timewheel",
     description:
-      "Book A Sloth is India-first appointment booking software: 24/7 booking pages, UPI and Razorpay payments, Google Calendar sync, WhatsApp reminders, GST invoices.",
+      "Meeticulous is India-first appointment booking software: 24/7 booking pages, UPI and Razorpay payments, Google Calendar sync, WhatsApp reminders, GST invoices.",
   },
   nav: {
     links: [
@@ -40,25 +40,25 @@ export const bas = {
       { label: "About", href: "/about" },
     ],
   },
-  liveUrl: "https://bookasloth.com",
+  liveUrl: "https://meeticulous.com",
   hero: {
-    titleLine1: "Book A Sloth.",
+    titleLine1: "Meeticulous.",
     titleLine2: "Bookings on autopilot.",
     titleAccent: "Bookings on autopilot.",
-    body: "Book A Sloth is an India-first appointment booking and scheduling platform. Take bookings 24/7, get paid up front over UPI and Razorpay, sync Google Calendar both ways, and cut no-shows with automatic WhatsApp and email reminders, with GST invoicing built in.",
+    body: "Meeticulous is an India-first appointment booking and scheduling platform. Take bookings 24/7, get paid up front over UPI and Razorpay, sync Google Calendar both ways, and cut no-shows with automatic WhatsApp and email reminders, with GST invoicing built in.",
     primary: "Visit Site",
     secondary: "Get Started",
-    shotUrl: "bookasloth.com",
+    shotUrl: "meeticulous.com",
     shot: "dashboard16x10",
-    shotAlt: "Book A Sloth marketing banner",
+    shotAlt: "Meeticulous marketing banner",
     builtBy: "Built by Timewheel",
   },
   intro: {
     number: "01",
     label: "THE PRODUCT",
     title: "Everything needed to manage bookings.",
-    body: "Book A Sloth connects booking, scheduling, customers and automation in one product.",
-    shotAlt: "Book A Sloth booking page",
+    body: "Meeticulous connects booking, scheduling, customers and automation in one product.",
+    shotAlt: "Meeticulous booking page",
     shotCaption: "CUSTOMER EXPERIENCE",
     shotDesc: "Simple booking from the customer's side.",
   },
@@ -148,8 +148,8 @@ export const bas = {
     title: "From manual juggling\nto automatic flow.",
     titleAccent: "automatic flow.",
     body: "Every step of the booking lifecycle used to demand attention. Now it runs itself.",
-    beforeTitle: "Before Book A Sloth",
-    afterTitle: "With Book A Sloth",
+    beforeTitle: "Before Meeticulous",
+    afterTitle: "With Meeticulous",
     before: [
       "Manual bookings",
       "Multiple tools",
@@ -171,7 +171,7 @@ export const bas = {
     number: "07",
     label: "WHAT WE BUILT",
     title: "From idea\nto production.",
-    body: "Timewheel designed and built Book A Sloth as a complete digital product.",
+    body: "Timewheel designed and built Meeticulous as a complete digital product.",
     items: [
       { icon: "compass", label: "Product Strategy" },
       { icon: "pen", label: "UX / UI Design" },
@@ -189,7 +189,7 @@ export const bas = {
     number: "08",
     label: "ONE PRODUCT IS ONLY THE BEGINNING.",
     title: "What could we build\nfor your business?",
-    body: "Book A Sloth is one example of how Timewheel turns business ideas and workflows into real digital products.",
+    body: "Meeticulous is one example of how Timewheel turns business ideas and workflows into real digital products.",
     examples: [
       "Booking Platforms",
       "SaaS Products",
@@ -203,7 +203,7 @@ export const bas = {
     number: "09",
     label: "HOW TIMEWHEEL BUILDS",
     title: "From idea\nto launch.",
-    body: "A simple, proven process, the same one that took Book A Sloth from an idea to a shipping product.",
+    body: "A simple, proven process, the same one that took Meeticulous from an idea to a shipping product.",
     steps: [
       { name: "Discover", desc: "The business, the users, the workflow." },
       { name: "Design", desc: "The product and every screen in it." },
@@ -363,7 +363,7 @@ export const bas = {
     number: "12",
     label: "CONNECTIONS",
     title: "Plays well with your stack.",
-    body: "Book A Sloth connects with the tools your business already uses.",
+    body: "Meeticulous connects with the tools your business already uses.",
     note: "More integrations ship every month.",
     items: [
       { icon: "wa", name: "WhatsApp" },
@@ -380,7 +380,7 @@ export const bas = {
     rating: "4.9",
     reviews: "180+",
     badge: "Excellent",
-    title: "Teams that run on Book A Sloth.",
+    title: "Teams that run on Meeticulous.",
     body: "Service businesses moved off manual bookings and never looked back.",
     items: [
       {
@@ -410,7 +410,7 @@ export const bas = {
     items: [
       {
         q: "Is there a free plan?",
-        a: "Yes, Book A Sloth starts free and grows with you. You only pay for what you actually use.",
+        a: "Yes, Meeticulous starts free and grows with you. You only pay for what you actually use.",
       },
       {
         q: "Can I migrate my existing bookings?",
@@ -418,7 +418,7 @@ export const bas = {
       },
       {
         q: "Does it work on my phone?",
-        a: "Book A Sloth is fully responsive, so your team can manage bookings from any device.",
+        a: "Meeticulous is fully responsive, so your team can manage bookings from any device.",
       },
       {
         q: "What happens after I sign up?",
@@ -479,7 +479,7 @@ export const bas = {
   walkthrough: {
     number: "16",
     label: "WALKTHROUGH",
-    title: "How a booking flows\nthrough Book A Sloth.",
+    title: "How a booking flows\nthrough Meeticulous.",
     body: "From first click to follow-up, every step is handled.",
     steps: [
       {
@@ -512,7 +512,7 @@ export const bas = {
   final: {
     title: "Have an idea?",
     big: "Let's build it.",
-    body: "Book A Sloth is one example of what Timewheel can build. Your product could be next.",
+    body: "Meeticulous is one example of what Timewheel can build. Your product could be next.",
     primary: "Start a Project",
     secondary: "Explore Timewheel",
   },

@@ -11,7 +11,7 @@ import { RevealHeading } from "@/components/anim/reveal-heading";
 
 // The four headline products shown on the homepage. Picked by slug so
 // re-ordering lib/products.ts can never shuffle this grid.
-const TOP_SLUGS = ["alluminaty", "book-a-sloth", "coffee-for-me", "ticket-dino"];
+const TOP_SLUGS = ["alluminaty", "meeticulous", "coffee-for-me", "ticket-dino"];
 
 const topProducts = TOP_SLUGS.map((slug) =>
   featuredProducts.find((p) => p.slug === slug),
@@ -21,7 +21,7 @@ const topProducts = TOP_SLUGS.map((slug) =>
 // same artwork the case studies use (lib/case-studies-products.ts).
 const PRODUCT_IMAGE: Record<string, { src: string; alt: string }> = {
   alluminaty: { src: "/portfolio/alluminaty2.png", alt: "Alluminaty alumni management app" },
-  "book-a-sloth": { src: "/portfolio/bookasloth2.png", alt: "Book A Sloth booking app" },
+  "meeticulous": { src: "/portfolio/meeticulous2.png", alt: "Meeticulous booking app" },
   "coffee-for-me": { src: "/portfolio/coffee-toffee.png", alt: "Coffee and Toffee creator support" },
   "ticket-dino": { src: "/portfolio/ticket-dino.png", alt: "Ticket Dino event ticketing" },
 };

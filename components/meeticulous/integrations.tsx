@@ -7,7 +7,7 @@ import {
   Video,
 } from "lucide-react";
 import { Reveal } from "@/components/reveal";
-import { bas } from "@/lib/book-a-sloth";
+import { bas } from "@/lib/meeticulous";
 import "./integrations.css";
 
 const iconMap = {

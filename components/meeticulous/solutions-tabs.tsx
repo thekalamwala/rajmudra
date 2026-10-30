@@ -104,7 +104,7 @@ const tabContent = {
   integrations: {
     title: "Integrations",
     description:
-      "Connect Book A Sloth with the tools your organization already uses.",
+      "Connect Meeticulous with the tools your organization already uses.",
     features: [
       "Google Calendar synchronization",
       "Microsoft Outlook integration",

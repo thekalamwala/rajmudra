@@ -65,7 +65,7 @@ const SEGMENTS: Segment[] = [
     accent: "#fe5100",
     blurb:
       "Bookings, a storefront and a steady stream of leads — the operational stack a small team actually needs, without juggling five subscriptions that never talk to each other.",
-    productSlugs: ["book-a-sloth", "ezshop", "leader", "archflow"],
+    productSlugs: ["meeticulous", "ezshop", "leader", "archflow"],
   },
   {
     slug: "events",
@@ -75,7 +75,7 @@ const SEGMENTS: Segment[] = [
     accent: "#00b67a",
     blurb:
       "From the on-sale rush to the check-in queue: ticketing that holds at scale, registrations paid up front, and an attendee community that lasts past the event.",
-    productSlugs: ["ticket-dino", "book-a-sloth", "the-parliament"],
+    productSlugs: ["ticket-dino", "meeticulous", "the-parliament"],
   },
   {
     slug: "communities",
@@ -95,7 +95,7 @@ const SEGMENTS: Segment[] = [
     accent: "#008c45",
     blurb:
       "Fixtures, rosters, tournaments, season fees and ground slots — the whole club run online and on the ground, from selection to the points table.",
-    productSlugs: ["indian-sports-club", "book-a-sloth", "ticket-dino"],
+    productSlugs: ["indian-sports-club", "meeticulous", "ticket-dino"],
   },
   {
     slug: "d2c",

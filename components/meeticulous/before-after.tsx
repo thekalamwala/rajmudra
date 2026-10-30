@@ -11,7 +11,7 @@ import {
   MessageSquareX,
   X,
 } from "lucide-react";
-import { bas } from "@/lib/book-a-sloth";
+import { bas } from "@/lib/meeticulous";
 import "./before-after.css";
 
 const beforeIcons = [CalendarOff, LayoutGrid, MessageSquareX, Archive];

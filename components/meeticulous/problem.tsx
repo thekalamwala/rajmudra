@@ -8,7 +8,7 @@ import {
   TriangleAlert,
 } from "lucide-react";
 import { Reveal } from "@/components/reveal";
-import { bas } from "@/lib/book-a-sloth";
+import { bas } from "@/lib/meeticulous";
 
 const icons = [MessageSquare, Phone, CalendarX, Banknote, TriangleAlert, Database] as const;
 

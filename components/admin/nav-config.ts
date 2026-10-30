@@ -1,5 +1,5 @@
 // Single source of truth for the admin console navigation, modelled on The
-// Parliament console (bookasloth/the-parliament, src/app/admin/nav). Drives the
+// Parliament console (meeticulous/the-parliament, src/app/admin/nav). Drives the
 // primary rail (one icon per section), the secondary sidebar (items of the
 // active section), the breadcrumb and the ⌘K palette.
 //

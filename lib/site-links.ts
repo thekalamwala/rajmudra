@@ -15,7 +15,7 @@ export const serviceLinks: SiteLink[] = [
 ];
 
 export const productLinks: SiteLink[] = [
-  { label: "Book A Sloth", href: "/products/book-a-sloth" },
+  { label: "Meeticulous", href: "/products/meeticulous" },
   { label: "Alluminaty", href: "/products/alluminaty" },
   { label: "EZShop", href: "/products/ezshop" },
   { label: "Ticket Dino", href: "/products/ticket-dino" },

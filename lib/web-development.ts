@@ -43,7 +43,7 @@ export const wd = {
   // Portfolio order (slugs into lib/products.ts). Real products we've built.
   portfolio: {
     title: "Recent work",
-    body: "A sample of products we've designed, built and shipped. Book A Sloth is live today; the rest are in active rollout.",
+    body: "A sample of products we've designed, built and shipped. Meeticulous is live today; the rest are in active rollout.",
     items: [] as { slug: string; live?: string; result: string }[],
   },
 

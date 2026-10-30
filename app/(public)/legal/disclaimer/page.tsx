@@ -62,7 +62,7 @@ export default function DisclaimerPage() {
         <section className="space-y-4">
           <h2 className="text-lg font-semibold text-foreground">5. Products</h2>
           <p>
-            Features, pricing and availability of our products, including Book A Sloth,
+            Features, pricing and availability of our products, including Meeticulous,
             Alluminaty, EZShop, Ticket Dino and The Parliament, may change. The terms you accept
             inside each product apply to your use of it.
           </p>

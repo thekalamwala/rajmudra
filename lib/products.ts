@@ -86,13 +86,13 @@ export const products: Product[] = [
     ],
   },
   {
-    slug: "book-a-sloth",
-    name: "Book A Sloth",
+    slug: "meeticulous",
+    name: "Meeticulous",
     tagline: "Manage Bookings & Clients",
     icon: CalendarCheck,
-    logo: "/products/book-a-sloth-logo.png",
+    logo: "/products/meeticulous-logo.png",
     accent: "#fe5100",
-    href: "/products/book-a-sloth",
+    href: "/products/meeticulous",
     featured: true,
     blurb:
       "A modern booking platform built to simplify how businesses manage appointments, reservations, and customer scheduling, built around speed, usability, and conversion-focused experiences customers actually enjoy.",

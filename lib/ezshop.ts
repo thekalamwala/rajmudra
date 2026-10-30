@@ -233,7 +233,7 @@ export const ez = {
     links: [
       { label: "Shopify development company in Nagpur", href: "/shopify-development-company-in-nagpur" },
       { label: "Website design for local businesses", href: "/website-design-company-in-nagpur" },
-      { label: "Book A Sloth appointment booking software", href: "/products/book-a-sloth" },
+      { label: "Meeticulous appointment booking software", href: "/products/meeticulous" },
     ],
   },
   faq: {

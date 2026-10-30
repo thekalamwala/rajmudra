@@ -1,5 +1,5 @@
 // Ticket Dino product page content. Target query: "event ticketing software"
-// (India). Every feature claim maps to shipped code in the bookasloth/ticket-dino
+// (India). Every feature claim maps to shipped code in the meeticulous/ticket-dino
 // repo (Zoho Payments, Resend email, QR tickets, atomic inventory). No customer
 // counts, ratings or testimonials until real ones exist.
 //

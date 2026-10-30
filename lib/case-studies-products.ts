@@ -98,8 +98,8 @@ export const productCaseStudies: CaseStudy[] = [
     ],
   },
   {
-    slug: "book-a-sloth",
-    name: "Book A Sloth",
+    slug: "meeticulous",
+    name: "Meeticulous",
     tagline: "Booking, payments and reminders in one system",
     category: "SaaS · Booking Platform",
     summary:
@@ -108,20 +108,20 @@ export const productCaseStudies: CaseStudy[] = [
       "India-first appointment booking platform with 24/7 booking pages, UPI and Razorpay payments, Google Calendar sync, WhatsApp reminders and GST invoicing.",
     accent: "#fe5100",
     image: {
-      src: "/portfolio/bookasloth2.png",
+      src: "/portfolio/meeticulous2.png",
       width: 1200,
       height: 675,
     },
     tags: ["Product Design", "Design System", "Payments", "Scheduling"],
-    href: "/case-studies/book-a-sloth",
-    liveUrl: "https://bookasloth.com",
+    href: "/case-studies/meeticulous",
+    liveUrl: "https://meeticulous.com",
     meta: { readTime: "3 min", services: ["Product Design", "UI / UX", "Development"] },
     content: {
       hero: {
         title: "Booking that runs itself.",
         titleAccent: "Payments, reminders, invoicing.",
         summary:
-          "Book A Sloth is a live appointment booking platform built for Indian service businesses: take bookings 24/7, get paid up front, and let the follow-up happen automatically.",
+          "Meeticulous is a live appointment booking platform built for Indian service businesses: take bookings 24/7, get paid up front, and let the follow-up happen automatically.",
         badge: "Live product",
         primaryCta: { label: "Book a call", href: "/book-a-demo" },
         secondaryCta: { label: "More case studies", href: "/case-studies" },
@@ -158,7 +158,7 @@ export const productCaseStudies: CaseStudy[] = [
         {
           eyebrow: "What's Shipped",
           title: "Running live, and used on our own demos.",
-          body: "The platform is live at bookasloth.com. The published plan is ₹19 per month for up to 500 bookings a month, with automated reminders and custom booking pages included. We dogfood it: our own demo bookings are scheduled through Book A Sloth.",
+          body: "The platform is live at meeticulous.com. The published plan is ₹19 per month for up to 500 bookings a month, with automated reminders and custom booking pages included. We dogfood it: our own demo bookings are scheduled through Meeticulous.",
         },
       ],
       closing: {
@@ -170,7 +170,7 @@ export const productCaseStudies: CaseStudy[] = [
     },
     faq: [
       {
-        q: "What does Book A Sloth do?",
+        q: "What does Meeticulous do?",
         a: "Appointment booking and scheduling for service businesses: 24/7 booking pages, UPI and Razorpay payments, two-way Google Calendar sync, WhatsApp and email reminders, GST invoicing, and a business dashboard.",
       },
       {
@@ -179,7 +179,7 @@ export const productCaseStudies: CaseStudy[] = [
       },
       {
         q: "Is it live?",
-        a: "Yes, at bookasloth.com. It is also the platform we use to run our own product demos.",
+        a: "Yes, at meeticulous.com. It is also the platform we use to run our own product demos.",
       },
     ],
   },

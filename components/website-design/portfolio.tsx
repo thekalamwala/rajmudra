@@ -38,10 +38,10 @@ function Frame({
 
 function BasVisual() {
   return (
-    <Frame url="bookasloth.com">
+    <Frame url="meeticulous.com">
       <Image
-        src="/bookasloth.png"
-        alt="Book A Sloth, a modern booking platform design shown in a browser"
+        src="/meeticulous.png"
+        alt="Meeticulous, a modern booking platform design shown in a browser"
         width={1440}
         height={810}
         sizes="(max-width: 1024px) 100vw, 55vw"
@@ -67,7 +67,7 @@ function AlluminatyVisual() {
 }
 
 const visuals: Record<WdPortfolioProject["visual"], () => ReactNode> = {
-  "screenshot-book-a-sloth": BasVisual,
+  "screenshot-meeticulous": BasVisual,
   "mockup-alluminaty": AlluminatyVisual,
 };
 

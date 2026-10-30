@@ -44,11 +44,11 @@ function Frame({
 
 function BookASlothVisual() {
   return (
-    <Frame url="bookasloth.com">
+    <Frame url="meeticulous.com">
       <div className="relative aspect-[16/10] overflow-hidden bg-secondary/40">
         <Image
           src="/portfolio/Sloth Booking App Celebration (1).png"
-          alt="Book A Sloth"
+          alt="Meeticulous"
           width={720}
           height={405}
           className="absolute inset-0 h-full w-full object-cover object-top"
@@ -98,10 +98,10 @@ export const projects: {
   Visual: () => ReactNode;
 }[] = [
   {
-    name: "Book A Sloth",
+    name: "Meeticulous",
     category: "Website Design",
     desc: "Strategy, design and development for a modern digital presence.",
-    href: "/products/book-a-sloth",
+    href: "/products/meeticulous",
     Visual: BookASlothVisual,
   },
   {

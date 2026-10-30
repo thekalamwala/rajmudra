@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 import type { CSSProperties } from "react";
 import { Reveal } from "@/components/reveal";
-import { bas } from "@/lib/book-a-sloth";
+import { bas } from "@/lib/meeticulous";
 
 const iconMap = {
   compass: Compass,

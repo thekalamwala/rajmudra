@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { ArrowRight, BellRing, CalendarCheck, CheckCircle2, PlayCircle } from "lucide-react";
 import { Reveal } from "@/components/reveal";
-import { bas, shots } from "@/lib/book-a-sloth";
+import { bas, shots } from "@/lib/meeticulous";
 import { SxButton } from "./cta";
 
 export function BasHero() {

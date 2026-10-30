@@ -1,7 +1,7 @@
 import type { CSSProperties } from "react";
 import { ArrowRight, Bell, CalendarCheck, CalendarSync, CreditCard, LayoutDashboard, MailCheck } from "lucide-react";
 import { Reveal } from "@/components/reveal";
-import { bas } from "@/lib/book-a-sloth";
+import { bas } from "@/lib/meeticulous";
 
 const icons = [CalendarCheck, CreditCard, CalendarSync, MailCheck, Bell, LayoutDashboard];
 

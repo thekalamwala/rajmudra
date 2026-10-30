@@ -1,6 +1,6 @@
 import { Check, Sparkles } from "lucide-react";
 import { Reveal } from "@/components/reveal";
-import { bas } from "@/lib/book-a-sloth";
+import { bas } from "@/lib/meeticulous";
 import { SxButton } from "./cta";
 import "./pricing.css";
 

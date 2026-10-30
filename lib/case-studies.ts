@@ -137,7 +137,7 @@ metaDescription:
       hero: {
         title: "Ranking a UAE cake shop",
         titleAccent: "#1 for 40+ local searches.",
-        primaryCta: { label: "Book a call", href: "https://bookasloth.com/sndatarkar" },
+        primaryCta: { label: "Book a call", href: "https://meeticulous.com/sndatarkar" },
         secondaryCta: { label: "More case studies", href: "/case-studies" },
       },
       stats: [
@@ -208,7 +208,7 @@ metaDescription:
         title: "Want results like this?",
         body: "Whether it's organic growth, performance, AI workflows, or a product you need built, start with a conversation.",
         ctaLabel: "Book a call",
-        ctaHref: "https://bookasloth.com/sndatarkar",
+        ctaHref: "https://meeticulous.com/sndatarkar",
       },
     },
   },
@@ -255,7 +255,7 @@ metaDescription:
       hero: {
         title: "Ad copy that cut",
         titleAccent: "cost-per-install.",
-        primaryCta: { label: "Book a call", href: "https://bookasloth.com/sndatarkar" },
+        primaryCta: { label: "Book a call", href: "https://meeticulous.com/sndatarkar" },
         secondaryCta: { label: "More case studies", href: "/case-studies" },
       },
       stats: [
@@ -326,7 +326,7 @@ metaDescription:
         title: "Want results like this?",
         body: "Whether it's growing installs, cutting CAC, or a product you need built, start with a conversation.",
         ctaLabel: "Book a call",
-        ctaHref: "https://bookasloth.com/sndatarkar",
+        ctaHref: "https://meeticulous.com/sndatarkar",
       },
     },
   },
@@ -373,7 +373,7 @@ metaDescription:
       hero: {
         title: "Selling land by turning",
         titleAccent: "plots into life stories.",
-        primaryCta: { label: "Book a call", href: "https://bookasloth.com/sndatarkar" },
+        primaryCta: { label: "Book a call", href: "https://meeticulous.com/sndatarkar" },
         secondaryCta: { label: "More case studies", href: "/case-studies" },
       },
       stats: [
@@ -444,7 +444,7 @@ metaDescription:
         title: "Want results like this?",
         body: "Whether it's growing leads, cutting CAC, or a product you need built, start with a conversation.",
         ctaLabel: "Book a call",
-        ctaHref: "https://bookasloth.com/sndatarkar",
+        ctaHref: "https://meeticulous.com/sndatarkar",
       },
     },
   },
@@ -491,7 +491,7 @@ metaDescription:
       hero: {
         title: "Meta lead-gen that turned",
         titleAccent: "clicks into customers.",
-        primaryCta: { label: "Book a call", href: "https://bookasloth.com/sndatarkar" },
+        primaryCta: { label: "Book a call", href: "https://meeticulous.com/sndatarkar" },
         secondaryCta: { label: "More case studies", href: "/case-studies" },
       },
       stats: [
@@ -562,7 +562,7 @@ metaDescription:
         title: "Want results like this?",
         body: "Whether it's growing leads, cutting CAC, or a product you need built, start with a conversation.",
         ctaLabel: "Book a call",
-        ctaHref: "https://bookasloth.com/sndatarkar",
+        ctaHref: "https://meeticulous.com/sndatarkar",
       },
     },
   },

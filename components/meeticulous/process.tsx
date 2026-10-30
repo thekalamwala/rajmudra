@@ -7,7 +7,7 @@ import {
   Tag,
   Wallet,
 } from "lucide-react";
-import { bas } from "@/lib/book-a-sloth";
+import { bas } from "@/lib/meeticulous";
 import { SxButton } from "./cta";
 import "./process.css";
 
@@ -83,7 +83,7 @@ export function BasProcess() {
 
         <div className="pw__foot">
           <SxButton href={bas.liveUrl} external variant="accent">
-            Try Book A Sloth
+            Try Meeticulous
           </SxButton>
         </div>
       </div>

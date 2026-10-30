@@ -21,7 +21,7 @@ import { InPageAnchor } from "@/components/shared/in-page-anchor";
 
 const TITLE = "Book a Demo of Our Products and Services | Timewheel";
 const DESC =
-  "See it live. Pick a demo, from Book A Sloth and Ticket Dino to websites, marketing, SEO and AI automation. We reply with a time within one business day.";
+  "See it live. Pick a demo, from Meeticulous and Ticket Dino to websites, marketing, SEO and AI automation. We reply with a time within one business day.";
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 // The demos a prospect can book. Products first, then services. The form's
 // dropdown mirrors this list plus "Something else".
 const demos = [
-  { icon: CalendarCheck, name: "Book A Sloth", blurb: "Bookings, payments and reminders on autopilot." },
+  { icon: CalendarCheck, name: "Meeticulous", blurb: "Bookings, payments and reminders on autopilot." },
   { icon: Ticket, name: "Ticket Dino", blurb: "Events, ticketing and check-in in one flow." },
   { icon: Users, name: "Alluminaty", blurb: "Alumni management software for schools and colleges." },
   { icon: Coffee, name: "Coffee and Toffee", blurb: "Accept tips and memberships from fans, 0% fee on tips." },
@@ -45,10 +45,10 @@ const demos = [
 
 const serviceOptions = [...demos.map((d) => d.name), "Something else"];
 
-// Book A Sloth booking page (we run demos on our own product). Swap to a
+// Meeticulous booking page (we run demos on our own product). Swap to a
 // dedicated Timewheel booking page later via env, no code change needed.
 const BOOKING_URL =
-  process.env.NEXT_PUBLIC_BAS_BOOKING_URL || "https://bookasloth.com/sndatarkar";
+  process.env.NEXT_PUBLIC_BAS_BOOKING_URL || "https://meeticulous.com/sndatarkar";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -78,7 +78,7 @@ export default function BookADemoPage() {
               See it live. Pick your demo.
             </RevealHeading>
             <p className="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
-              We run our demos on our own booking platform, Book A Sloth. Pick a time that
+              We run our demos on our own booking platform, Meeticulous. Pick a time that
               suits you, book instantly, and get reminders before the session. Prefer we reach
               out instead? Request a callback below.
             </p>
@@ -89,7 +89,7 @@ export default function BookADemoPage() {
                 rel="noopener noreferrer"
                 className="btn btn-primary inline-flex items-center gap-2 rounded-lg px-7 py-3.5 text-sm font-semibold text-brand-foreground"
               >
-                Book a demo on Book A Sloth
+                Book a demo on Meeticulous
                 <ArrowUpRight className="size-4" />
               </a>
               <InPageAnchor

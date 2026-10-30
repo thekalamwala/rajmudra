@@ -35,6 +35,9 @@ const nextConfig: NextConfig = {
       // Admin moved out of the member area into its own console (2026-10-11).
       { source: "/members/admin", destination: "/admin", permanent: true },
       { source: "/members/admin/:path*", destination: "/admin/:path*", permanent: true },
+      // Book A Sloth renamed to Meeticulous (2026-10-29). Keep rankings + inbound links.
+      { source: "/products/book-a-sloth", destination: "/products/meeticulous", permanent: true },
+      { source: "/case-studies/book-a-sloth", destination: "/case-studies/meeticulous", permanent: true },
     ];
   },
   images: {

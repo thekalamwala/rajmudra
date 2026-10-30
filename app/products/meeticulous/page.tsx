@@ -1,31 +1,31 @@
 import type { Metadata } from "next";
 import { social } from "@/lib/metadata";
-import { bas } from "@/lib/book-a-sloth";
-import { BasHero } from "@/components/book-a-sloth/hero";
-import { BasProblem } from "@/components/book-a-sloth/problem";
-import { BasAutomation } from "@/components/book-a-sloth/automation";
-import { BasBeforeAfter } from "@/components/book-a-sloth/before-after";
-import { BasCapabilities } from "@/components/book-a-sloth/capabilities";
-import { BasFaq } from "@/components/book-a-sloth/faq";
-import { BasProcess } from "@/components/book-a-sloth/process";
-import { BasFinalCta } from "@/components/book-a-sloth/final-cta";
-import { BasFeatures } from "@/components/book-a-sloth/features";
-import { BasIntegrations } from "@/components/book-a-sloth/integrations";
-import { BasPricing } from "@/components/book-a-sloth/pricing";
-import { BasTestimonials } from "@/components/book-a-sloth/testimonials";
+import { bas } from "@/lib/meeticulous";
+import { BasHero } from "@/components/meeticulous/hero";
+import { BasProblem } from "@/components/meeticulous/problem";
+import { BasAutomation } from "@/components/meeticulous/automation";
+import { BasBeforeAfter } from "@/components/meeticulous/before-after";
+import { BasCapabilities } from "@/components/meeticulous/capabilities";
+import { BasFaq } from "@/components/meeticulous/faq";
+import { BasProcess } from "@/components/meeticulous/process";
+import { BasFinalCta } from "@/components/meeticulous/final-cta";
+import { BasFeatures } from "@/components/meeticulous/features";
+import { BasIntegrations } from "@/components/meeticulous/integrations";
+import { BasPricing } from "@/components/meeticulous/pricing";
+import { BasTestimonials } from "@/components/meeticulous/testimonials";
 
 // Title set here (not from lib copy) to keep the site-wide ", Timewheel" suffix
 // and avoid the em-dash in the lib string.
-const META_TITLE = "Book A Sloth: Appointment Booking & Scheduling Software";
+const META_TITLE = "Meeticulous: Appointment Booking & Scheduling Software";
 
 export const metadata: Metadata = {
   title: { absolute: META_TITLE },
   description: bas.meta.description,
-  ...social({ path: "/products/book-a-sloth", title: META_TITLE, description: bas.meta.description }),
-  alternates: { canonical: "/products/book-a-sloth" },
+  ...social({ path: "/products/meeticulous", title: META_TITLE, description: bas.meta.description }),
+  alternates: { canonical: "/products/meeticulous" },
 };
 
-const PAGE_URL = "https://timewheel.co.in/products/book-a-sloth";
+const PAGE_URL = "https://timewheel.co.in/products/meeticulous";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -33,7 +33,7 @@ const jsonLd = {
     {
       "@type": "SoftwareApplication",
       "@id": `${PAGE_URL}#software`,
-      name: "Book A Sloth",
+      name: "Meeticulous",
       url: bas.liveUrl,
       applicationCategory: "BusinessApplication",
       operatingSystem: "Web",

@@ -14,7 +14,7 @@
 
 ## Featured products (4, each: desc + 3 bullets + Learn more)
 
-### Book A Sloth
+### Meeticulous
 Modern booking platform to simplify appointments, reservations, and customer scheduling. Speed, usability, conversion-focused journeys customers enjoy.
 - Fast and frictionless booking workflows
 - Automated scheduling and confirmations

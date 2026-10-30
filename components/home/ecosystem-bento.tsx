@@ -77,7 +77,7 @@ const rest = services.slice(1);
 // Proof tiles: picked by slug, not by index, so re-ordering lib/case-studies.ts
 // can never shuffle the homepage. Deliberately skips the placeholder entries
 // flagged at the top of that file.
-const PROOF_SLUGS = ["book-a-sloth", "alluminaty", "eureka-coworking"];
+const PROOF_SLUGS = ["meeticulous", "alluminaty", "eureka-coworking"];
 const proof = PROOF_SLUGS.map((slug) => caseStudies.find((cs) => cs.slug === slug)).filter(
   (cs): cs is CaseStudy => Boolean(cs),
 );

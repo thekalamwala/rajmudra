@@ -1,5 +1,5 @@
 // The Parliament product page content. Target query: "online community platform"
-// (India). Every feature claim maps to shipped code in the bookasloth/the-parliament
+// (India). Every feature claim maps to shipped code in the meeticulous/the-parliament
 // repo; no customer counts, ratings or testimonials until real ones exist.
 // Alumni wording stays off this page: that query belongs to /products/alluminaty.
 
