@@ -95,7 +95,8 @@ export function Navbar() {
   }
   const light = pathname === "/" && !scrolled && !mobileOpen;
   const linkBase = "flex items-center gap-1 rounded-md px-3 py-2 text-sm font-medium transition-colors";
-  const linkTone = light ? "text-white/85 hover:text-white" : "text-foreground/90 hover:text-foreground";
+  // Hero is light, so nav content stays dark even in the transparent overlay.
+  const linkTone = "text-foreground/90 hover:text-foreground";
 
   const mobileRow = (item: { name: string; icon: Icon; accent: string; href: string }) => (
     <Link
@@ -128,7 +129,7 @@ export function Navbar() {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
         <Link href="/" aria-label="Rajmudra home" className="flex items-center">
           <Image
-            src={light ? "/brand/rajmudra/horizontal-reversed.svg" : "/brand/rajmudra/horizontal-full-color.svg"}
+            src="/brand/rajmudra/horizontal-full-color.svg"
             alt="Rajmudra"
             width={175}
             height={32}
@@ -281,7 +282,7 @@ export function Navbar() {
             Book A Meeting
           </Link>
           <button
-            className={cn("grid size-10 place-items-center rounded-lg hover:bg-secondary md:hidden", light && "text-white")}
+            className="grid size-10 place-items-center rounded-lg hover:bg-secondary md:hidden"
             onClick={() => setMobileOpen((v) => !v)}
             aria-label="Toggle menu"
           >
