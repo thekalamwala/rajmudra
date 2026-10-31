@@ -1,25 +1,18 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { ArrowRight, Database, BadgePercent, LayoutDashboard, TrendingUp } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 import { skipEntrance, useIsClientMount } from "@/components/anim/entrance";
 import { InPageAnchor } from "@/components/shared/in-page-anchor";
-import { Skyline, FestiveFrame } from "@/components/desi";
+import { Fort } from "@/components/desi";
 
-// Festive daytime poster hero: warm cream ground, marigold sun rays, an Indian
-// skyline along the base and ink copy. Keeps the rotating typewriter word, one
-// big CTA, and the 4-card feature row (desi-framed).
+// Festive daytime poster hero: warm cream ground, marigold sun rays and a
+// sandstone hill-fort along the base. Headline with a rotating typewriter word
+// and one big CTA, sized to sit fully above the fold over the fort.
 
 const TYPED = ["website.", "web app.", "online store.", "brand.", "traffic.", "revenue.", "audience.", "community.", "leads."];
-
-const features = [
-  { icon: Database, label: "Own your code & data", accent: "var(--desi-orange)" },
-  { icon: BadgePercent, label: "No platform commissions", accent: "var(--desi-magenta)" },
-  { icon: LayoutDashboard, label: "One connected dashboard", accent: "var(--desi-teal)" },
-  { icon: TrendingUp, label: "Scales with your business", accent: "#e39a00" },
-];
 
 function Typewriter() {
   const [text, setText] = useState("");
@@ -84,24 +77,41 @@ export function Hero() {
       {/* slow marigold sun rays fanning up from the base */}
       <div
         aria-hidden
-        className="desi-rays desi-spin-slower pointer-events-none absolute left-1/2 top-[80%] aspect-square w-[150vw] max-w-[1500px] -translate-x-1/2 -translate-y-1/2 opacity-[0.14]"
+        className="desi-rays desi-spin-slower pointer-events-none absolute left-1/2 top-[82%] aspect-square w-[150vw] max-w-[1500px] -translate-x-1/2 -translate-y-1/2 opacity-[0.2]"
         style={{ ["--ray" as string]: "rgba(254,81,0,0.85)", ["--rays-fade" as string]: "5%" }}
       />
 
       {/* soft warm glow behind the feature cards */}
       <div
         aria-hidden
-        className="pointer-events-none absolute bottom-[3%] left-1/2 h-[440px] w-[860px] max-w-[94vw] -translate-x-1/2 rounded-full blur-[120px]"
+        className="pointer-events-none absolute bottom-[2%] left-1/2 h-[440px] w-[860px] max-w-[94vw] -translate-x-1/2 rounded-full blur-[120px]"
         style={{ background: "radial-gradient(circle, rgba(254,81,0,0.26) 0%, rgba(232,15,122,0.12) 48%, transparent 72%)" }}
       />
 
-      {/* skyline silhouette grounds the scene */}
-      <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 opacity-90">
-        <Skyline color="var(--desi-ink)" height={148} />
+      {/* sandstone hill-fort grounds the scene (sits on the base, covering the
+          lower rays so none stray below it) */}
+      {/* hill-fort + its tall central flag. The flag sits BEHIND the fort
+          (lower z) so the fort hides the planted pole base; the pole is centred
+          on its SVG so it lands over the middle of the gate. `isolate` makes the
+          z-order reliable (an absolute child otherwise paints over the in-flow
+          fort SVG regardless of DOM order). */}
+      <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 isolate">
+        <div className="absolute bottom-[150px] left-1/2 z-0 -translate-x-1/2">
+          <svg width="44" height="92" viewBox="0 0 44 92" role="presentation">
+            <line x1="22" y1="92" x2="22" y2="5" stroke="#5f2e16" strokeWidth="3" strokeLinecap="round" />
+            <circle cx="22" cy="4" r="3.2" fill="#5f2e16" />
+            <g className="desi-flag">
+              <path d="M23 7 L 43 14.5 L 23 22 Z" fill="#ff7d1f" />
+            </g>
+          </svg>
+        </div>
+        <div className="relative z-10">
+          <Fort height={184} />
+        </div>
       </div>
 
-      <div className="relative z-10 mx-auto flex max-w-5xl flex-col items-center px-6 pb-24 pt-24 text-center md:pt-28">
-        <h1 className="hero-up font-display text-[2.07rem] font-extrabold leading-[1.08] tracking-tight md:text-[3.37rem]">
+      <div className="relative z-10 mx-auto flex max-w-5xl -translate-y-[50px] flex-col items-center px-6 pb-40 pt-24 text-center md:pt-28">
+        <h1 className="hero-up hm-hero-h1 font-display font-extrabold tracking-tight">
           We turn ambitious ideas into <br />things that grow your <Typewriter />
         </h1>
         <p className="hero-up mt-5 max-w-3xl text-base text-muted-foreground md:text-lg">
@@ -115,30 +125,6 @@ export function Hero() {
           Explore the Ecosystem
           <ArrowRight className="size-5 transition-transform group-hover:translate-x-0.5" />
         </InPageAnchor>
-
-        {/* feature cards — desi framed light tiles */}
-        <div className="hero-up mt-16 grid w-full grid-cols-2 gap-[21px] lg:grid-cols-4">
-          {features.map(({ icon: Icon, label, accent }) => (
-            <div
-              key={label}
-              className="group relative flex flex-col gap-7 overflow-hidden rounded-2xl bg-card p-5 pb-9 text-left transition-transform duration-300 hover:-translate-y-1"
-              style={{ border: `1.5px solid ${accent}`, ["--a" as string]: accent }}
-            >
-              <FestiveFrame color={accent} />
-              <span
-                className="relative grid size-12 place-items-center rounded-xl"
-                style={{
-                  background: "color-mix(in srgb, var(--a) 14%, transparent)",
-                  color: accent,
-                  boxShadow: "inset 0 0 0 1px color-mix(in srgb, var(--a) 30%, transparent)",
-                }}
-              >
-                <Icon className="size-6" />
-              </span>
-              <span className="relative text-sm font-semibold text-foreground">{label}</span>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );

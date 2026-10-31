@@ -8,6 +8,7 @@ import { featuredProducts, type Product } from "@/lib/products";
 import { cn } from "@/lib/utils";
 import { Reveal } from "@/components/reveal";
 import { RevealHeading } from "@/components/anim/reveal-heading";
+import { Toran } from "@/components/desi";
 
 // The four headline products shown on the homepage. Picked by slug so
 // re-ordering lib/products.ts can never shuffle this grid.
@@ -57,14 +58,17 @@ function ProductTile({
           onExpand();
         }
       }}
-      style={{ flexGrow: expanded ? 2.35 : 1 }}
+      style={{ flexGrow: expanded ? 2.35 : 1, borderColor: accent }}
       className={cn(
-        "group/tile relative flex h-[42rem] min-w-0 cursor-pointer flex-col overflow-hidden rounded-2xl border p-6 text-left transition-all duration-500 ease-out focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand md:h-[34rem] md:basis-0 md:p-7",
+        "group/tile relative flex h-[42rem] min-w-0 cursor-pointer flex-col overflow-hidden rounded-[20px] border-2 bg-card p-6 pb-8 text-left transition-all duration-500 ease-out focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand md:h-[34rem] md:basis-0 md:p-7 md:pb-8",
         expanded
-          ? "border-ink/25 bg-card shadow-[0_30px_70px_-40px_rgba(23,23,23,0.5)]"
-          : "border-border bg-card hover:-translate-y-1 hover:border-ink/25 hover:shadow-[0_24px_50px_-42px_rgba(23,23,23,0.55)]",
+          ? "shadow-[0_30px_70px_-40px_rgba(23,23,23,0.5)]"
+          : "hover:-translate-y-1 hover:shadow-[0_24px_50px_-42px_rgba(23,23,23,0.55)]",
       )}
     >
+      {/* festive dressing: tiny-dot garland on top, dotted line at the base */}
+      {expanded ? <Toran color={accent} height={22} className="absolute inset-x-0 top-0" /> : null}
+      <div className="pointer-events-none absolute inset-x-6 bottom-4 border-t-2 border-dotted" style={{ borderColor: accent }} />
       {/* accent bloom */}
       <span
         aria-hidden="true"
@@ -200,7 +204,7 @@ export function TopProducts() {
     });
 
   return (
-    <section id="products" className="mx-auto max-w-6xl px-6 py-20 md:py-28">
+    <section id="products" className="mx-auto max-w-6xl px-6 py-12 md:py-16">
       <Reveal className="flex flex-wrap items-end justify-between gap-4">
         <div>
           <RevealHeading
@@ -222,7 +226,7 @@ export function TopProducts() {
         </Link>
       </Reveal>
 
-      <Reveal stagger className="mt-12 space-y-4 md:mt-14">
+      <Reveal stagger className="mt-8 space-y-4 md:mt-10">
         {rows.map((row, r) => (
           <div key={r} className="flex flex-col gap-4 md:flex-row">
             {row.map((product, i) => (

@@ -11,7 +11,7 @@ export function Faq() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section className="mx-auto max-w-6xl px-6 py-20 md:py-28">
+    <section className="mx-auto max-w-6xl px-6 py-12 md:py-16">
       <div className="mx-auto max-w-3xl">
         <Reveal>
           <RevealHeading
@@ -22,7 +22,7 @@ export function Faq() {
           </RevealHeading>
         </Reveal>
 
-        <div className="mt-12 space-y-3">
+        <div className="mt-8 space-y-3">
           {homeFaq.items.map((item, i) => {
             const isOpen = open === i;
             return (

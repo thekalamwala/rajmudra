@@ -33,7 +33,7 @@ const serviceGroups: { title: string; icon: Icon; items: NavService[] }[] = [
     icon: Code,
     items: [
       { name: "Website Design", icon: PenNib, accent: "#47143D", href: "/website-design-company-in-nagpur", desc: "Interfaces built to convert, not just impress." },
-      { name: "Website Development", icon: Code, accent: "#269cef", href: "/web-development-company-in-nagpur", desc: "Fast, clean builds that ship on time." },
+      { name: "Website Development", icon: Code, accent: "#7a3fc7", href: "/web-development-company-in-nagpur", desc: "Fast, clean builds that ship on time." },
       { name: "Shopify Development", icon: Storefront, accent: "#5e8e3e", href: "/shopify-development-company-in-nagpur", desc: "Storefronts tuned to sell." },
     ],
   },
@@ -50,7 +50,7 @@ const serviceGroups: { title: string; icon: Icon; items: NavService[] }[] = [
 
 const resourceItems = [
   { name: "Case Studies", href: "/case-studies", icon: PresentationChart, accent: "#fe5100" },
-  { name: "Blog", href: "/blog", icon: BookOpenText, accent: "#269cef" },
+  { name: "Blog", href: "/blog", icon: BookOpenText, accent: "#7a3fc7" },
   { name: "Academy", href: "/academy", icon: GraduationCap, accent: "#29a66f" },
 ];
 

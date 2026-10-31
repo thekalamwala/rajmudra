@@ -13,7 +13,7 @@ import { CaseStudyCard } from "@/components/case-studies/case-study-card";
 import { cn } from "@/lib/utils";
 import { Reveal } from "@/components/reveal";
 import { RevealHeading } from "@/components/anim/reveal-heading";
-import { Skyline, FestiveFrame, FlowerDivider, Jaali } from "@/components/desi";
+import { FestiveFrame, Jaali, BlockPrint } from "@/components/desi";
 
 // Homepage "ecosystem" bento: the five services we sell, as mixed-size tiles.
 // Desi Digital: each tile wears a festive frame (accent border, corner leaf
@@ -35,7 +35,7 @@ const services: Service[] = [
     tagline: "Fast, clean builds that ship on time.",
     href: "/web-development-company-in-nagpur",
     icon: Code,
-    accent: "#269cef",
+    accent: "#7a3fc7",
     points: ["Websites & landing pages", "Web apps & dashboards", "API & integrations"],
   },
   {
@@ -128,10 +128,10 @@ export function EcosystemBento() {
   const { icon: Icon, accent, href, name, tagline, points } = anchor;
 
   return (
-    <section id="ecosystem" className="relative overflow-hidden py-20 md:py-28">
+    <section id="ecosystem" className="relative overflow-hidden py-12 md:py-16">
       {/* jaali lattice corners */}
-      <Jaali size={240} opacity={0.09} className="absolute -right-10 top-0" color="var(--desi-orange)" />
-      <Jaali size={200} opacity={0.08} className="absolute -left-10 bottom-24" color="var(--desi-teal)" />
+      <Jaali size={240} opacity={0.13} className="absolute -right-10 top-0" color="var(--desi-orange)" />
+      <Jaali size={200} opacity={0.12} className="absolute -left-10 bottom-24" color="var(--desi-teal)" />
 
       <div className="relative mx-auto max-w-6xl px-6">
         <Reveal>
@@ -140,7 +140,37 @@ export function EcosystemBento() {
           </RevealHeading>
         </Reveal>
 
-        <Reveal stagger className="mt-12 grid auto-rows-[minmax(150px,auto)] grid-cols-2 gap-4 md:grid-cols-4">
+        <Reveal stagger className="mt-8 grid auto-rows-[minmax(150px,auto)] grid-cols-2 gap-4 md:grid-cols-4">
+          {/* stat — festive orange poster tile */}
+          <div
+            className="relative flex flex-col justify-between overflow-hidden rounded-[18px] bg-brand p-5 pb-9 text-brand-foreground"
+            style={{ border: "2px solid rgba(255,255,255,0.4)" }}
+          >
+            <FestiveFrame color="rgba(255,255,255,0.75)" />
+            <p className="relative font-display text-4xl font-black tracking-tight">10+</p>
+            <p className="relative text-sm font-semibold">Products designed, built &amp; shipped</p>
+          </div>
+
+          {/* ownership — deep festive panel with a block-print design, wide */}
+          <div
+            className="relative col-span-2 flex flex-col justify-between overflow-hidden rounded-[18px] p-7 pb-10 text-white md:col-span-3"
+            style={{
+              border: "2px solid color-mix(in srgb, var(--desi-marigold) 55%, transparent)",
+              background:
+                "radial-gradient(90% 80% at 88% 0%, rgba(254,81,0,0.32), transparent 55%), radial-gradient(80% 80% at 0% 100%, rgba(232,15,122,0.26), transparent 55%), linear-gradient(145deg, #3a1420 0%, #57203a 48%, #25101a 100%)",
+            }}
+          >
+            <FestiveFrame color="var(--desi-marigold)" />
+            <BlockPrint color="rgba(255,183,3,0.9)" opacity={0.12} className="absolute inset-0" />
+            <ShieldCheck className="relative size-6 text-[var(--desi-marigold)]" />
+            <div className="relative mt-6">
+              <p className="font-display text-xl font-extrabold">You own the whole stack.</p>
+              <p className="mt-1.5 max-w-md text-sm text-white/75">
+                Your code, your data, your infrastructure, no platform commissions, no SaaS rent, no lock-in.
+              </p>
+            </div>
+          </div>
+
           {/* anchor service, 2x2 */}
           <Link
             href={href}
@@ -171,47 +201,14 @@ export function EcosystemBento() {
           {rest.slice(0, 4).map((s) => (
             <ServiceTile key={s.name} service={s} />
           ))}
-
-          {/* stat — festive orange poster tile */}
-          <div
-            className="relative flex flex-col justify-between overflow-hidden rounded-[18px] bg-brand p-5 pb-9 text-brand-foreground"
-            style={{ border: "2px solid rgba(255,255,255,0.4)" }}
-          >
-            <FestiveFrame color="rgba(255,255,255,0.75)" />
-            <p className="relative font-display text-4xl font-black tracking-tight">10+</p>
-            <p className="relative text-sm font-semibold">Products designed, built &amp; shipped</p>
-          </div>
-
-          {/* ownership — deep festive indigo panel with a skyline, wide */}
-          <div
-            className="desi-indigo-panel relative col-span-2 flex flex-col justify-between overflow-hidden rounded-[18px] p-7 pb-10 text-white md:col-span-3"
-            style={{ border: "2px solid color-mix(in srgb, var(--desi-marigold) 55%, transparent)" }}
-          >
-            <FestiveFrame color="var(--desi-marigold)" />
-            <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 opacity-50">
-              {/* preserve="none" fits the full silhouette into the short strip
-                  (slightly flatter) instead of cropping the tall towers */}
-              <Skyline color="rgba(255,183,3,0.5)" height={104} preserve="none" />
-            </div>
-            <ShieldCheck className="relative size-6 text-[var(--desi-marigold)]" />
-            <div className="relative mt-6">
-              <p className="font-display text-xl font-extrabold">You own the whole stack.</p>
-              <p className="mt-1.5 max-w-md text-sm text-white/75">
-                Your code, your data, your infrastructure, no platform commissions, no SaaS rent, no lock-in.
-              </p>
-            </div>
-          </div>
         </Reveal>
 
-        {/* flower divider into the case studies */}
-        <FlowerDivider className="mx-auto mt-20 max-w-3xl" />
-
         {/* Case studies — same cards and grid as /case-studies, three of them. */}
-        <Reveal className="mt-14">
+        <Reveal className="mt-12">
           <div className="flex flex-wrap items-end justify-between gap-4">
             <div>
               <RevealHeading
-                as="h3"
+                as="h2"
                 className="font-display max-w-2xl text-3xl font-black tracking-tight md:text-4xl"
               >
                 Work we designed, built and shipped
@@ -230,7 +227,7 @@ export function EcosystemBento() {
           </div>
         </Reveal>
 
-        <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {proof.map((cs) => (
             <Reveal key={cs.slug} className="h-full">
               <CaseStudyCard cs={cs} />

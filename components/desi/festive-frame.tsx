@@ -1,23 +1,9 @@
 import { useId } from "react";
 import { cn } from "@/lib/utils";
 
-// Ornamental card dressing for the Desi Digital cards: little leaf sprigs in the
-// corners and a fish-scale (seigaiha) lace along the bottom edge. Drop inside a
-// `relative overflow-hidden` card; everything tints from one `color`.
-
-function CornerFlourish({ color, className }: { color: string; className?: string }) {
-  // top-left orientation; rotate via className for other corners
-  const leaf = "M0 0 Q 9 -3 18 0 Q 9 3 0 0 Z";
-  return (
-    <svg viewBox="0 0 40 40" width="26" height="26" aria-hidden className={cn("absolute", className)} style={{ color }}>
-      <g fill="currentColor" transform="translate(7 7)">
-        <path d={leaf} transform="rotate(10)" />
-        <path d={leaf} transform="rotate(80)" />
-        <circle cx="-1.5" cy="-1.5" r="1.8" />
-      </g>
-    </svg>
-  );
-}
+// Ornamental card dressing for the Desi Digital cards: a fish-scale (seigaiha)
+// scallop lace along the bottom edge. Drop inside a `relative overflow-hidden`
+// card; it tints from one `color`.
 
 function ScallopEdge({ color, className }: { color: string; className?: string }) {
   const id = useId().replace(/:/g, "");
@@ -48,13 +34,6 @@ function ScallopEdge({ color, className }: { color: string; className?: string }
 }
 
 export function FestiveFrame({ color, scallop = true }: { color: string; scallop?: boolean }) {
-  return (
-    <>
-      <CornerFlourish color={color} className="left-1.5 top-1.5" />
-      <CornerFlourish color={color} className="right-1.5 top-1.5 rotate-90" />
-      <CornerFlourish color={color} className="bottom-1.5 right-1.5 rotate-180" />
-      <CornerFlourish color={color} className="bottom-1.5 left-1.5 -rotate-90" />
-      {scallop && <ScallopEdge color={color} className="absolute inset-x-0 bottom-0" />}
-    </>
-  );
+  if (!scallop) return null;
+  return <ScallopEdge color={color} className="absolute inset-x-0 bottom-0" />;
 }

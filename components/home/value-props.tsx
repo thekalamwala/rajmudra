@@ -1,7 +1,7 @@
 import { Boxes, ServerCog, UserCheck } from "lucide-react";
 import { Reveal } from "@/components/reveal";
 import { RevealHeading } from "@/components/anim/reveal-heading";
-import { FestiveFrame, FlowerDivider, Jaali } from "@/components/desi";
+import { FestiveFrame, Jaali } from "@/components/desi";
 
 const props = [
   {
@@ -26,22 +26,20 @@ const props = [
 
 export function ValueProps() {
   return (
-    <section className="relative overflow-hidden py-16 md:py-24">
+    <section className="relative overflow-hidden py-12 md:py-16">
       {/* faint jaali lattice in the corners */}
       <Jaali size={240} opacity={0.1} className="absolute -right-10 -top-6" color="var(--desi-orange)" />
       <Jaali size={190} opacity={0.08} className="absolute -left-10 bottom-10" color="var(--desi-teal)" />
       <Jaali size={190} opacity={0.08} className="absolute -right-6 bottom-0" color="var(--desi-magenta)" />
 
       <div className="relative mx-auto max-w-6xl px-6">
-        <FlowerDivider className="mx-auto max-w-4xl" />
-
-        <div className="mx-auto mt-10 flex max-w-2xl flex-col items-center text-center">
+        <div className="mx-auto flex max-w-2xl flex-col items-center text-center">
           <RevealHeading as="h2" className="font-display text-3xl font-extrabold md:text-4xl">
             Built with ownership-first systems for modern businesses
           </RevealHeading>
         </div>
 
-        <Reveal stagger className="mt-12 grid gap-6 md:grid-cols-3">
+        <Reveal stagger className="mt-8 grid gap-6 md:grid-cols-3">
           {props.map((p) => (
             <div
               key={p.title}
@@ -54,27 +52,19 @@ export function ValueProps() {
             >
               <FestiveFrame color={p.accent} />
 
-              {/* soft accent blob behind the icon */}
-              <span
-                aria-hidden
-                className="pointer-events-none absolute left-4 top-10 size-32 rounded-full blur-2xl"
-                style={{ background: "color-mix(in srgb, var(--a) 24%, transparent)" }}
-              />
-
-              <span
-                className="relative grid size-16 place-items-center rounded-2xl transition-transform duration-300 group-hover:scale-105"
-                style={{ background: "color-mix(in srgb, var(--a) 15%, transparent)", color: p.accent, boxShadow: "inset 0 0 0 1px color-mix(in srgb, var(--a) 30%, transparent)" }}
-              >
-                <p.icon className="size-7" strokeWidth={1.6} />
-              </span>
-
-              <h3 className="font-display relative mt-6 text-xl font-extrabold leading-tight">{p.title}</h3>
-              <p className="relative mt-2.5 text-sm leading-relaxed text-muted-foreground">{p.body}</p>
+              <div className="relative flex items-center gap-4">
+                <span
+                  className="grid size-14 shrink-0 place-items-center rounded-2xl transition-transform duration-300 group-hover:scale-105"
+                  style={{ background: "color-mix(in srgb, var(--a) 15%, transparent)", color: p.accent, boxShadow: "inset 0 0 0 1px color-mix(in srgb, var(--a) 30%, transparent)" }}
+                >
+                  <p.icon className="size-7" strokeWidth={1.6} />
+                </span>
+                <h3 className="font-display text-xl font-extrabold leading-tight">{p.title}</h3>
+              </div>
+              <p className="relative mt-4 text-sm leading-relaxed text-muted-foreground">{p.body}</p>
             </div>
           ))}
         </Reveal>
-
-        <FlowerDivider className="mx-auto mt-16 max-w-4xl" />
       </div>
     </section>
   );

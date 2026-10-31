@@ -111,7 +111,7 @@ export const products: Product[] = [
     tagline: "Collect Tips & Donations",
     icon: Coffee,
     logo: "https://picsum.photos/seed/coffee-for-me/96/96",
-    accent: "#ffcc1c",
+    accent: "#e5342b",
     href: "/coffee-and-toffee",
     featured: true,
     blurb:

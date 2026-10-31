@@ -593,6 +593,11 @@ h2 {
   font-size: clamp(2.25rem, 1.2rem + 3.2vw, 3.25rem) !important;
   line-height: 1.04 !important;
 }
+/* Home hero: larger focal headline over the fort (overrides the global 40px). */
+.hm-hero-h1 {
+  font-size: clamp(2.25rem, 1.2rem + 3.4vw, 3.6rem) !important;
+  line-height: 1.05 !important;
+}
 /* Digital marketing cinematic hero: 42px on a phone up to 78px on desktop,
    over the client-supplied photograph. Same class-specificity escape as the
    two above, because the global `h1` rule above is !important. */
@@ -841,9 +846,21 @@ h2 {
     conic-gradient(from 0deg, var(--desi-orange), var(--desi-magenta), var(--desi-marigold), var(--desi-teal), var(--desi-orange)) border-box;
 }
 
+/* saffron fort flags flutter in the breeze (SVG pennants) */
+@keyframes desi-flag {
+  0%, 100% { transform: scaleX(1) skewY(0deg); }
+  50% { transform: scaleX(0.88) skewY(-5deg); }
+}
+.desi-flag {
+  transform-box: fill-box;
+  transform-origin: left center;
+  animation: desi-flag 2.6s ease-in-out infinite;
+  animation-delay: var(--d, 0s);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .desi-spin-slow, .desi-spin-slower, .desi-spin-rev,
-  .desi-float, .desi-marquee, .desi-gradient-text {
+  .desi-float, .desi-marquee, .desi-gradient-text, .desi-flag {
     animation: none;
   }
 }

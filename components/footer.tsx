@@ -10,13 +10,11 @@ import {
 } from "@phosphor-icons/react/dist/ssr";
 import { footerRows, type SiteLink } from "@/lib/site-links";
 import { site } from "@/lib/site";
-import { ScallopBorder } from "@/components/desi";
+import { ScallopBorder, FlowerDivider, CornerLeaf, WarliDancers, WarliVillage, WarliBorder } from "@/components/desi";
 
-// Site-wide footer: two rows of four columns. Row 1 is company info plus three
-// link columns, row 2 is four link columns. Links come from lib/site-links so
-// the /sitemap page stays in step.
+// Site-wide footer: compact, festive, folk-art (Warli) framed — sized to fit on
+// one screen. Two rows of link columns from lib/site-links.
 
-// Only real profiles render; placeholder "#" links are dropped.
 const social = [
   { label: "LinkedIn", href: site.social.linkedin, icon: LinkedinLogo },
   { label: "Instagram", href: site.social.instagram, icon: InstagramLogo },
@@ -30,17 +28,22 @@ export function Footer() {
 
   return (
     <footer className="mt-auto">
-      {/* brand scallop border as the footer's decorative top edge */}
-      <ScallopBorder color="var(--desi-orange)" flip radius={13} />
-      <div className="relative bg-secondary/60">
-        <div className="relative mx-auto max-w-6xl px-6 py-14">
+      {/* scalloped + dotted top edge */}
+      <ScallopBorder color="var(--desi-orange)" radius={12} />
+      <div className="relative overflow-hidden bg-[var(--desi-cream)]">
+        <div className="mx-auto h-0 w-full max-w-6xl border-t border-dotted border-[var(--desi-orange)]/50" />
+        {/* top-corner flourishes */}
+        <CornerLeaf color="var(--desi-orange)" className="left-3 top-2 -rotate-90" />
+        <CornerLeaf color="var(--desi-orange)" className="right-3 top-2 rotate-180" />
+
+        <div className="relative mx-auto max-w-6xl px-6 pb-11 pt-6">
           {/* Row 1: company info + Services, Products, Company */}
-          <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-4">
             <div>
               <Link href="/" aria-label="Rajmudra home" className="flex items-center">
-                <Image src="/brand/rajmudra/horizontal-full-color.svg" alt="Rajmudra" width={164} height={30} className="h-[30px] w-auto" />
+                <Image src="/brand/rajmudra/horizontal-full-color.svg" alt="Rajmudra" width={164} height={30} className="h-[28px] w-auto" />
               </Link>
-              <ul className="mt-5 space-y-3 text-sm text-muted-foreground">
+              <ul className="mt-3 space-y-1.5 text-[13px] text-muted-foreground">
                 <li className="flex items-start gap-2.5">
                   <MapPin className="mt-0.5 size-4 shrink-0 text-brand" />
                   <span>Eureka Coworking, Pratap Nagar Metro Square, Nagpur, Maharashtra</span>
@@ -54,7 +57,7 @@ export function Footer() {
                   <a href={`mailto:${site.contact.email}`} className="hover:text-foreground">{site.contact.email}</a>
                 </li>
               </ul>
-              <div className="mt-6 flex gap-2">
+              <div className="mt-3 flex gap-2">
                 {social.map(({ label, href, icon: Icon }) => (
                   <a
                     key={label}
@@ -75,19 +78,33 @@ export function Footer() {
             ))}
           </div>
 
+          <FlowerDivider className="my-4 max-w-4xl mx-auto" />
+
           {/* Row 2: Initiatives, Community, Others, Legals */}
-          <div className="mt-12 grid gap-10 border-t border-border/60 pt-12 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-4">
             {row2.map((g) => (
               <FooterCol key={g.title} title={g.title} links={g.links} />
             ))}
           </div>
 
-          {/* bottom bar */}
-          <div className="mt-12 flex flex-col items-center justify-between gap-2 border-t border-border/60 pt-6 text-center text-sm text-muted-foreground sm:flex-row sm:text-left">
-            <p>© {new Date().getFullYear()} Rajmudra. All rights reserved.</p>
-            <p>Handcrafted by humans of Rajmudra</p>
+          <FlowerDivider className="mt-5 max-w-4xl mx-auto" />
+
+          {/* bottom bar — one centered line */}
+          <div className="mt-3 flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-center text-[11px] text-muted-foreground">
+            <span>© {new Date().getFullYear()} Rajmudra. All rights reserved.</span>
+            <span aria-hidden className="text-brand/60">·</span>
+            <span>Handcrafted by राजमुद्राची मराठी माणसं</span>
           </div>
         </div>
+
+        {/* Warli folk-art scenes above the border */}
+        <div className="pointer-events-none absolute inset-x-0 bottom-2 mx-auto max-w-6xl px-6">
+          <WarliDancers color="#b0531f" height={44} className="absolute bottom-0 left-6" />
+          <WarliVillage color="#b0531f" height={50} className="absolute bottom-0 right-6" />
+        </div>
+
+        {/* Warli triangle border */}
+        <WarliBorder color="var(--desi-orange)" height={11} className="absolute inset-x-0 bottom-0" />
       </div>
     </footer>
   );
@@ -96,11 +113,11 @@ export function Footer() {
 function FooterCol({ title, links }: { title: string; links: SiteLink[] }) {
   return (
     <div>
-      <p className="text-sm font-semibold">{title}</p>
-      <ul className="mt-4 space-y-2.5">
+      <p className="text-[13px] font-bold">{title}</p>
+      <ul className="mt-2.5 space-y-1.5">
         {links.map((l) => (
           <li key={l.href}>
-            <Link href={l.href} className="text-sm text-muted-foreground hover:text-foreground">
+            <Link href={l.href} className="text-[13px] text-muted-foreground hover:text-foreground">
               {l.label}
             </Link>
           </li>
