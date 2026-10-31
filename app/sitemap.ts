@@ -65,7 +65,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     entry("/blog", latestPost, 0.8, "weekly"),
     ...posts.map((p) => entry(`/blog/${p.slug}`, p.updated || p.date || latestPost, 0.7, "monthly")),
     ...tags.map((tag) => entry(`/blog/tag/${slugify(tag)}`, latestPost, 0.3, "weekly")),
-    entry("/products/book-a-sloth", PRODUCTS_UPDATED, 0.8, "monthly"),
+    entry("/products/meeticulous", PRODUCTS_UPDATED, 0.8, "monthly"),
     entry("/products/alluminaty", PRODUCTS_UPDATED, 0.7, "monthly"),
     entry("/products/ticket-dino", PRODUCTS_UPDATED, 0.5, "monthly"),
     entry("/products/the-parliament", PRODUCTS_UPDATED, 0.7, "monthly"),

@@ -13,7 +13,7 @@ export const homeFaq: {
   items: [
     {
       q: "What is Timewheel?",
-      a: "Timewheel Studios is a product studio and digital agency based in Nagpur, Maharashtra, founded by Shubham N Datarkar. It builds websites, web apps, SEO and digital marketing systems for businesses across India, and designs, builds and runs its own products such as Book A Sloth and Alluminaty.",
+      a: "Timewheel Studios is a product studio and digital agency based in Nagpur, Maharashtra, founded by Shubham N Datarkar. It builds websites, web apps, SEO and digital marketing systems for businesses across India, and designs, builds and runs its own products such as Meeticulous and Alluminaty.",
     },
     {
       q: "What services does Timewheel actually offer?",

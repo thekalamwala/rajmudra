@@ -3,6 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { Reveal } from "@/components/reveal";
 import { RevealHeading } from "@/components/anim/reveal-heading";
 import { InPageAnchor } from "@/components/shared/in-page-anchor";
+import { MandalaSeal } from "@/components/desi";
 
 const stats = [
   { value: "10", label: "products designed, built & run" },
@@ -13,15 +14,21 @@ const stats = [
 
 export function SolHero() {
   return (
-    <section className="relative -mt-16 overflow-hidden bg-black text-white">
+    <section className="desi-indigo-panel relative -mt-16 overflow-hidden text-white">
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "radial-gradient(70% 55% at 50% -5%, rgba(244,91,10,0.22) 0%, transparent 62%), radial-gradient(45% 40% at 82% 18%, rgba(38,156,239,0.12) 0%, transparent 60%)",
+            "radial-gradient(70% 55% at 50% -5%, rgba(254,81,0,0.28) 0%, transparent 62%), radial-gradient(45% 40% at 82% 18%, rgba(232,15,122,0.16) 0%, transparent 60%)",
         }}
       />
+      <div
+        aria-hidden
+        className="desi-halftone pointer-events-none absolute inset-0 opacity-50"
+        style={{ ["--dot" as string]: "rgba(255,255,255,0.09)" }}
+      />
+      <MandalaSeal size={360} color="rgba(255,255,255,0.06)" spin="slow" className="pointer-events-none absolute -right-20 top-10" />
       <div className="relative mx-auto max-w-5xl px-6 pb-16 pt-28 text-center md:pb-20 md:pt-32">
         <Reveal>
           <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.22em] text-white/70 backdrop-blur">

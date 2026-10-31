@@ -4,12 +4,19 @@ import { Reveal } from "@/components/reveal";
 import { smm } from "@/lib/social-media-marketing";
 import { site } from "@/lib/site";
 import { RevealHeading } from "@/components/anim/reveal-heading";
+import { MandalaSeal } from "@/components/desi";
 
 export function SmmFinalCta() {
   return (
     <section className="w-full">
-      <Reveal className="relative overflow-hidden bg-black px-6 py-16 text-center text-white md:px-8 md:py-20">
-        <div className="relative">
+      <Reveal className="desi-indigo-panel relative isolate overflow-hidden px-6 py-16 text-center text-white md:px-8 md:py-20">
+        <div
+          aria-hidden
+          className="desi-halftone pointer-events-none absolute inset-0 opacity-60"
+          style={{ ["--dot" as string]: "rgba(255,255,255,0.1)" }}
+        />
+        <MandalaSeal size={230} color="var(--desi-marigold)" className="pointer-events-none absolute bottom-3 right-3 opacity-90" />
+        <div className="relative z-10">
           <RevealHeading as="h2" className="mx-auto max-w-2xl text-3xl font-black leading-tight tracking-tight md:text-5xl">
             {smm.finalCta.heading}
           </RevealHeading>

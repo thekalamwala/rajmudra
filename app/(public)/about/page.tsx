@@ -13,9 +13,15 @@ import { AboutTestimonials } from "@/components/about/testimonials";
 import { AboutTeam } from "@/components/about/team";
 import { AboutProcess } from "@/components/about/process";
 import { AboutCta } from "@/components/about/cta";
+import { FestiveBand } from "@/components/desi";
 import { JsonLd } from "@/components/json-ld";
 import { breadcrumbLd, organizationLd } from "@/lib/jsonld";
 import { site } from "@/lib/site";
+
+// Signature festive band as a section seam (matches the homepage / posters).
+function Seam() {
+  return <FestiveBand height={16} className="opacity-95" />;
+}
 
 const description =
   "Timewheel is a Nagpur design and development partner helping ambitious businesses build clear, modern websites and digital experiences that grow.";
@@ -47,9 +53,11 @@ export default function AboutPage() {
       <AboutCompany />
       <AboutValues />
       <AboutCapabilities />
+      <Seam />
       <AboutClients />
       <AboutWork />
       <AboutCaseStudies />
+      <Seam />
       <AboutTestimonials />
       <AboutTeam />
       <AboutProcess />

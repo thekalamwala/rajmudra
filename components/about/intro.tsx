@@ -24,7 +24,7 @@ export function AboutIntro() {
               digital agency based in Nagpur, Maharashtra, founded and led by
               Shubham N Datarkar. We build websites, web apps, SEO and digital
               marketing systems for businesses across India, and we design,
-              build and run our own products, including Book A Sloth and
+              build and run our own products, including Meeticulous and
               Alluminaty.
             </p>
             <p>

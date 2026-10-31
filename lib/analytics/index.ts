@@ -2,7 +2,7 @@
 //
 // Rule that prevents rebuilds: never call gtag/fbq/clarity/posthog directly in a
 // component. Call analytics.track(EVENTS.X, props). Adding/removing a tool = edit
-// one adapter file, zero call-site churn. Mirrors the bookasloth analytics bus.
+// one adapter file, zero call-site churn. Mirrors the meeticulous analytics bus.
 //
 // Consent model:
 //   - PostHog (needsConsent:false) is always-on (first-party product analytics).

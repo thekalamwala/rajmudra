@@ -1,5 +1,5 @@
 // Canonical analytics event names. One source of truth so a stray "BookDemo"
-// vs "book_demo" never splits a funnel. Mirrors the bookasloth analytics bus.
+// vs "book_demo" never splits a funnel. Mirrors the meeticulous analytics bus.
 //
 // Money/acquisition-significant events also fire server-side (Meta CAPI in
 // app/api/lead/route.ts) with a shared event_id so Meta de-dupes browser+server.

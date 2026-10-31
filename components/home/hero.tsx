@@ -1,24 +1,18 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { ArrowRight, Database, BadgePercent, LayoutDashboard, TrendingUp } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
-import { BlackHoleHeroSection } from "@/components/ui/blackhole-hero-section";
 import { skipEntrance, useIsClientMount } from "@/components/anim/entrance";
 import { InPageAnchor } from "@/components/shared/in-page-anchor";
+import { Fort } from "@/components/desi";
 
-// Dark, centered hero (Lexend-style): headline with a typewriter word, big CTA,
-// and a 4-card feature row.
+// Festive daytime poster hero: warm cream ground, marigold sun rays and a
+// sandstone hill-fort along the base. Headline with a rotating typewriter word
+// and one big CTA, sized to sit fully above the fold over the fort.
 
 const TYPED = ["website.", "web app.", "online store.", "brand.", "traffic.", "revenue.", "audience.", "community.", "leads."];
-
-const features = [
-  { icon: Database, label: "Own your code & data" },
-  { icon: BadgePercent, label: "No platform commissions" },
-  { icon: LayoutDashboard, label: "One connected dashboard" },
-  { icon: TrendingUp, label: "Scales with your business" },
-];
 
 function Typewriter() {
   const [text, setText] = useState("");
@@ -47,42 +41,15 @@ function Typewriter() {
   }, [text, deleting, wordIdx]);
 
   return (
-    <span className="text-brand">
+    <span className="desi-gradient-text">
       {text}
-      <span className="ml-0.5 inline-block w-[3px] -translate-y-1 animate-pulse bg-brand align-middle" style={{ height: "0.85em" }} aria-hidden />
+      <span
+        className="ml-0.5 inline-block w-[3px] -translate-y-1 animate-pulse bg-[var(--desi-orange)] align-middle"
+        style={{ height: "0.85em" }}
+        aria-hidden
+      />
     </span>
   );
-}
-
-// Flies the hole straight across the frame — in one edge, out the other — over
-// 240s, easing in and out. Direction alternates each pass: right-to-left, then
-// left-to-right. It never fully leaves — at each edge it rests half-in. Its
-// own component so only the canvas re-renders each frame, not the copy.
-function DriftingBlackHole() {
-  const [focus, setFocus] = useState<[number, number]>([1.0, 0.55]);
-  useEffect(() => {
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      setFocus([0.5, 0.55]);
-      return;
-    }
-    const CY = 0.55, D = 0.5; // vertical centre; reach so the hole rests half-in at each edge
-    const DUR = 240000;
-    let dir = 1; // 1 = right→left, -1 = left→right
-    let t0 = performance.now();
-    let raf = 0;
-    const loop = (now: number) => {
-      let k = (now - t0) / DUR;
-      if (k >= 1) { dir = -dir; t0 = now; k = 0; }
-      const e = k < 0.5 ? 2 * k * k : 1 - Math.pow(-2 * k + 2, 2) / 2; // easeInOutQuad
-      const startX = 0.5 + dir * D;
-      const endX = 0.5 - dir * D;
-      setFocus([startX + (endX - startX) * e, CY]);
-      raf = requestAnimationFrame(loop);
-    };
-    raf = requestAnimationFrame(loop);
-    return () => cancelAnimationFrame(raf);
-  }, []);
-  return <BlackHoleHeroSection focus={focus} distance={29} roll={0} elevation={-5.5} vignette={0.4} />;
 }
 
 export function Hero() {
@@ -92,52 +59,72 @@ export function Hero() {
   useGSAP(
     () => {
       const q = gsap.utils.selector(ref);
-      // Don't re-hide a hero the visitor already sees on a hard load.
       if (skipEntrance(ref.current!, clientMount)) return;
       gsap.timeline()
         .from(q(".hero-up"), { opacity: 0, y: 22, duration: 0.7, ease: "power3.out", stagger: 0.1 });
     },
-    { scope: ref },
+    { scope: ref, revertOnUpdate: true },
   );
 
   return (
     <section
       ref={ref}
-      className="relative -mt-16 flex min-h-[calc(100svh+4rem)] items-center overflow-hidden bg-black text-white"
+      className="relative -mt-16 flex min-h-[calc(100svh+4rem)] items-center overflow-hidden text-foreground"
     >
-      {/* WebGL ray-traced black hole, horizontal disc, centered behind copy */}
-      <div aria-hidden className="absolute inset-0">
-        <DriftingBlackHole />
+      {/* warm cream festive ground */}
+      <div aria-hidden className="absolute inset-0 desi-ground" />
+
+      {/* slow marigold sun rays fanning up from the base */}
+      <div
+        aria-hidden
+        className="desi-rays desi-spin-slower pointer-events-none absolute left-1/2 top-[82%] aspect-square w-[150vw] max-w-[1500px] -translate-x-1/2 -translate-y-1/2 opacity-[0.2]"
+        style={{ ["--ray" as string]: "rgba(254,81,0,0.85)", ["--rays-fade" as string]: "5%" }}
+      />
+
+      {/* soft warm glow behind the feature cards */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute bottom-[2%] left-1/2 h-[440px] w-[860px] max-w-[94vw] -translate-x-1/2 rounded-full blur-[120px]"
+        style={{ background: "radial-gradient(circle, rgba(254,81,0,0.26) 0%, rgba(232,15,122,0.12) 48%, transparent 72%)" }}
+      />
+
+      {/* sandstone hill-fort grounds the scene (sits on the base, covering the
+          lower rays so none stray below it) */}
+      {/* hill-fort + its tall central flag. The flag sits BEHIND the fort
+          (lower z) so the fort hides the planted pole base; the pole is centred
+          on its SVG so it lands over the middle of the gate. `isolate` makes the
+          z-order reliable (an absolute child otherwise paints over the in-flow
+          fort SVG regardless of DOM order). */}
+      <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 isolate">
+        <div className="absolute bottom-[150px] left-1/2 z-0 -translate-x-1/2">
+          <svg width="44" height="92" viewBox="0 0 44 92" role="presentation">
+            <line x1="22" y1="92" x2="22" y2="5" stroke="#5f2e16" strokeWidth="3" strokeLinecap="round" />
+            <circle cx="22" cy="4" r="3.2" fill="#5f2e16" />
+            <g className="desi-flag">
+              <path d="M23 7 L 43 14.5 L 23 22 Z" fill="#ff7d1f" />
+            </g>
+          </svg>
+        </div>
+        <div className="relative z-10">
+          <Fort height={184} />
+        </div>
       </div>
-      {/* legibility vignette over the disc, under the content */}
-      <div aria-hidden className="pointer-events-none absolute inset-0 bg-[radial-gradient(60%_55%_at_50%_50%,rgba(0,0,0,0.7)_0%,rgba(0,0,0,0.32)_45%,transparent_78%)]" />
-      <div className="relative z-10 mx-auto flex max-w-5xl flex-col items-center px-6 pb-16 pt-24 text-center md:pt-28">
-        <h1 className="hero-up text-[2.07rem] font-black leading-[1.08] tracking-tight md:text-[3.37rem]">
+
+      <div className="relative z-10 mx-auto flex max-w-5xl -translate-y-[50px] flex-col items-center px-6 pb-40 pt-24 text-center md:pt-28">
+        <h1 className="hero-up hm-hero-h1 font-display font-extrabold tracking-tight">
           We turn ambitious ideas into <br />things that grow your <Typewriter />
         </h1>
-        <p className="hero-up mt-5 max-w-3xl text-base text-white/60 md:text-lg">
+        <p className="hero-up mt-5 max-w-3xl text-base text-muted-foreground md:text-lg">
           One team to design, build and grow your business online — websites and apps,
           then the SEO, ads and social to fill them. Built on systems you own, not rent.
         </p>
         <InPageAnchor
           href="#ecosystem"
-          className="hero-up group btn btn-primary mt-9 inline-flex items-center gap-2 rounded-lg px-8 py-4 text-base font-semibold text-brand-foreground"
+          className="hero-up group btn btn-primary mt-9 inline-flex items-center gap-2 rounded-lg px-8 py-4 text-base font-semibold text-brand-foreground shadow-[0_18px_50px_-18px_rgba(254,81,0,0.7)]"
         >
           Explore the Ecosystem
           <ArrowRight className="size-5 transition-transform group-hover:translate-x-0.5" />
         </InPageAnchor>
-
-        {/* feature cards */}
-        <div className="hero-up mt-16 grid w-full grid-cols-2 gap-[21px] lg:grid-cols-4">
-          {features.map(({ icon: Icon, label }) => (
-            <div key={label} className="flex flex-col gap-8 rounded-2xl border border-white/10 bg-white/[0.03] p-5 text-left">
-              <span className="grid size-11 place-items-center rounded-xl bg-brand/15 text-brand">
-                <Icon className="size-5" />
-              </span>
-              <span className="text-sm font-semibold text-white/90">{label}</span>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );

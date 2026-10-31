@@ -18,7 +18,7 @@ Sitemap: https://timewheel.co.in/sitemap.xml
 - [30 Days, 30 Websites](https://timewheel.co.in/30-days-30-websites): A challenge to build 30 websites in 30 days on a pay-what-you-want basis, including ₹0.
 
 ## Products
-- [Book A Sloth](https://timewheel.co.in/products/book-a-sloth): An India-first appointment booking and scheduling platform Timewheel designed and built. 24/7 booking pages, UPI and Razorpay payments, two-way Google Calendar sync, WhatsApp and email reminders, GST invoicing, and a business dashboard. Live at https://bookasloth.com.
+- [Meeticulous](https://timewheel.co.in/products/meeticulous): An India-first appointment booking and scheduling platform Timewheel designed and built. 24/7 booking pages, UPI and Razorpay payments, two-way Google Calendar sync, WhatsApp and email reminders, GST invoicing, and a business dashboard. Live at https://meeticulous.com.
 - [Alluminaty](https://timewheel.co.in/products/alluminaty): Alumni management software for schools, colleges and universities: a verified alumni database and directory the institution owns, batch and house groups, events with paid registration, Razorpay membership fees, fundraising with receipts, and an admin console.
 - [The Parliament](https://timewheel.co.in/products/the-parliament): An online community platform for communities that outgrew WhatsApp groups: feed, groups, events with paid registration, paid memberships via Razorpay, DMs, video calls, moderation and WhatsApp broadcasts.
 - [EZShop](https://timewheel.co.in/products/ezshop): An online store builder for Indian D2C brands and local shops: Razorpay UPI, cards and Cash on Delivery, GST invoices, Shiprocket shipping, and WhatsApp order updates, with no commission on orders.
@@ -44,7 +44,7 @@ Sitemap: https://timewheel.co.in/sitemap.xml
 - [Edulocus](https://timewheel.co.in/case-studies/edulocus): Guiding a student through a decision that lasts years.
 - [Linestory Studio](https://timewheel.co.in/case-studies/linestory-studio): A portfolio that reads like a drawing set.
 - [Alluminaty build](https://timewheel.co.in/case-studies/alluminaty): The social network for your alumni.
-- [Book A Sloth build](https://timewheel.co.in/case-studies/book-a-sloth): Booking, payments and reminders in one system.
+- [Meeticulous build](https://timewheel.co.in/case-studies/meeticulous): Booking, payments and reminders in one system.
 - [Coffee and Toffee build](https://timewheel.co.in/case-studies/coffee-for-me): Direct audience-to-creator support.
 - [Ticket Dino build](https://timewheel.co.in/case-studies/ticket-dino): Event ticketing that holds at scale.
 - [The Parliament](https://timewheel.co.in/case-studies/the-parliament): Memberships, billing and access control.
@@ -54,7 +54,7 @@ Sitemap: https://timewheel.co.in/sitemap.xml
 - [About](https://timewheel.co.in/about): A digital design and development partner helping businesses build websites and digital experiences that are clear, modern and built to grow.
 - [Solutions](https://timewheel.co.in/solutions): Product and service overview.
 - [Pricing](https://timewheel.co.in/pricing): Transparent starting prices for website design, development, Shopify, social media, SEO and digital marketing.
-- [Book a Demo](https://timewheel.co.in/book-a-demo): Book a live demo of Book A Sloth, Ticket Dino, websites, digital marketing, SEO or AI automation.
+- [Book a Demo](https://timewheel.co.in/book-a-demo): Book a live demo of Meeticulous, Ticket Dino, websites, digital marketing, SEO or AI automation.
 - [Contact](https://timewheel.co.in/contact): Send a product idea, project brief or question; replies within one business day.
 
 ## Academy

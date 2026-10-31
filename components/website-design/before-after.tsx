@@ -24,8 +24,8 @@ export function WdBeforeAfter() {
       <Reveal className="mx-auto mt-12 max-w-4xl">
         <div className="relative aspect-[1908/924] select-none overflow-hidden rounded-2xl border border-border bg-white shadow-[0_40px_80px_-48px_rgba(17,24,39,0.45)]">
           <Image
-            src="/bookasloth-new.PNG"
-            alt="Book A Sloth website after the redesign"
+            src="/meeticulous-new.PNG"
+            alt="Meeticulous website after the redesign"
             fill
             preload
             sizes="(min-width: 1024px) 896px, 100vw"
@@ -33,8 +33,8 @@ export function WdBeforeAfter() {
           />
           <div className="absolute inset-0" style={{ clipPath: `inset(0 ${100 - pos}% 0 0)` }}>
             <Image
-              src="/bookasloth-old.PNG"
-              alt="Book A Sloth website before the redesign"
+              src="/meeticulous-old.PNG"
+              alt="Meeticulous website before the redesign"
               fill
               sizes="(min-width: 1024px) 896px, 100vw"
               className="object-cover object-top"

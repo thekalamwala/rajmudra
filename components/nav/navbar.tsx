@@ -33,7 +33,7 @@ const serviceGroups: { title: string; icon: Icon; items: NavService[] }[] = [
     icon: Code,
     items: [
       { name: "Website Design", icon: PenNib, accent: "#47143D", href: "/website-design-company-in-nagpur", desc: "Interfaces built to convert, not just impress." },
-      { name: "Website Development", icon: Code, accent: "#269cef", href: "/web-development-company-in-nagpur", desc: "Fast, clean builds that ship on time." },
+      { name: "Website Development", icon: Code, accent: "#7a3fc7", href: "/web-development-company-in-nagpur", desc: "Fast, clean builds that ship on time." },
       { name: "Shopify Development", icon: Storefront, accent: "#5e8e3e", href: "/shopify-development-company-in-nagpur", desc: "Storefronts tuned to sell." },
     ],
   },
@@ -50,7 +50,7 @@ const serviceGroups: { title: string; icon: Icon; items: NavService[] }[] = [
 
 const resourceItems = [
   { name: "Case Studies", href: "/case-studies", icon: PresentationChart, accent: "#fe5100" },
-  { name: "Blog", href: "/blog", icon: BookOpenText, accent: "#269cef" },
+  { name: "Blog", href: "/blog", icon: BookOpenText, accent: "#7a3fc7" },
   { name: "Academy", href: "/academy", icon: GraduationCap, accent: "#29a66f" },
 ];
 
@@ -95,7 +95,8 @@ export function Navbar() {
   }
   const light = pathname === "/" && !scrolled && !mobileOpen;
   const linkBase = "flex items-center gap-1 rounded-md px-3 py-2 text-sm font-medium transition-colors";
-  const linkTone = light ? "text-white/85 hover:text-white" : "text-foreground/90 hover:text-foreground";
+  // Hero is light, so nav content stays dark even in the transparent overlay.
+  const linkTone = "text-foreground/90 hover:text-foreground";
 
   const mobileRow = (item: { name: string; icon: Icon; accent: string; href: string }) => (
     <Link
@@ -126,23 +127,16 @@ export function Navbar() {
       )}
     >
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
-        <Link href="/" aria-label="Timewheel home" className="flex items-center gap-2">
+        <Link href="/" aria-label="Rajmudra home" className="flex items-center">
           <Image
-            src="/brand/svg/timewheel-icon.svg"
-            alt=""
-            width={32}
+            src="/brand/rajmudra/horizontal-full-color.svg"
+            alt="Rajmudra"
+            width={175}
             height={32}
             loading="eager"
-            className="size-8"
+            priority
+            className="h-8 w-auto"
           />
-          <span
-            className={cn(
-              "text-xl font-black tracking-tight",
-              light ? "text-white" : "text-foreground",
-            )}
-          >
-            TIME<span className="text-brand">WHEEL</span>
-          </span>
         </Link>
 
         {/* desktop nav */}
@@ -288,7 +282,7 @@ export function Navbar() {
             Book A Meeting
           </Link>
           <button
-            className={cn("grid size-10 place-items-center rounded-lg hover:bg-secondary md:hidden", light && "text-white")}
+            className="grid size-10 place-items-center rounded-lg hover:bg-secondary md:hidden"
             onClick={() => setMobileOpen((v) => !v)}
             aria-label="Toggle menu"
           >

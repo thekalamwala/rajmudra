@@ -8,10 +8,11 @@ import { featuredProducts, type Product } from "@/lib/products";
 import { cn } from "@/lib/utils";
 import { Reveal } from "@/components/reveal";
 import { RevealHeading } from "@/components/anim/reveal-heading";
+import { Toran } from "@/components/desi";
 
 // The four headline products shown on the homepage. Picked by slug so
 // re-ordering lib/products.ts can never shuffle this grid.
-const TOP_SLUGS = ["alluminaty", "book-a-sloth", "coffee-for-me", "ticket-dino"];
+const TOP_SLUGS = ["alluminaty", "meeticulous", "coffee-for-me", "ticket-dino"];
 
 const topProducts = TOP_SLUGS.map((slug) =>
   featuredProducts.find((p) => p.slug === slug),
@@ -21,7 +22,7 @@ const topProducts = TOP_SLUGS.map((slug) =>
 // same artwork the case studies use (lib/case-studies-products.ts).
 const PRODUCT_IMAGE: Record<string, { src: string; alt: string }> = {
   alluminaty: { src: "/portfolio/alluminaty2.png", alt: "Alluminaty alumni management app" },
-  "book-a-sloth": { src: "/portfolio/bookasloth2.png", alt: "Book A Sloth booking app" },
+  "meeticulous": { src: "/portfolio/meeticulous2.png", alt: "Meeticulous booking app" },
   "coffee-for-me": { src: "/portfolio/coffee-toffee.png", alt: "Coffee and Toffee creator support" },
   "ticket-dino": { src: "/portfolio/ticket-dino.png", alt: "Ticket Dino event ticketing" },
 };
@@ -57,14 +58,17 @@ function ProductTile({
           onExpand();
         }
       }}
-      style={{ flexGrow: expanded ? 2.35 : 1 }}
+      style={{ flexGrow: expanded ? 2.35 : 1, borderColor: accent }}
       className={cn(
-        "group/tile relative flex h-[42rem] min-w-0 cursor-pointer flex-col overflow-hidden rounded-2xl border p-6 text-left transition-all duration-500 ease-out focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand md:h-[34rem] md:basis-0 md:p-7",
+        "group/tile relative flex h-[42rem] min-w-0 cursor-pointer flex-col overflow-hidden rounded-[20px] border-2 bg-card p-6 pb-8 text-left transition-all duration-500 ease-out focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand md:h-[34rem] md:basis-0 md:p-7 md:pb-8",
         expanded
-          ? "border-ink/25 bg-card shadow-[0_30px_70px_-40px_rgba(23,23,23,0.5)]"
-          : "border-border bg-card hover:-translate-y-1 hover:border-ink/25 hover:shadow-[0_24px_50px_-42px_rgba(23,23,23,0.55)]",
+          ? "shadow-[0_30px_70px_-40px_rgba(23,23,23,0.5)]"
+          : "hover:-translate-y-1 hover:shadow-[0_24px_50px_-42px_rgba(23,23,23,0.55)]",
       )}
     >
+      {/* festive dressing: tiny-dot garland on top, dotted line at the base */}
+      {expanded ? <Toran color={accent} height={22} className="absolute inset-x-0 top-0" /> : null}
+      <div className="pointer-events-none absolute inset-x-6 bottom-4 border-t-2 border-dotted" style={{ borderColor: accent }} />
       {/* accent bloom */}
       <span
         aria-hidden="true"
@@ -106,7 +110,7 @@ function ProductTile({
           {String(index + 1).padStart(2, "0")}
         </span>
         <div className="mt-2 flex items-center gap-1.5">
-          <h3 className="text-2xl font-black tracking-tight text-foreground">{name}</h3>
+          <h3 className="font-display text-2xl font-black tracking-tight text-foreground">{name}</h3>
           <ArrowUpRight className="size-5 text-muted-foreground transition-transform duration-300 group-hover/tile:-translate-y-0.5 group-hover/tile:translate-x-0.5" />
         </div>
         <p className="mt-1.5 text-sm text-muted-foreground">{tagline}</p>
@@ -190,28 +194,27 @@ export function TopProducts() {
   // Per row, the index of the widened tile. Defaults put products 1 and 4 wide.
   const [expanded, setExpanded] = useState<number[]>([0, 1]);
 
+  // Click a collapsed tile to open it; click the open tile (its X) to close the
+  // whole row back to even-width tiles (-1 = none expanded).
   const expand = (row: number, index: number) =>
     setExpanded((prev) => {
       const next = [...prev];
-      next[row] = index;
+      next[row] = prev[row] === index ? -1 : index;
       return next;
     });
 
   return (
-    <section id="products" className="mx-auto max-w-6xl px-6 py-20 md:py-28">
+    <section id="products" className="mx-auto max-w-6xl px-6 py-12 md:py-16">
       <Reveal className="flex flex-wrap items-end justify-between gap-4">
         <div>
-          <p className="text-sm font-semibold uppercase tracking-wide text-brand-text">
-            Top products
-          </p>
           <RevealHeading
             as="h2"
-            className="mt-3 max-w-2xl text-3xl font-extrabold tracking-tight md:text-4xl"
+            className="font-display max-w-2xl text-3xl font-extrabold tracking-tight md:text-4xl"
           >
             Software we designed, built and run.
           </RevealHeading>
           <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
-            Four products from the Timewheel ecosystem. Open a tile to see what it does.
+            Four products from the Rajmudra ecosystem. Open a tile to see what it does.
           </p>
         </div>
         <Link
@@ -223,7 +226,7 @@ export function TopProducts() {
         </Link>
       </Reveal>
 
-      <Reveal stagger className="mt-12 space-y-4 md:mt-14">
+      <Reveal stagger className="mt-8 space-y-4 md:mt-10">
         {rows.map((row, r) => (
           <div key={r} className="flex flex-col gap-4 md:flex-row">
             {row.map((product, i) => (

@@ -20,7 +20,7 @@ export type WdPortfolioProject = {
   summary: string;
   services: string[];
   accent: string;
-  visual: "screenshot-book-a-sloth" | "mockup-alluminaty";
+  visual: "screenshot-meeticulous" | "mockup-alluminaty";
   href: string;
   external: boolean;
   meta: WdPortfolioMeta[];
@@ -89,14 +89,14 @@ export const wd = {
     projects: [
       {
         number: "01",
-        name: "Book A Sloth",
+        name: "Meeticulous",
         category: "SaaS · Booking Platform",
         summary:
           "A modern booking platform for service businesses, designed to feel fast and trustworthy, then built end to end.",
         services: ["Product Design", "UI / UX", "Design System", "Development"],
         accent: palette.orange,
-        visual: "screenshot-book-a-sloth",
-        href: "/case-studies/book-a-sloth",
+        visual: "screenshot-meeticulous",
+        href: "/case-studies/meeticulous",
         external: false,
         meta: [
           { key: "Role", value: "Design + Build" },

@@ -6,6 +6,7 @@ import { ContactChannels } from "@/components/contact/contact-channels";
 import { ContactSteps } from "@/components/contact/contact-steps";
 import { ContactLocate } from "@/components/contact/contact-locate";
 import { ContactFaq, faqs } from "@/components/contact/contact-faq";
+import { FestiveBand } from "@/components/desi";
 
 const TITLE = "Contact Timewheel, Web and Marketing Agency in Nagpur";
 const DESC =
@@ -59,11 +60,13 @@ export default function ContactPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
       />
       <ContactHero />
+      <FestiveBand height={16} className="opacity-95" />
       {/* <ContactChannels /> */}
       {/* <ContactSteps /> */}
       {/* ContactForm (wired to /api/lead) replaced by design-only ContactLocate.
           Re-add <ContactForm /> if you want backend capture back. */}
       <ContactLocate />
+      <FestiveBand height={16} className="opacity-95" />
       <ContactFaq />
     </>
   );
