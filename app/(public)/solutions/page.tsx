@@ -6,6 +6,7 @@ import { SolHero } from "@/components/solutions/hero";
 import { BuildSection } from "@/components/solutions/build-section";
 import { SolOwnership } from "@/components/solutions/ownership";
 import { SolFinalCta } from "@/components/solutions/final-cta";
+import { FestiveBand } from "@/components/desi";
 
 const TITLE = "Solutions for Creators, Schools, Shops & Events";
 const DESC =
@@ -29,6 +30,7 @@ export default function SolutionsPage() {
       />
       <SolHero />
       <BuildSection />
+      <FestiveBand height={16} className="opacity-95" />
       <SolOwnership />
       <SolFinalCta />
     </>

@@ -3,12 +3,19 @@ import { ArrowRight } from "lucide-react";
 import { Reveal } from "@/components/reveal";
 import { wa } from "@/lib/web-app-development";
 import { RevealHeading } from "@/components/anim/reveal-heading";
+import { MandalaSeal } from "@/components/desi";
 
 export function WaFinalCta() {
   return (
-    <section className="bg-black">
+    <section className="desi-indigo-panel relative isolate overflow-hidden">
+      <div
+        aria-hidden
+        className="desi-halftone pointer-events-none absolute inset-0 opacity-60"
+        style={{ ["--dot" as string]: "rgba(255,255,255,0.1)" }}
+      />
+      <MandalaSeal size={240} color="var(--desi-marigold)" className="pointer-events-none absolute bottom-3 right-3 opacity-90" />
       <Reveal>
-        <div className="mx-auto max-w-3xl px-6 py-20 text-center md:py-28">
+        <div className="relative z-10 mx-auto max-w-3xl px-6 py-20 text-center md:py-28">
           <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3.5 py-1.5 text-xs font-bold uppercase tracking-widest text-white/70">
             <span className="size-1.5 animate-pulse rounded-full bg-rating" />
             Available for new projects

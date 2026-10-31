@@ -1,13 +1,15 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { servicePages } from "@/lib/services";
+import { FestiveBand } from "@/components/desi";
 
 // Cross-links for a service page: the neighbouring services, so none is a dead end.
 export function RelatedServices({ current }: { current: string }) {
   const others = servicePages.filter((s) => s.href !== current);
 
   return (
-    <section className="border-t border-border/60">
+    <section>
+      <FestiveBand height={16} className="opacity-95" />
       <div className="mx-auto max-w-6xl px-6 py-16 md:py-20">
         <p className="text-sm font-semibold uppercase tracking-wide text-brand-text">Related services</p>
         <h2 className="mt-2 text-2xl font-extrabold tracking-tight md:text-3xl">More ways we can help</h2>

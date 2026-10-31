@@ -2,6 +2,7 @@ import { ArrowRight } from "lucide-react";
 import { Reveal } from "@/components/reveal";
 import { RevealHeading } from "@/components/anim/reveal-heading";
 import { InPageAnchor } from "@/components/shared/in-page-anchor";
+import { MandalaSeal } from "@/components/desi";
 
 // ponytail: no WhatsApp deep link yet, needs a real number. Add a wa.me
 // secondary CTA here once one exists (blueprint MUST-HAVE); until then both
@@ -9,7 +10,14 @@ import { InPageAnchor } from "@/components/shared/in-page-anchor";
 export function WdFinalCta() {
   return (
     <section className="w-full">
-      <Reveal className="relative overflow-hidden bg-black px-6 py-16 text-center md:px-8 md:py-20">
+      <Reveal className="desi-indigo-panel relative isolate overflow-hidden px-6 py-16 text-center md:px-8 md:py-20">
+        <div
+          aria-hidden
+          className="desi-halftone pointer-events-none absolute inset-0 opacity-60"
+          style={{ ["--dot" as string]: "rgba(255,255,255,0.1)" }}
+        />
+        <MandalaSeal size={230} color="var(--desi-marigold)" className="pointer-events-none absolute bottom-3 right-3 opacity-90" />
+        <div className="relative z-10">
         <RevealHeading as="h2" className="text-3xl font-black tracking-tight text-white md:text-5xl">
           Ready to Build Something That Loads Fast and Ranks?
         </RevealHeading>
@@ -31,6 +39,7 @@ export function WdFinalCta() {
           >
             See our work
           </InPageAnchor>
+        </div>
         </div>
       </Reveal>
     </section>

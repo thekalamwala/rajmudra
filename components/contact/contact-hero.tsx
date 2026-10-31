@@ -4,11 +4,18 @@ import { Reveal } from "@/components/reveal";
 import { RevealHeading } from "@/components/anim/reveal-heading";
 import { site } from "@/lib/site";
 import { InPageAnchor } from "@/components/shared/in-page-anchor";
+import { Jaali, MandalaSeal } from "@/components/desi";
 
 export function ContactHero() {
   return (
-    <section className="bg-background">
-      <div className="mx-auto max-w-4xl px-6 py-24 text-center md:py-32">
+    <section className="desi-ground relative overflow-hidden">
+      {/* ambient festive background */}
+      <div aria-hidden className="pointer-events-none absolute inset-0">
+        <Jaali size={240} opacity={0.1} className="absolute -right-10 top-6" color="var(--desi-orange)" />
+        <Jaali size={200} opacity={0.08} className="absolute -left-10 bottom-6" color="var(--desi-teal)" />
+        <MandalaSeal size={320} color="rgba(254,81,0,0.05)" spin="slow" className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" />
+      </div>
+      <div className="relative mx-auto max-w-4xl px-6 py-24 text-center md:py-32">
         <Reveal>
 
           <RevealHeading as="h1" className="mt-6 text-4xl font-black tracking-tight md:text-6xl">

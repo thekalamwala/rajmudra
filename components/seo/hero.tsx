@@ -7,6 +7,7 @@ import { Link2, ArrowRight, ArrowUp, ArrowLeft, Loader2, Check, ChevronRight, Al
 import { Reveal } from "@/components/reveal";
 import { RevealHeading } from "@/components/anim/reveal-heading";
 import { AuditLeadPanel } from "@/components/seo/audit-lead-modal";
+import { Jaali, MandalaSeal } from "@/components/desi";
 import { seo } from "@/lib/seo";
 
 type Scores = { overall: number | null; ai: number | null; seo: number | null };
@@ -248,13 +249,16 @@ export function SeoHero() {
   }
 
   return (
-    <section className="relative overflow-hidden">
+    <section className="desi-ground relative overflow-hidden">
       {/* Soft focus glow behind the panel; keeps the ground calm. */}
       <div
         aria-hidden
         className="pointer-events-none absolute right-0 top-24 h-72 w-[42rem] max-w-[90vw] translate-x-1/4 rounded-full opacity-50 blur-3xl"
         style={{ background: "radial-gradient(closest-side, rgba(41,166,111,0.12), transparent)" }}
       />
+      {/* festive motifs */}
+      <Jaali size={220} opacity={0.08} className="pointer-events-none absolute -right-10 top-16" color="var(--desi-orange)" />
+      <MandalaSeal size={300} color="rgba(254,81,0,0.05)" spin="slow" className="pointer-events-none absolute -left-24 bottom-0" />
 
       <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-6 pb-16 pt-12 md:pt-16 lg:grid-cols-2 lg:gap-16">
         {/* Left: copy + audit form */}

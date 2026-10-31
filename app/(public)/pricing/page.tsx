@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils";
 import { Reveal } from "@/components/reveal";
 import { JsonLd } from "@/components/json-ld";
 import { breadcrumbLd } from "@/lib/jsonld";
+import { Jaali, MandalaSeal } from "@/components/desi";
 
 const DESC =
   "Transparent starting prices for every service, website design, development, Shopify, social media, SEO and digital marketing. Limited project slots each month.";
@@ -249,7 +250,7 @@ function ServiceRow({ service }: { service: ServicePrice }) {
 
 export default function PricingPage() {
   return (
-    <div className="mx-auto max-w-6xl px-6 py-24 md:py-28">
+    <div className="relative mx-auto max-w-6xl overflow-x-clip px-6 py-24 md:py-28">
       <JsonLd
         data={breadcrumbLd([
           { name: "Home", path: "/" },
@@ -257,7 +258,10 @@ export default function PricingPage() {
         ])}
       />
       {/* hero */}
-      <Reveal className="text-center">
+      <div className="relative">
+        <Jaali size={220} opacity={0.1} className="pointer-events-none absolute -right-8 -top-14" color="var(--desi-orange)" />
+        <Jaali size={170} opacity={0.08} className="pointer-events-none absolute -left-8 top-20" color="var(--desi-teal)" />
+      <Reveal className="relative text-center">
         <p className="text-sm font-semibold uppercase tracking-wide text-brand-text">
           Pricing
         </p>
@@ -278,6 +282,7 @@ export default function PricingPage() {
           ))}
         </div>
       </Reveal>
+      </div>
 
       {/* service groups */}
       {serviceGroups.map((group) => {
@@ -303,22 +308,31 @@ export default function PricingPage() {
         );
       })}
 
-      {/* closing note + CTA */}
-      <Reveal className="mt-20 rounded-3xl border border-border bg-secondary/50 px-8 py-12 text-center">
-        <h2 className="text-2xl font-extrabold md:text-3xl">
-          Not sure where to start?
-        </h2>
-        <p className="mx-auto mt-3 max-w-xl text-muted-foreground">
-          Tell us your goal and we&apos;ll scope the right mix of services and a
-          clear quote, no pressure, no lock-in.
-        </p>
-        <Link
-          href={site.demoUrl}
-          className="btn btn-primary mt-7 inline-flex items-center gap-2 rounded-lg px-6 py-3 text-sm font-semibold text-brand-foreground"
-        >
-          Book a Demo
-          <ArrowRight className="size-4" />
-        </Link>
+      {/* closing note + CTA — indigo festive poster card */}
+      <Reveal className="relative isolate mt-20 overflow-hidden rounded-3xl px-8 py-14 text-center text-white">
+        <div aria-hidden className="desi-indigo-panel absolute inset-0" />
+        <div
+          aria-hidden
+          className="desi-halftone pointer-events-none absolute inset-0 opacity-60"
+          style={{ ["--dot" as string]: "rgba(255,255,255,0.1)" }}
+        />
+        <MandalaSeal size={210} color="var(--desi-marigold)" className="pointer-events-none absolute bottom-3 right-3 opacity-90" />
+        <div className="relative z-10">
+          <h2 className="text-2xl font-extrabold text-white md:text-3xl">
+            Not sure where to start?
+          </h2>
+          <p className="mx-auto mt-3 max-w-xl text-white/75">
+            Tell us your goal and we&apos;ll scope the right mix of services and a
+            clear quote, no pressure, no lock-in.
+          </p>
+          <Link
+            href={site.demoUrl}
+            className="mt-7 inline-flex items-center gap-2 rounded-lg bg-white px-6 py-3 text-sm font-semibold text-[var(--desi-indigo)] transition-colors hover:bg-[var(--desi-cream)]"
+          >
+            Book a Demo
+            <ArrowRight className="size-4" />
+          </Link>
+        </div>
       </Reveal>
     </div>
   );

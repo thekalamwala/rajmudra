@@ -3,12 +3,19 @@ import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { Reveal } from "@/components/reveal";
 import { wd } from "@/lib/website-design";
 import { RevealHeading } from "@/components/anim/reveal-heading";
+import { MandalaSeal } from "@/components/desi";
 
 export function WdFinalCta() {
   return (
     <section className="w-full">
-      <Reveal className="relative overflow-hidden bg-black text-center text-white">
-        <div className="relative px-6 py-20 md:px-12 md:py-24">
+      <Reveal className="desi-indigo-panel relative isolate overflow-hidden text-center text-white">
+        <div
+          aria-hidden
+          className="desi-halftone pointer-events-none absolute inset-0 opacity-60"
+          style={{ ["--dot" as string]: "rgba(255,255,255,0.1)" }}
+        />
+        <MandalaSeal size={240} color="var(--desi-marigold)" className="pointer-events-none absolute bottom-3 right-3 opacity-90" />
+        <div className="relative z-10 px-6 py-20 md:px-12 md:py-24">
           <p className="text-sm font-semibold uppercase tracking-widest text-white/50">Let&apos;s talk</p>
           <RevealHeading as="h2" className="mx-auto mt-4 max-w-3xl text-4xl font-black leading-[1.08] tracking-tight md:text-6xl">
             {wd.finalCta.title}

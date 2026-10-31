@@ -2,15 +2,26 @@ import { ArrowRight } from "lucide-react";
 import { Reveal } from "@/components/reveal";
 import { RevealHeading } from "@/components/anim/reveal-heading";
 import { InPageAnchor } from "@/components/shared/in-page-anchor";
+import { MandalaSeal, Flower } from "@/components/desi";
 
 export function SeoFinalCta() {
   return (
     <section className="w-full px-6 py-16">
-      <Reveal className="relative overflow-hidden rounded-3xl bg-black px-8 py-16 text-center md:py-20">
+      {/* indigo festive poster card */}
+      <Reveal className="relative isolate overflow-hidden rounded-3xl px-8 py-16 text-center text-white md:py-20">
+        <div aria-hidden className="desi-indigo-panel absolute inset-0" />
+        <div
+          aria-hidden
+          className="desi-halftone pointer-events-none absolute inset-0 opacity-60"
+          style={{ ["--dot" as string]: "rgba(255,255,255,0.1)" }}
+        />
+        <MandalaSeal size={230} color="var(--desi-marigold)" className="pointer-events-none absolute bottom-3 right-3 opacity-90" />
+        <Flower size={22} color="var(--desi-magenta)" center="var(--desi-marigold)" className="pointer-events-none absolute left-[10%] top-[16%]" />
+        <div className="relative z-10">
         <RevealHeading as="h2" className="text-3xl font-black tracking-tight text-white md:text-5xl">
           See exactly where your site stands, free
         </RevealHeading>
-        <p className="mx-auto mt-5 max-w-xl text-white/70 md:text-lg">
+        <p className="mx-auto mt-5 max-w-xl text-white/75 md:text-lg">
           Run the instant AI + SEO audit, then get a clear, honest plan to fix what&apos;s
           holding your Nagpur rankings back. No sign-up, no obligation.
         </p>
@@ -28,6 +39,7 @@ export function SeoFinalCta() {
           >
             Talk to us
           </InPageAnchor>
+        </div>
         </div>
       </Reveal>
     </section>

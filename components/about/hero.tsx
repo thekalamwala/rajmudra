@@ -4,23 +4,20 @@ import { ArrowRight } from "lucide-react";
 import { Reveal } from "@/components/reveal";
 import { RevealHeading } from "@/components/anim/reveal-heading";
 import { InPageAnchor } from "@/components/shared/in-page-anchor";
+import { Jaali, MandalaSeal } from "@/components/desi";
 
-// About hero, full-bleed section on a clean white background. Copy on the
-// left, the team/about photo on the right in a softly framed card.
-
-const DOT_GRID = "radial-gradient(circle, rgba(15,17,17,0.06) 1px, transparent 1px)";
+// About hero, full-bleed section on the warm festive cream ground. Copy on the
+// left, the team/about photo on the right in a softly framed card, with jaali
+// lattice and a faint Rajmudra mandala in the ambient layer (Desi Digital).
 
 export function AboutHero() {
   return (
-    <section className="relative flex min-h-[calc(100svh-4rem)] w-full flex-col justify-center overflow-hidden bg-background">
-      {/* ambient background */}
+    <section className="desi-ground relative flex min-h-[calc(100svh-4rem)] w-full flex-col justify-center overflow-hidden">
+      {/* ambient festive background */}
       <div aria-hidden className="pointer-events-none absolute inset-0">
-        <div
-          className="absolute inset-0"
-          style={{ backgroundImage: DOT_GRID, backgroundSize: "26px 26px" }}
-        />
-        <div className="absolute -left-24 top-1/4 h-72 w-72 rounded-full bg-brand/10 blur-[110px]" />
-        <div className="absolute -right-20 -top-20 h-80 w-80 rounded-full bg-foreground/[0.04] blur-[100px]" />
+        <Jaali size={300} opacity={0.1} className="absolute -right-12 top-10" color="var(--desi-orange)" />
+        <Jaali size={220} opacity={0.08} className="absolute -left-12 bottom-8" color="var(--desi-teal)" />
+        <MandalaSeal size={360} color="rgba(254,81,0,0.06)" spin="slow" className="absolute -left-24 top-1/4" />
       </div>
 
       <Reveal className="relative mx-auto grid w-full max-w-6xl flex-1 items-center gap-14 px-6 py-16 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12">
