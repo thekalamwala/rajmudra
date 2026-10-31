@@ -10,6 +10,7 @@ import {
 } from "@phosphor-icons/react/dist/ssr";
 import { footerRows, type SiteLink } from "@/lib/site-links";
 import { site } from "@/lib/site";
+import { ScallopBorder } from "@/components/desi";
 
 // Site-wide footer: two rows of four columns. Row 1 is company info plus three
 // link columns, row 2 is four link columns. Links come from lib/site-links so
@@ -29,16 +30,15 @@ export function Footer() {
 
   return (
     <footer className="mt-auto">
-      <div className="border-t border-border/60 bg-secondary/60">
-        <div className="mx-auto max-w-6xl px-6 py-14">
+      {/* brand scallop border as the footer's decorative top edge */}
+      <ScallopBorder color="var(--desi-orange)" flip radius={13} />
+      <div className="relative bg-secondary/60">
+        <div className="relative mx-auto max-w-6xl px-6 py-14">
           {/* Row 1: company info + Services, Products, Company */}
           <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
             <div>
-              <Link href="/" aria-label="Timewheel home" className="flex items-center gap-2">
-                <Image src="/brand/svg/timewheel-icon.svg" alt="" width={28} height={28} />
-                <span className="text-xl font-black tracking-tight">
-                  TIME<span className="text-brand">WHEEL</span>
-                </span>
+              <Link href="/" aria-label="Rajmudra home" className="flex items-center">
+                <Image src="/brand/rajmudra/horizontal-full-color.svg" alt="Rajmudra" width={164} height={30} className="h-[30px] w-auto" />
               </Link>
               <ul className="mt-5 space-y-3 text-sm text-muted-foreground">
                 <li className="flex items-start gap-2.5">
@@ -84,8 +84,8 @@ export function Footer() {
 
           {/* bottom bar */}
           <div className="mt-12 flex flex-col items-center justify-between gap-2 border-t border-border/60 pt-6 text-center text-sm text-muted-foreground sm:flex-row sm:text-left">
-            <p>© {new Date().getFullYear()} Timewheel. All rights reserved.</p>
-            <p>Handcrafted by humans of Timewheel Studios</p>
+            <p>© {new Date().getFullYear()} Rajmudra. All rights reserved.</p>
+            <p>Handcrafted by humans of Rajmudra</p>
           </div>
         </div>
       </div>

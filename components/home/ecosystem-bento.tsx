@@ -13,10 +13,11 @@ import { CaseStudyCard } from "@/components/case-studies/case-study-card";
 import { cn } from "@/lib/utils";
 import { Reveal } from "@/components/reveal";
 import { RevealHeading } from "@/components/anim/reveal-heading";
+import { Skyline, FestiveFrame, FlowerDivider, Jaali } from "@/components/desi";
 
 // Homepage "ecosystem" bento: the five services we sell, as mixed-size tiles.
-// Cream/ink (Tactile Editorial) tokens; per-service accent only as an icon dab.
-// Shopify Development is deliberately not listed here yet.
+// Desi Digital: each tile wears a festive frame (accent border, corner leaf
+// flourishes, scallop lace), with jaali corners on the section ground.
 
 type Service = {
   name: string;
@@ -24,10 +25,7 @@ type Service = {
   href: string;
   icon: Icon;
   accent: string;
-  /** Rendered as the large 2x2 anchor tile, with `points` as its mini rows. */
   points?: string[];
-  /** Filled accent background with reversed text, so one service reads as the
-      flagship without changing the grid. */
   featured?: boolean;
 };
 
@@ -60,23 +58,20 @@ const services: Service[] = [
     tagline: "Rank higher. Get found. Get leads.",
     href: "/seo-company-in-nagpur",
     icon: MagnifyingGlass,
-    accent: "#4ab765",
+    accent: "#0e9384",
   },
   {
     name: "Digital Marketing",
     tagline: "Ad spend that pays back.",
     href: "/digital-marketing-company-in-nagpur",
     icon: FileText,
-    accent: "#ffcc1c",
+    accent: "#e39a00",
   },
 ];
 
 const anchor = services[0];
 const rest = services.slice(1);
 
-// Proof tiles: picked by slug, not by index, so re-ordering lib/case-studies.ts
-// can never shuffle the homepage. Deliberately skips the placeholder entries
-// flagged at the top of that file.
 const PROOF_SLUGS = ["meeticulous", "alluminaty", "eureka-coworking"];
 const proof = PROOF_SLUGS.map((slug) => caseStudies.find((cs) => cs.slug === slug)).filter(
   (cs): cs is CaseStudy => Boolean(cs),
@@ -84,34 +79,35 @@ const proof = PROOF_SLUGS.map((slug) => caseStudies.find((cs) => cs.slug === slu
 
 function ServiceTile({ service }: { service: Service }) {
   const { icon: Icon, accent, name, tagline, href, featured } = service;
+  const frameColor = featured ? "var(--desi-magenta)" : accent;
   return (
     <Link
       href={href}
-      style={featured ? { backgroundColor: accent } : undefined}
-      className={cn(
-        "group flex flex-col justify-between rounded-2xl border p-5 transition-[background-color,border-color,filter]",
+      style={
         featured
-          ? "border-transparent text-white hover:border-white/40 hover:brightness-110"
-          : "border-border bg-card hover:border-ink/40",
+          ? { backgroundColor: accent, border: "2px solid var(--desi-magenta)" }
+          : { border: `2px solid ${accent}` }
+      }
+      className={cn(
+        "group relative flex flex-col justify-between overflow-hidden rounded-[18px] p-5 pb-9 transition-[transform,box-shadow]",
+        featured
+          ? "text-white hover:brightness-110"
+          : "bg-card hover:-translate-y-0.5",
       )}
     >
+      <FestiveFrame color={frameColor} />
       <span
-        className="grid size-11 place-items-center rounded-xl"
+        className="relative grid size-11 place-items-center rounded-xl"
         style={
           featured
-            ? { backgroundColor: "rgba(255,255,255,0.14)", color: "#fff" }
+            ? { backgroundColor: "rgba(255,255,255,0.16)", color: "#fff" }
             : { backgroundColor: `${accent}1f`, color: accent }
         }
       >
         <Icon className="size-5" />
       </span>
-      <div className="mt-6">
-        <p
-          className={cn(
-            "flex items-center gap-1 font-bold",
-            featured ? "text-white" : "text-foreground",
-          )}
-        >
+      <div className="relative mt-6">
+        <p className={cn("flex items-center gap-1 font-bold", featured ? "text-white" : "text-foreground")}>
           {name}
           <ArrowUpRight
             className={cn(
@@ -120,12 +116,7 @@ function ServiceTile({ service }: { service: Service }) {
             )}
           />
         </p>
-        <p
-          className={cn(
-            "mt-0.5 text-sm",
-            featured ? "text-white/75" : "text-muted-foreground",
-          )}
-        >
+        <p className={cn("mt-0.5 text-sm", featured ? "text-white/75" : "text-muted-foreground")}>
           {tagline}
         </p>
       </div>
@@ -137,96 +128,115 @@ export function EcosystemBento() {
   const { icon: Icon, accent, href, name, tagline, points } = anchor;
 
   return (
-    <section id="ecosystem" className="mx-auto max-w-6xl px-6 py-20 md:py-28">
-      <Reveal>
-        <p className="text-sm font-semibold uppercase tracking-wide text-brand-text">The ecosystem</p>
-        <RevealHeading as="h2" className="mt-3 max-w-2xl text-3xl font-extrabold tracking-tight md:text-4xl">
-          One connected system. Every service, one team.
-        </RevealHeading>
-      </Reveal>
+    <section id="ecosystem" className="relative overflow-hidden py-20 md:py-28">
+      {/* jaali lattice corners */}
+      <Jaali size={240} opacity={0.09} className="absolute -right-10 top-0" color="var(--desi-orange)" />
+      <Jaali size={200} opacity={0.08} className="absolute -left-10 bottom-24" color="var(--desi-teal)" />
 
-      <Reveal stagger className="mt-12 grid auto-rows-[minmax(150px,auto)] grid-cols-2 gap-4 md:grid-cols-4">
-        {/* anchor service, 2x2 */}
-        <Link
-          href={href}
-          className="group col-span-2 row-span-2 flex flex-col justify-between rounded-2xl border border-border bg-card p-7 transition-colors hover:border-ink/40"
-        >
-          <span className="grid size-12 place-items-center rounded-2xl" style={{ backgroundColor: `${accent}1f`, color: accent }}>
-            <Icon className="size-6" />
-          </span>
-          {/* what the service covers, as mini rows */}
-          <div className="mt-6 space-y-2.5">
-            {points?.map((p) => (
-              <div key={p} className="flex items-center gap-3 rounded-xl border border-border bg-secondary/50 px-3 py-2.5">
-                <span className="size-5 shrink-0 rounded-md" style={{ backgroundColor: `${accent}26` }} />
-                <span className="text-sm font-medium text-foreground/80">{p}</span>
-              </div>
-            ))}
-          </div>
-          <div className="mt-6">
-            <p className="flex items-center gap-1 text-xl font-extrabold text-foreground">
-              {name}
-              <ArrowUpRight className="size-5 text-muted-foreground transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-            </p>
-            <p className="mt-1 max-w-sm text-sm text-muted-foreground">{tagline}</p>
-          </div>
-        </Link>
+      <div className="relative mx-auto max-w-6xl px-6">
+        <Reveal>
+          <RevealHeading as="h2" className="font-display max-w-2xl text-3xl font-extrabold tracking-tight md:text-4xl">
+            One connected system. Every service, one team.
+          </RevealHeading>
+        </Reveal>
 
-        {rest.slice(0, 4).map((s) => (
-          <ServiceTile key={s.name} service={s} />
-        ))}
-
-        {/* stat, bold orange tile */}
-        <div className="flex flex-col justify-between rounded-2xl bg-brand p-5 text-brand-foreground">
-          <p className="text-4xl font-black tracking-tight">10+</p>
-          <p className="text-sm font-semibold">Products designed, built &amp; shipped</p>
-        </div>
-
-        {/* ownership, ink tile, wide */}
-        <div className="col-span-2 flex flex-col justify-between rounded-2xl bg-navy p-7 text-white md:col-span-3">
-          <ShieldCheck className="size-6 text-white/80" />
-          <div className="mt-6">
-            <p className="text-xl font-extrabold">You own the whole stack.</p>
-            <p className="mt-1.5 max-w-md text-sm text-white/70">
-              Your code, your data, your infrastructure, no platform commissions, no SaaS rent, no lock-in.
-            </p>
-          </div>
-        </div>
-      </Reveal>
-
-      {/* Case studies — same cards and grid as /case-studies, three of them. */}
-      <Reveal className="mt-20">
-        <div className="flex flex-wrap items-end justify-between gap-4">
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-wide text-brand-text">
-              Case Studies
-            </p>
-            <RevealHeading
-              as="h3"
-              className="mt-3 max-w-2xl text-3xl font-black tracking-tight md:text-4xl"
-            >
-              Work we designed, built and shipped
-            </RevealHeading>
-            <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
-              The challenges, decisions and results behind real builds by Timewheel.
-            </p>
-          </div>
+        <Reveal stagger className="mt-12 grid auto-rows-[minmax(150px,auto)] grid-cols-2 gap-4 md:grid-cols-4">
+          {/* anchor service, 2x2 */}
           <Link
-            href="/case-studies"
-            className="group inline-flex items-center gap-1.5 text-sm font-bold text-foreground"
+            href={href}
+            style={{ border: `2px solid ${accent}` }}
+            className="group relative col-span-2 row-span-2 flex flex-col justify-between overflow-hidden rounded-[18px] bg-card p-7 pb-10 transition-transform hover:-translate-y-0.5"
           >
-            All case studies
-            <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
+            <FestiveFrame color={accent} />
+            <span className="relative grid size-12 place-items-center rounded-2xl" style={{ backgroundColor: `${accent}1f`, color: accent }}>
+              <Icon className="size-6" />
+            </span>
+            <div className="relative mt-6 space-y-2.5">
+              {points?.map((p) => (
+                <div key={p} className="flex items-center gap-3 rounded-xl border border-border bg-secondary/50 px-3 py-2.5">
+                  <span className="size-5 shrink-0 rounded-md" style={{ backgroundColor: `${accent}26` }} />
+                  <span className="text-sm font-medium text-foreground/80">{p}</span>
+                </div>
+              ))}
+            </div>
+            <div className="relative mt-6">
+              <p className="flex items-center gap-1 text-xl font-extrabold text-foreground">
+                {name}
+                <ArrowUpRight className="size-5 text-muted-foreground transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+              </p>
+              <p className="mt-1 max-w-sm text-sm text-muted-foreground">{tagline}</p>
+            </div>
           </Link>
-        </div>
-      </Reveal>
 
-      <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {proof.map((cs) => (
-          <Reveal key={cs.slug} className="h-full">
-            <CaseStudyCard cs={cs} />
-          </Reveal>
-        ))}
+          {rest.slice(0, 4).map((s) => (
+            <ServiceTile key={s.name} service={s} />
+          ))}
+
+          {/* stat — festive orange poster tile */}
+          <div
+            className="relative flex flex-col justify-between overflow-hidden rounded-[18px] bg-brand p-5 pb-9 text-brand-foreground"
+            style={{ border: "2px solid rgba(255,255,255,0.4)" }}
+          >
+            <FestiveFrame color="rgba(255,255,255,0.75)" />
+            <p className="relative font-display text-4xl font-black tracking-tight">10+</p>
+            <p className="relative text-sm font-semibold">Products designed, built &amp; shipped</p>
+          </div>
+
+          {/* ownership — deep festive indigo panel with a skyline, wide */}
+          <div
+            className="desi-indigo-panel relative col-span-2 flex flex-col justify-between overflow-hidden rounded-[18px] p-7 pb-10 text-white md:col-span-3"
+            style={{ border: "2px solid color-mix(in srgb, var(--desi-marigold) 55%, transparent)" }}
+          >
+            <FestiveFrame color="var(--desi-marigold)" />
+            <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 opacity-50">
+              {/* preserve="none" fits the full silhouette into the short strip
+                  (slightly flatter) instead of cropping the tall towers */}
+              <Skyline color="rgba(255,183,3,0.5)" height={104} preserve="none" />
+            </div>
+            <ShieldCheck className="relative size-6 text-[var(--desi-marigold)]" />
+            <div className="relative mt-6">
+              <p className="font-display text-xl font-extrabold">You own the whole stack.</p>
+              <p className="mt-1.5 max-w-md text-sm text-white/75">
+                Your code, your data, your infrastructure, no platform commissions, no SaaS rent, no lock-in.
+              </p>
+            </div>
+          </div>
+        </Reveal>
+
+        {/* flower divider into the case studies */}
+        <FlowerDivider className="mx-auto mt-20 max-w-3xl" />
+
+        {/* Case studies — same cards and grid as /case-studies, three of them. */}
+        <Reveal className="mt-14">
+          <div className="flex flex-wrap items-end justify-between gap-4">
+            <div>
+              <RevealHeading
+                as="h3"
+                className="font-display max-w-2xl text-3xl font-black tracking-tight md:text-4xl"
+              >
+                Work we designed, built and shipped
+              </RevealHeading>
+              <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
+                The challenges, decisions and results behind real builds by Rajmudra.
+              </p>
+            </div>
+            <Link
+              href="/case-studies"
+              className="group inline-flex items-center gap-1.5 text-sm font-bold text-foreground"
+            >
+              All case studies
+              <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
+            </Link>
+          </div>
+        </Reveal>
+
+        <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {proof.map((cs) => (
+            <Reveal key={cs.slug} className="h-full">
+              <CaseStudyCard cs={cs} />
+            </Reveal>
+          ))}
+        </div>
       </div>
     </section>
   );

@@ -126,23 +126,16 @@ export function Navbar() {
       )}
     >
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
-        <Link href="/" aria-label="Timewheel home" className="flex items-center gap-2">
+        <Link href="/" aria-label="Rajmudra home" className="flex items-center">
           <Image
-            src="/brand/svg/timewheel-icon.svg"
-            alt=""
-            width={32}
+            src={light ? "/brand/rajmudra/horizontal-reversed.svg" : "/brand/rajmudra/horizontal-full-color.svg"}
+            alt="Rajmudra"
+            width={175}
             height={32}
             loading="eager"
-            className="size-8"
+            priority
+            className="h-8 w-auto"
           />
-          <span
-            className={cn(
-              "text-xl font-black tracking-tight",
-              light ? "text-white" : "text-foreground",
-            )}
-          >
-            TIME<span className="text-brand">WHEEL</span>
-          </span>
         </Link>
 
         {/* desktop nav */}

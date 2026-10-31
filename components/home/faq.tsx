@@ -14,12 +14,9 @@ export function Faq() {
     <section className="mx-auto max-w-6xl px-6 py-20 md:py-28">
       <div className="mx-auto max-w-3xl">
         <Reveal>
-          <p className="text-center text-sm font-semibold uppercase tracking-widest text-brand-text">
-            {homeFaq.label}
-          </p>
           <RevealHeading
             as="h2"
-            className="mt-3 text-center text-3xl font-extrabold tracking-tight md:text-4xl"
+            className="font-display text-center text-3xl font-extrabold tracking-tight md:text-4xl"
           >
             {homeFaq.title}
           </RevealHeading>
@@ -30,7 +27,7 @@ export function Faq() {
             const isOpen = open === i;
             return (
               <Reveal key={item.q} delay={i * 0.04}>
-                <div className="rounded-2xl border border-border bg-card">
+                <div className={cn("overflow-hidden rounded-2xl border bg-card transition-colors", isOpen ? "border-brand/50" : "border-border")}>
                   <h3>
                     <button
                       type="button"

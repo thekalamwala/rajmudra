@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
-import { Plus_Jakarta_Sans, Poppins } from "next/font/google";
+import { Plus_Jakarta_Sans, Poppins, Bricolage_Grotesque } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { AnalyticsBridge } from "@/components/analytics-bridge";
 import { EngagementTracker } from "@/components/engagement-tracker";
@@ -18,6 +18,14 @@ const poppins = Poppins({
 
 const jakarta = Plus_Jakarta_Sans({
   variable: "--font-heading",
+  subsets: ["latin"],
+  weight: ["600", "700", "800"],
+});
+
+// Display face for the Desi Digital look — same family as the Rajmudra wordmark
+// (Bricolage Grotesque ExtraBold). Used for poster headlines via `font-display`.
+const bricolage = Bricolage_Grotesque({
+  variable: "--font-display",
   subsets: ["latin"],
   weight: ["600", "700", "800"],
 });
@@ -65,7 +73,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html
       lang="en"
-      className={`${poppins.variable} ${jakarta.variable} h-full antialiased`}
+      className={`${poppins.variable} ${jakarta.variable} ${bricolage.variable} h-full antialiased`}
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">

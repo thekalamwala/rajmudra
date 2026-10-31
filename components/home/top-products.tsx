@@ -106,7 +106,7 @@ function ProductTile({
           {String(index + 1).padStart(2, "0")}
         </span>
         <div className="mt-2 flex items-center gap-1.5">
-          <h3 className="text-2xl font-black tracking-tight text-foreground">{name}</h3>
+          <h3 className="font-display text-2xl font-black tracking-tight text-foreground">{name}</h3>
           <ArrowUpRight className="size-5 text-muted-foreground transition-transform duration-300 group-hover/tile:-translate-y-0.5 group-hover/tile:translate-x-0.5" />
         </div>
         <p className="mt-1.5 text-sm text-muted-foreground">{tagline}</p>
@@ -190,10 +190,12 @@ export function TopProducts() {
   // Per row, the index of the widened tile. Defaults put products 1 and 4 wide.
   const [expanded, setExpanded] = useState<number[]>([0, 1]);
 
+  // Click a collapsed tile to open it; click the open tile (its X) to close the
+  // whole row back to even-width tiles (-1 = none expanded).
   const expand = (row: number, index: number) =>
     setExpanded((prev) => {
       const next = [...prev];
-      next[row] = index;
+      next[row] = prev[row] === index ? -1 : index;
       return next;
     });
 
@@ -201,17 +203,14 @@ export function TopProducts() {
     <section id="products" className="mx-auto max-w-6xl px-6 py-20 md:py-28">
       <Reveal className="flex flex-wrap items-end justify-between gap-4">
         <div>
-          <p className="text-sm font-semibold uppercase tracking-wide text-brand-text">
-            Top products
-          </p>
           <RevealHeading
             as="h2"
-            className="mt-3 max-w-2xl text-3xl font-extrabold tracking-tight md:text-4xl"
+            className="font-display max-w-2xl text-3xl font-extrabold tracking-tight md:text-4xl"
           >
             Software we designed, built and run.
           </RevealHeading>
           <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
-            Four products from the Timewheel ecosystem. Open a tile to see what it does.
+            Four products from the Rajmudra ecosystem. Open a tile to see what it does.
           </p>
         </div>
         <Link

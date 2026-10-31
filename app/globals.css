@@ -9,6 +9,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-sans);
   --font-heading: var(--font-heading);
+  --font-display: var(--font-display), var(--font-heading), sans-serif;
   --color-brand: var(--brand);
   --color-brand-foreground: var(--brand-foreground);
   --color-brand-text: var(--brand-text);
@@ -40,6 +41,17 @@
   --color-surface: var(--card);
   --color-ink: var(--foreground);
 
+  /* ── Desi Digital palette (festive, Rajmudra) ──────────────────────────────
+     Rajmudra brand orange + the saturated poster family: magenta, teal,
+     marigold and a deep festive indigo for dark panels, over warm cream. */
+  --color-desi-orange: var(--desi-orange);
+  --color-desi-magenta: var(--desi-magenta);
+  --color-desi-teal: var(--desi-teal);
+  --color-desi-marigold: var(--desi-marigold);
+  --color-desi-indigo: var(--desi-indigo);
+  --color-desi-cream: var(--desi-cream);
+  --color-desi-ink: var(--desi-ink);
+
   --radius-sm: 4px;
   --radius-md: 6px;
   --radius-lg: 8px;
@@ -55,22 +67,31 @@
      paper #F5F0E7 · surface #FFFDF7 · ink #171717 · grey #77736C
      orange #F45B0A · blue #3987C9 · green #29A66F · pink #FF4D93 · yellow #FFCC1C */
   --background: #f5f0e7; /* cream paper ground */
-  --foreground: #171717; /* ink */
-  --navy: #171717; /* ink (kept as token name; dark buttons/fills) */
+  --foreground: #0f1111; /* Rajmudra ink */
+  --navy: #0f1111; /* ink (kept as token name; dark buttons/fills) */
   --card: #fffdf7; /* paper surface */
-  --card-foreground: #171717;
+  --card-foreground: #0f1111;
   --popover: #fffdf7;
-  --popover-foreground: #171717;
+  --popover-foreground: #0f1111;
 
-  --primary: #f45b0a;
+  --primary: #fe5100;
   --primary-foreground: #fffdf7;
-  --brand: #f45b0a; /* bright orange — fills, large text, icons */
+  --brand: #fe5100; /* official Rajmudra orange — fills, large text, icons */
   --brand-foreground: #fffdf7;
-  --brand-text: #b83f00; /* darker orange for small text on light — AA (4.9:1 on cream) */
-  --rating: #29a66f; /* green */
-  --accent-pink: #ff4d93;
-  --accent-yellow: #ffcc1c;
+  --brand-text: #c23400; /* darker orange for small text on cream — AA */
+  --rating: #29a66f; /* green (ratings / WhatsApp — kept for semantics) */
+  --accent-pink: #e80f7a;
+  --accent-yellow: #ffb703;
   --accent-blue: #3987c9;
+
+  /* Desi Digital palette tokens */
+  --desi-orange: #fe5100;
+  --desi-magenta: #e80f7a;
+  --desi-teal: #0e9384;
+  --desi-marigold: #ffb703;
+  --desi-indigo: #231a5b;
+  --desi-cream: #fbf4e6;
+  --desi-ink: #0f1111;
 
   --secondary: #ebe4d8; /* muted cream surface */
   --secondary-foreground: #171717;
@@ -725,6 +746,106 @@ h2 {
 ::selection {
   background: var(--brand);
   color: #fff;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   DESI DIGITAL — motif system
+   Reusable paint + motion for the festive Rajmudra look. Structure lives in
+   components/desi/*; these are the shared surfaces, rays and animations.
+   Everything degrades gracefully under prefers-reduced-motion.
+   ═════════════════════════════════════════════════════════════════════════ */
+
+/* Display face helper (Bricolage Grotesque) for poster headlines. */
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+}
+
+/* rotation primitives for suns, mandalas and seals */
+@keyframes desi-spin { to { transform: rotate(360deg); } }
+.desi-spin-slow { animation: desi-spin 60s linear infinite; transform-origin: center; }
+.desi-spin-slower { animation: desi-spin 120s linear infinite; transform-origin: center; }
+.desi-spin-rev { animation: desi-spin 90s linear infinite reverse; transform-origin: center; }
+
+/* gentle float for scattered marigolds / badges */
+@keyframes desi-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.desi-float { animation: desi-float 6s ease-in-out infinite; animation-delay: var(--d, 0s); }
+
+/* continuous ticker (ribbon strips) */
+@keyframes desi-marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.desi-marquee { animation: desi-marquee var(--spd, 32s) linear infinite; will-change: transform; }
+
+/* animated festive gradient text: orange → magenta → marigold */
+@keyframes desi-hue { 0%, 100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
+.desi-gradient-text {
+  background-image: linear-gradient(92deg, var(--desi-orange) 0%, var(--desi-magenta) 45%, var(--desi-marigold) 100%);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: desi-hue 7s ease-in-out infinite;
+}
+
+/* SUN RAYS — crisp alternating wedges from a point. Masked to fade at the rim.
+   Set --ray to the ray colour and --rays-fade for the falloff radius. */
+.desi-rays {
+  background: repeating-conic-gradient(
+    from 0deg at 50% 50%,
+    var(--ray, rgba(255, 183, 3, 0.9)) 0deg 5deg,
+    transparent 5deg 11.25deg
+  );
+  -webkit-mask: radial-gradient(circle at 50% 50%, #000 0%, #000 var(--rays-fade, 18%), transparent 72%);
+  mask: radial-gradient(circle at 50% 50%, #000 0%, #000 var(--rays-fade, 18%), transparent 72%);
+}
+
+/* HALFTONE — a field of dots that thins out, the printed-poster texture.
+   Set --dot for the dot colour. */
+.desi-halftone {
+  background-image: radial-gradient(var(--dot, rgba(15, 17, 17, 0.14)) 1.4px, transparent 1.6px);
+  background-size: 11px 11px;
+}
+
+/* CONCENTRIC rings (rangoli ground). */
+.desi-rings {
+  background: repeating-radial-gradient(
+    circle at 50% 50%,
+    transparent 0 13px,
+    var(--ring-c, rgba(255, 255, 255, 0.14)) 13px 15px
+  );
+}
+
+/* warm cream poster ground with a soft marigold bloom in a corner */
+.desi-ground {
+  background:
+    radial-gradient(120% 90% at 100% 0%, color-mix(in srgb, var(--desi-marigold) 18%, transparent), transparent 55%),
+    radial-gradient(90% 80% at 0% 100%, color-mix(in srgb, var(--desi-magenta) 10%, transparent), transparent 55%),
+    var(--desi-cream);
+}
+
+/* deep festive indigo panel (dark moments), with orange + magenta blooms */
+.desi-indigo-panel {
+  background:
+    radial-gradient(90% 70% at 85% 0%, rgba(254, 81, 0, 0.28), transparent 55%),
+    radial-gradient(80% 70% at 0% 100%, rgba(232, 15, 122, 0.24), transparent 55%),
+    linear-gradient(145deg, #1a1247 0%, #231a5b 45%, #14102e 100%);
+}
+
+/* hairline festive border via a conic gradient edge */
+.desi-border-festive {
+  border: 2px solid transparent;
+  background:
+    linear-gradient(var(--card), var(--card)) padding-box,
+    conic-gradient(from 0deg, var(--desi-orange), var(--desi-magenta), var(--desi-marigold), var(--desi-teal), var(--desi-orange)) border-box;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .desi-spin-slow, .desi-spin-slower, .desi-spin-rev,
+  .desi-float, .desi-marquee, .desi-gradient-text {
+    animation: none;
+  }
 }
 
 /* Smooth in-page scrolling with an offset for the sticky nav */
