@@ -304,13 +304,14 @@ export function Navbar() {
         </div>
       </div>
 
-      {/* festive band hangs just under the solid bar (the poster seam edge) */}
-      {!light && <FestiveBand height={9} className="absolute inset-x-0 top-full" />}
+      {/* festive band hangs just under the solid bar (the poster seam edge).
+          Hidden while the mobile sheet is open so it never overlaps its content. */}
+      {!light && !mobileOpen && <FestiveBand height={9} className="absolute inset-x-0 top-full" />}
       </header>
 
       {/* mobile menu, full-screen festive sheet with collapsible sections */}
       {mobileOpen && (
-        <div className="desi-ground fixed inset-x-0 bottom-0 top-16 z-40 flex flex-col overflow-y-auto px-6 pb-8 pt-2 md:hidden">
+        <div className="desi-ground fixed inset-x-0 bottom-0 top-16 z-40 overflow-y-auto px-6 pb-10 pt-2 md:hidden">
           {/* Services */}
           <button
             className="flex w-full items-center justify-between border-b-2 border-[var(--desi-orange)]/15 py-4 text-base font-bold"
