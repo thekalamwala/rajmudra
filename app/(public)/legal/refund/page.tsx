@@ -92,10 +92,10 @@ export default function RefundPage() {
           <li>
             Email{" "}
             <a
-              href="mailto:team@timewheel.co.in"
+              href="mailto:namaskar@rajmudramedia.com"
               className="text-brand hover:underline"
             >
-              team@timewheel.co.in
+              namaskar@rajmudramedia.com
             </a>{" "}
             with your account email and reason for the refund request.
           </li>
@@ -282,10 +282,10 @@ export default function RefundPage() {
         <p>
           For refund requests or SLA inquiries, please contact us at{" "}
           <a
-            href="mailto:team@timewheel.co.in"
+            href="mailto:namaskar@rajmudramedia.com"
             className="text-brand hover:underline"
           >
-            team@timewheel.co.in
+            namaskar@rajmudramedia.com
           </a>
           .
         </p>

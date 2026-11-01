@@ -232,10 +232,10 @@ export default function CookiesPage() {
         <p>
           If you have questions about our use of cookies, please contact us at{" "}
           <a
-            href="mailto:team@timewheel.co.in"
+            href="mailto:namaskar@rajmudramedia.com"
             className="text-brand hover:underline"
           >
-            team@timewheel.co.in
+            namaskar@rajmudramedia.com
           </a>
           .
         </p>

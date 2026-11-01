@@ -214,10 +214,10 @@ export default function PrivacyPage() {
         <p>
           To exercise any of these rights, contact us at{" "}
           <a
-            href="mailto:team@timewheel.co.in"
+            href="mailto:namaskar@rajmudramedia.com"
             className="text-brand hover:underline"
           >
-            team@timewheel.co.in
+            namaskar@rajmudramedia.com
           </a>
           .
         </p>
@@ -268,10 +268,10 @@ export default function PrivacyPage() {
         <p>
           Email:{" "}
           <a
-            href="mailto:team@timewheel.co.in"
+            href="mailto:namaskar@rajmudramedia.com"
             className="text-brand hover:underline"
           >
-            team@timewheel.co.in
+            namaskar@rajmudramedia.com
           </a>
         </p>
         <p>Rajmudra Media · timewheel.co.in</p>

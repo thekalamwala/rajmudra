@@ -49,7 +49,7 @@ export const SELLER = {
   gstin: "21AAMCT8270C1ZF",
   pan: "AAMCT8270C",
   cin: "U62012OD2026PTC052654",
-  email: "team@timewheel.co.in",
+  email: "namaskar@rajmudramedia.com",
   phone: "+91 79041 09359",
   website: "timewheel.co.in",
 };

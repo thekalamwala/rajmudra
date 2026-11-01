@@ -7,7 +7,7 @@ export const site = {
     process.env.NEXT_PUBLIC_CALENDLY_URL ?? "https://timewheel.co.in/book-a-demo",
   tagline: "Build on systems you control forever",
   contact: {
-    email: "team@timewheel.co.in",
+    email: "namaskar@rajmudramedia.com",
     phone: "+91 79041 09359",
     whatsappDigits: "917904109359",
     city: "Nagpur",

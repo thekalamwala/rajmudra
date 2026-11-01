@@ -1,4 +1,4 @@
-// Transactional send via Resend: every email that goes from team@timewheel.co.in
+// Transactional send via Resend: every email that goes from namaskar@rajmudramedia.com
 // through the verified Resend domain. Separate from resend-contacts.ts (audience
 // sync). Templates live in lib/email/templates.ts.
 //
@@ -15,8 +15,8 @@ import {
   websiteLive,
 } from "@/lib/email/templates";
 
-const FROM = process.env.RESEND_FROM || "Rajmudra <team@timewheel.co.in>";
-const REPLY_TO = "team@timewheel.co.in";
+const FROM = process.env.RESEND_FROM || "Rajmudra <namaskar@rajmudramedia.com>";
+const REPLY_TO = "namaskar@rajmudramedia.com";
 
 // Low-level send. Returns true on a 2xx. Never throws.
 export async function sendEmail(to: string | string[], email: Rendered, replyTo = REPLY_TO): Promise<boolean> {

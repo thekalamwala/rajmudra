@@ -798,6 +798,6 @@ export const academyFaqs: Faq[] = [
   },
   {
     q: "How is my information used?",
-    a: "Only to contact you about the Academy. We do not sell or share it, and it is never shown publicly. Email team@timewheel.co.in to have it deleted at any time.",
+    a: "Only to contact you about the Academy. We do not sell or share it, and it is never shown publicly. Email namaskar@rajmudramedia.com to have it deleted at any time.",
   },
 ];
