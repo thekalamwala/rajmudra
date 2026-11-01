@@ -3,9 +3,9 @@ import { ArrowRight, Handshake, Megaphone, Users } from "lucide-react";
 import { social } from "@/lib/metadata";
 import { site } from "@/lib/site";
 
-const TITLE = "Partner with Timewheel, Referral and Agency Partnerships";
+const TITLE = "Partner with Rajmudra, Referral and Agency Partnerships";
 const DESC =
-  "Refer clients, white-label our web and SEO work, or build together. Partnership options with Timewheel, a product studio and digital agency in Nagpur.";
+  "Refer clients, white-label our web and SEO work, or build together. Partnership options with Rajmudra, a product studio and digital agency in Nagpur.";
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
@@ -39,13 +39,13 @@ const steps = [
 ];
 
 export default function PartnersPage() {
-  const mail = `mailto:${site.contact.email}?subject=${encodeURIComponent("Partnership with Timewheel")}`;
+  const mail = `mailto:${site.contact.email}?subject=${encodeURIComponent("Partnership with Rajmudra")}`;
 
   return (
     <div className="overflow-x-clip">
       <section className="mx-auto max-w-3xl px-6 pb-16 pt-24 text-center md:pt-32">
         <p className="text-xs font-bold uppercase tracking-[0.22em] text-brand-text">Partner with us</p>
-        <h1 className="mt-4 text-4xl font-black tracking-tight md:text-6xl">Grow together with Timewheel</h1>
+        <h1 className="mt-4 text-4xl font-black tracking-tight md:text-6xl">Grow together with Rajmudra</h1>
         <p className="mx-auto mt-5 max-w-xl text-lg leading-relaxed text-muted-foreground">
           We work with consultants, agencies and builders who look out for the same clients we do.
           Here is how we can team up.

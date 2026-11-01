@@ -14,7 +14,7 @@ import { BasIntegrations } from "@/components/meeticulous/integrations";
 import { BasPricing } from "@/components/meeticulous/pricing";
 import { BasTestimonials } from "@/components/meeticulous/testimonials";
 
-// Title set here (not from lib copy) to keep the site-wide ", Timewheel" suffix
+// Title set here (not from lib copy) to keep the site-wide ", Rajmudra" suffix
 // and avoid the em-dash in the lib string.
 const META_TITLE = "Meeticulous: Appointment Booking & Scheduling Software";
 
@@ -40,7 +40,7 @@ const jsonLd = {
       description: bas.meta.description,
       author: {
         "@type": "Organization",
-        name: "Timewheel",
+        name: "Rajmudra",
         url: "https://timewheel.co.in",
       },
       offers: {

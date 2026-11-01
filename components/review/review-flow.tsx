@@ -8,7 +8,7 @@ import { analytics, EVENTS } from "@/lib/analytics";
 import { BRAND, GOOGLE_REVIEW_URL, REVIEW_SERVICES, type ReviewService } from "@/lib/review";
 
 // Two slides: pick the service, then copy a sample review. The main button
-// copies the text and opens Timewheel's Google review form in one tap. A copied
+// copies the text and opens Rajmudra's Google review form in one tap. A copied
 // sample is never offered again: the server tracks it for everyone, and this
 // browser also remembers it in case the server isn't configured.
 
@@ -197,7 +197,7 @@ export function ReviewFlow() {
                       setCopied(false);
                     }}
                     rows={6}
-                    placeholder={loading ? "Loading your review..." : "Write a few lines about your experience with Timewheel."}
+                    placeholder={loading ? "Loading your review..." : "Write a few lines about your experience with Rajmudra."}
                     className="w-full resize-none rounded-lg border border-border bg-background px-4 py-3 text-base leading-relaxed outline-none transition-colors focus:border-brand focus:ring-2 focus:ring-brand/20"
                   />
                   {pool.length > 1 && <button

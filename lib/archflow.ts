@@ -5,12 +5,12 @@
 export const arch = {
   path: "/products/archflow",
   meta: {
-    title: "Archflow: Project Workspace for Architecture & Construction | Timewheel",
+    title: "Archflow: Project Workspace for Architecture & Construction | Rajmudra",
     description:
-      "Archflow is a calm project workspace for architecture and construction studios: drawings, site issues, materials and tasks in one place, built by Timewheel.",
+      "Archflow is a calm project workspace for architecture and construction studios: drawings, site issues, materials and tasks in one place, built by Rajmudra.",
   },
   hero: {
-    eyebrow: "Archflow, by Timewheel",
+    eyebrow: "Archflow, by Rajmudra",
     title: "The operating system for",
     titleAccent: "architecture and construction projects.",
     answer:
@@ -179,7 +179,7 @@ export const arch = {
     items: [
       {
         q: "What is Archflow?",
-        a: "Archflow is a project workspace for architecture and construction studios, built by Timewheel. It brings drawings, revisions, site issues, materials and tasks into one place, so the whole studio works from the same, current picture.",
+        a: "Archflow is a project workspace for architecture and construction studios, built by Rajmudra. It brings drawings, revisions, site issues, materials and tasks into one place, so the whole studio works from the same, current picture.",
       },
       {
         q: "Who is Archflow for?",

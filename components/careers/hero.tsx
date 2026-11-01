@@ -24,7 +24,7 @@ export function CareersHero() {
       <Reveal className="relative mx-auto max-w-6xl px-6 py-20 md:py-28">
         <p className="flex items-center gap-2.5 text-xs font-bold uppercase tracking-[0.22em] text-brand">
           <span className="size-1.5 rounded-full bg-brand" />
-          Careers at Timewheel
+          Careers at Rajmudra
         </p>
 
         <RevealHeading
@@ -32,7 +32,7 @@ export function CareersHero() {
           className="mt-6 max-w-3xl text-[2.35rem] font-black leading-[1.08] tracking-tight sm:text-5xl"
         >
           <span className="block">Open roles at </span>
-          <span className="block text-brand">Timewheel Studios</span>
+          <span className="block text-brand">Rajmudra Studios</span>
         </RevealHeading>
 
         <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">

@@ -1,11 +1,11 @@
 // Content for /web-app-development.
 // A showcase-style service page: the hero presents a fictional but realistic
-// TIMEWHEEL web application (desktop + mobile) rather than a photograph.
+// RAJMUDRA web application (desktop + mobile) rather than a photograph.
 // All figures inside the mockups are illustrative UI samples, not client claims.
 
 export const wa = {
   meta: {
-    title: "Web App Development | Custom Web Applications, Timewheel",
+    title: "Web App Development | Custom Web Applications, Rajmudra",
     description:
       "Custom web application development in Nagpur: dashboards, customer portals, internal platforms and SaaS products, planned, designed and built to scale.",
   },
@@ -111,7 +111,7 @@ export const wa = {
    finalCta: {
      headingA: "Have a web app idea?",
      headingB: "Let's build it.",
-     body: "From internal business platforms to customer-facing products, TIMEWHEEL turns ideas into thoughtful, scalable web applications.",
+     body: "From internal business platforms to customer-facing products, RAJMUDRA turns ideas into thoughtful, scalable web applications.",
      primaryCta: { label: "Start a Project", href: "/contact" },
      secondaryCta: { label: "Talk to Our Team", href: "/contact" },
    },

@@ -1,7 +1,7 @@
 import { SELLER, amountInWords, computeTotals, inr, type InvoiceItem, type InvoiceStatus, type TaxMode } from "@/lib/admin/invoice-calc";
 
 // The invoice itself: A4 tax invoice in a clean Google / Zoho style. White page,
-// grey hairlines, and four accent colours (Google's RGBY with Timewheel orange
+// grey hairlines, and four accent colours (Google's RGBY with Rajmudra orange
 // in place of red). Rendered by the editor's live preview and the print page.
 // No hooks, so it works in both.
 

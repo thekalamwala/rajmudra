@@ -454,7 +454,7 @@ export function PmEcosystem() {
           >
             <Image
               src="/timewheel-logo.png"
-              alt="Timewheel"
+              alt="Rajmudra"
               width={80}
               height={80}
               className="size-20 object-contain"
@@ -543,7 +543,7 @@ export function PmEcosystem() {
             >
               <Image
                 src="/timewheel-logo.png"
-                alt="Timewheel"
+                alt="Rajmudra"
                 width={80}
                 height={80}
                 className="size-20 object-contain"

@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { social } from "@/lib/metadata";
 
-const TITLE = "Terms of Service for Timewheel Products and Services";
+const TITLE = "Terms of Service for Rajmudra Products and Services";
 const DESC =
-  "Read the terms and conditions that govern your use of the Timewheel website, products and services, from orders and payments to your rights and ours.";
+  "Read the terms and conditions that govern your use of the Rajmudra website, products and services, from orders and payments to your rights and ours.";
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
@@ -32,7 +32,7 @@ export default function TermsPage() {
           1. Acceptance of Terms
         </h2>
         <p>
-          By accessing or using the Timewheel website and services
+          By accessing or using the Rajmudra website and services
           (collectively, the &quot;Service&quot;), you agree to be bound by
           these Terms of Service (&quot;Terms&quot;). If you are using the
           Service on behalf of an organization, you represent that you have the
@@ -45,7 +45,7 @@ export default function TermsPage() {
           2. Description of Service
         </h2>
         <p>
-          Timewheel provides a suite of digital products including but not
+          Rajmudra provides a suite of digital products including but not
           limited to booking systems, payment processing, event management,
           community platforms, and digital marketing tools. Specific features
           and pricing are described on our{" "}
@@ -112,7 +112,7 @@ export default function TermsPage() {
         </h2>
         <p>
           The Service and its original content, features, and functionality are
-          owned by Timewheel and are protected by copyright, trademark, and
+          owned by Rajmudra and are protected by copyright, trademark, and
           other intellectual property laws. You retain ownership of any data or
           content you submit to the Service.
         </p>
@@ -180,7 +180,7 @@ export default function TermsPage() {
           9. Limitation of Liability
         </h2>
         <p>
-          To the maximum extent permitted by law, Timewheel shall not be liable
+          To the maximum extent permitted by law, Rajmudra shall not be liable
           for any indirect, incidental, special, consequential, or punitive
           damages, or any loss of profits or revenues, whether incurred directly
           or indirectly, or any loss of data, use, goodwill, or other intangible

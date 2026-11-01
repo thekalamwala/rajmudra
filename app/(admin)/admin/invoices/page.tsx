@@ -78,7 +78,7 @@ export default async function InvoicesPage() {
           <div className="p-4">
             <EmptyState
               title="No invoices yet"
-              description="Start from a Timewheel service. GST splits and numbering are handled for you."
+              description="Start from a Rajmudra service. GST splits and numbering are handled for you."
               action={
                 <Link href="/admin/invoices/new" className={btn.primary}>
                   <Plus size={16} /> New invoice

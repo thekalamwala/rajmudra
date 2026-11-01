@@ -11,7 +11,7 @@ export const tp = {
       "The Parliament is an online community platform for groups that outgrew WhatsApp: feed, groups, paid events and memberships via Razorpay, DMs and video calls.",
   },
   hero: {
-    eyebrow: "The Parliament, by Timewheel",
+    eyebrow: "The Parliament, by Rajmudra",
     title: "The online community platform for groups that",
     titleAccent: "outgrew WhatsApp.",
     // Answer-first block (the passage AI answers lift). Keep it under 60 words.
@@ -100,7 +100,7 @@ export const tp = {
     columns: ["", "WhatsApp group", "The Parliament"],
     rows: [
       ["Members already have it", "Yes, nothing to install", "No. Members sign up once, then add it to the home screen"],
-      ["Cost to start", "Free", "Set up by Timewheel; ask us for a quote"],
+      ["Cost to start", "Free", "Set up by Rajmudra; ask us for a quote"],
       ["End-to-end encrypted chats", "Yes", "No. Messages are stored on the server so moderators can act on reports"],
       ["Posts stay findable", "Scroll and search one chat", "Feed with saved posts, hashtags and search across posts, people, groups and events"],
       ["Member directory", "Contact list only", "Member profiles and a searchable directory"],
@@ -198,7 +198,7 @@ export const tp = {
         desc: "Share the link in the old group. Members who opt in keep getting updates on WhatsApp, and memberships and tickets bring money in without screenshots.",
       },
     ],
-    notes: ["No app-store download", "Members keep WhatsApp for alerts", "Set up by Timewheel"],
+    notes: ["No app-store download", "Members keep WhatsApp for alerts", "Set up by Rajmudra"],
   },
   audiences: {
     number: "06",
@@ -230,9 +230,9 @@ export const tp = {
   },
   capabilities: {
     number: "07",
-    label: "WHAT TIMEWHEEL BUILT",
-    title: "Built and run in production by Timewheel.",
-    body: "Timewheel designed and built The Parliament end to end, and it runs in production today for a registered membership association in Nagpur.",
+    label: "WHAT RAJMUDRA BUILT",
+    title: "Built and run in production by Rajmudra.",
+    body: "Rajmudra designed and built The Parliament end to end, and it runs in production today for a registered membership association in Nagpur.",
     items: [
       { icon: "compass", label: "Product strategy" },
       { icon: "pen", label: "UX and UI design" },
@@ -254,7 +254,7 @@ export const tp = {
     items: [
       {
         q: "What is The Parliament?",
-        a: "The Parliament is an online community platform for communities in India, built by Timewheel in Nagpur. It gives a community its own app with a feed, groups, events with paid registration, direct messages, video calls, paid membership tiers and an admin console for moderation. Payments run on Razorpay.",
+        a: "The Parliament is an online community platform for communities in India, built by Rajmudra in Nagpur. It gives a community its own app with a feed, groups, events with paid registration, direct messages, video calls, paid membership tiers and an admin console for moderation. Payments run on Razorpay.",
       },
       {
         q: "Is The Parliament a good WhatsApp group alternative for communities?",

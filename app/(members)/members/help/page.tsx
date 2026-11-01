@@ -29,7 +29,7 @@ export default async function HelpPage() {
       icon: MessageCircle,
       title: "WhatsApp",
       text: `${site.contact.phone} · ${site.contact.hours}`,
-      href: `https://wa.me/${site.contact.whatsappDigits}?text=${encodeURIComponent("Hi Timewheel, I need help with my member account.")}`,
+      href: `https://wa.me/${site.contact.whatsappDigits}?text=${encodeURIComponent("Hi Rajmudra, I need help with my member account.")}`,
       cta: "Open WhatsApp",
     },
     {

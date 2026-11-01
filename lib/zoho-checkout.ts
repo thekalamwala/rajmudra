@@ -80,7 +80,7 @@ export async function payWithZoho(req: PayRequest, orderUrl = "/api/pay/order"):
       currency_code: "INR",
       currency_symbol: "₹",
       payments_session_id: session.sessionId,
-      business: "Timewheel",
+      business: "Rajmudra",
       description: session.description,
       reference_number: orderId,
       address: { name: req.name, email: req.email },

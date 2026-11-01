@@ -13,7 +13,7 @@ export const td = {
       "Ticket Dino is event ticketing and management software for organizers in India: tiered tickets, coupons, UPI and card payments, QR e-tickets and gate check-in.",
   },
   hero: {
-    eyebrow: "Ticket Dino, by Timewheel",
+    eyebrow: "Ticket Dino, by Rajmudra",
     title: "Event ticketing that holds",
     titleAccent: "when the doors open.",
     // Answer-first block (the passage AI answers lift). Keep it under 60 words.
@@ -237,7 +237,7 @@ export const td = {
     items: [
       {
         q: "What is Ticket Dino?",
-        a: "Ticket Dino is event ticketing and management software, built by Timewheel in Nagpur for organizers in India. It covers tiered ticket sales, coupons and add-ons, UPI and card payments, QR e-ticket delivery, gate check-in and attendee data, so one link handles the whole event.",
+        a: "Ticket Dino is event ticketing and management software, built by Rajmudra in Nagpur for organizers in India. It covers tiered ticket sales, coupons and add-ons, UPI and card payments, QR e-ticket delivery, gate check-in and attendee data, so one link handles the whole event.",
       },
       {
         q: "How much does Ticket Dino cost?",

@@ -1,6 +1,6 @@
 // Central site config. Swap URLs when real assets land.
 export const site = {
-  name: "Timewheel",
+  name: "Rajmudra Media",
   url: "https://timewheel.co.in",
   demoUrl: "https://timewheel.co.in/book-a-demo",
   calendlyUrl:

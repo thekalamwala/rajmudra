@@ -118,7 +118,7 @@ export async function POST(request: Request) {
       programUrl: `${site.url}${programPath(program)}`,
       enrolling: program.status === "enrolling",
     });
-    return (await sendSmtp(email, mail, { fromName: "Timewheel Academy" })) || sendEmail(email, mail);
+    return (await sendSmtp(email, mail, { fromName: "Rajmudra Academy" })) || sendEmail(email, mail);
   };
 
   if (result === "saved") {

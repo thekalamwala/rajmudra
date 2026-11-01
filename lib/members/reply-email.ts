@@ -37,12 +37,12 @@ export async function emailReplyRecipients(postId: string, replierId: string, re
             greeting: `Hi ${first},`,
             lines: [
               own
-                ? `${replierName} replied to your post "${post.title}" in the Timewheel member community.`
-                : `${replierName} replied in "${post.title}", a thread you joined in the Timewheel member community.`,
+                ? `${replierName} replied to your post "${post.title}" in the Rajmudra member community.`
+                : `${replierName} replied in "${post.title}", a thread you joined in the Rajmudra member community.`,
               `Read it and reply here: ${link}`,
             ],
-            signature: ["Timewheel"],
-            footnote: `You get these because you're a Timewheel member. Turn them off any time in Account, Email preferences: ${site.url}/members/account#emails`,
+            signature: ["Rajmudra"],
+            footnote: `You get these because you're a Rajmudra member. Turn them off any time in Account, Email preferences: ${site.url}/members/account#emails`,
           }),
         );
       }),

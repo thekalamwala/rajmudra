@@ -9,7 +9,7 @@ import { membersConfigured } from "@/lib/supabase/server";
 
 export const metadata: Metadata = {
   title: "Create your free account",
-  description: "Join Timewheel for free: member downloads, the Premium library and a community of people growing their business online.",
+  description: "Join Rajmudra for free: member downloads, the Premium library and a community of people growing their business online.",
   alternates: { canonical: "/register" },
 };
 

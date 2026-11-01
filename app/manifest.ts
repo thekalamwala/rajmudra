@@ -4,8 +4,8 @@ import type { MetadataRoute } from "next";
 // pointed there so the manifest, favicon, and header all draw from one place.
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Timewheel",
-    short_name: "Timewheel",
+    name: "Rajmudra Media",
+    short_name: "Rajmudra",
     description:
       "Run bookings, payments, events, and communities on systems you own.",
     start_url: "/",

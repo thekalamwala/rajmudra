@@ -166,7 +166,7 @@ export function CaseStudyDetail({ cs }: { cs: CaseStudy }) {
             {initials(cs.name)}
           </span>
           <div>
-            <p className="text-sm font-bold">Built by Timewheel</p>
+            <p className="text-sm font-bold">Built by Rajmudra</p>
             <p className="text-xs text-muted-foreground">
               {meta?.client ? `${meta.client} · ` : ""}Strategy, design & engineering
             </p>

@@ -1,5 +1,5 @@
 // Marketing Bug product page content.
-// Marketing Bug is Timewheel's daily AI marketing newsletter. The copy below
+// Marketing Bug is Rajmudra's daily AI marketing newsletter. The copy below
 // is original; the layout follows the same section structure the page was
 // built with. No subscriber counts, ratings or testimonials with named
 // individuals, so none of it goes into structured data
@@ -10,10 +10,10 @@ export const mb = {
   meta: {
     title: "Marketing Bug: Daily AI Marketing Newsletter",
     description:
-      "Marketing Bug is Timewheel's free daily AI marketing newsletter. Every weekday: one story that matters in AI and marketing, a prompt you can run today, and one move to make — in a seven-minute read.",
+      "Marketing Bug is Rajmudra's free daily AI marketing newsletter. Every weekday: one story that matters in AI and marketing, a prompt you can run today, and one move to make — in a seven-minute read.",
   },
   hero: {
-    eyebrow: "Marketing Bug, by Timewheel",
+    eyebrow: "Marketing Bug, by Rajmudra",
     logo: {
       src: "/products/marketing-bug-logo.png",
       alt: "Marketing Bug mascot",
@@ -24,7 +24,7 @@ export const mb = {
     titleAccent: "in your inbox weekly.",
     // Answer-first block (the passage AI answers lift). Keep it under 60 words.
     answer:
-      "Marketing Bug is Timewheel's free daily AI marketing newsletter. Every weekday you get one story that matters in AI and marketing, a prompt you can run today, and one move to make — all in a seven-minute read. No spam, unsubscribe anytime.",
+      "Marketing Bug is Rajmudra's free daily AI marketing newsletter. Every weekday you get one story that matters in AI and marketing, a prompt you can run today, and one move to make — all in a seven-minute read. No spam, unsubscribe anytime.",
     formLabel: "Email address",
     formCta: "Subscribe free",
     image: {
@@ -179,7 +179,7 @@ export const mb = {
     items: [
       {
         q: "What is Marketing Bug?",
-        a: "Marketing Bug is Timewheel's free daily AI marketing newsletter. Every weekday you get one story that matters in AI and marketing, a prompt you can run that day, and one move to make — all in about a seven-minute read.",
+        a: "Marketing Bug is Rajmudra's free daily AI marketing newsletter. Every weekday you get one story that matters in AI and marketing, a prompt you can run that day, and one move to make — all in about a seven-minute read.",
       },
       {
         q: "Who is it for?",

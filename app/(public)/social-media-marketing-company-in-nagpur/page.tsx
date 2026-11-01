@@ -24,7 +24,7 @@ import { RelatedServices } from "@/components/shared/related-services";
 
 const PATH = "/social-media-marketing-company-in-nagpur";
 const url = `${site.url}${PATH}`;
-const title = "Social Media Marketing Company in Nagpur | Timewheel";
+const title = "Social Media Marketing Company in Nagpur | Rajmudra";
 const description =
   "Social media marketing company in Nagpur for strategy, content, creative, community and paid social. One consistent brand voice and clear, honest reporting.";
 

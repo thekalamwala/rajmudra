@@ -41,7 +41,7 @@ export type Invoice = {
  * business. Bank/UPI come from env; GSTIN/PAN/CIN fall back to the public
  * registration numbers. */
 export const SELLER = {
-  name: "Timewheel Studios",
+  name: "Rajmudra Studios",
   registeredOffice: "Jajpur Road, Jajpur, Odisha 755019",
   address: "Eureka Coworking, Mate Square, Pratap Nagar, Nagpur, Maharashtra 440022",
   state: "Odisha",

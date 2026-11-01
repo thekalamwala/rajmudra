@@ -30,7 +30,7 @@ const iconMap = {
 
 export function TpCapabilities() {
   const s = tp.capabilities;
-  const [lead] = s.title.split("Timewheel");
+  const [lead] = s.title.split("Rajmudra");
 
   return (
     <section className="tp-sec tp-built">
@@ -39,7 +39,7 @@ export function TpCapabilities() {
           <Reveal className="tp-built-head">
             <h2 className="tp-built-title">
               {lead}
-              <span className="tp-built-accent">Timewheel</span>.
+              <span className="tp-built-accent">Rajmudra</span>.
             </h2>
             <p className="tp-built-lede">{s.body}</p>
           </Reveal>

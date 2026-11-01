@@ -15,7 +15,7 @@ import {
   websiteLive,
 } from "@/lib/email/templates";
 
-const FROM = process.env.RESEND_FROM || "Timewheel <team@timewheel.co.in>";
+const FROM = process.env.RESEND_FROM || "Rajmudra <team@timewheel.co.in>";
 const REPLY_TO = "team@timewheel.co.in";
 
 // Low-level send. Returns true on a 2xx. Never throws.

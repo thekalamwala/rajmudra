@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { social } from "@/lib/metadata";
 
-const TITLE = "Refund Policy and Service Levels (SLA) | Timewheel";
+const TITLE = "Refund Policy and Service Levels (SLA) | Rajmudra";
 const DESC =
-  "Review Timewheel's refund policy, service-level commitments and support response targets for our projects, retainers and products, and how to raise a request.";
+  "Review Rajmudra's refund policy, service-level commitments and support response targets for our projects, retainers and products, and how to raise a request.";
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
@@ -30,7 +30,7 @@ export default function RefundPage() {
       <section className="space-y-4">
         <h2 className="text-lg font-semibold text-foreground">1. Overview</h2>
         <p>
-          This page outlines Timewheel&apos;s refund eligibility, our
+          This page outlines Rajmudra&apos;s refund eligibility, our
           service-level commitments (SLA), and the response targets you can
           expect from our support team.
         </p>

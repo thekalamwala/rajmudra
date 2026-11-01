@@ -13,14 +13,14 @@ export function AboutIntro() {
             <span className="h-px w-12 bg-brand/40" />
           </div>
           <RevealHeading as="h2" className="mt-5 text-3xl font-extrabold leading-[1.12] tracking-tight md:text-[2.6rem]">
-            What is Timewheel?
+            What is Rajmudra?
           </RevealHeading>
         </Reveal>
 
         <Reveal delay={0.1}>
           <div className="max-w-xl space-y-5 text-base leading-relaxed text-muted-foreground md:text-lg">
             <p>
-              Timewheel Studios is a product studio and
+              Rajmudra Studios is a product studio and
               digital agency based in Nagpur, Maharashtra, founded and led by
               Shubham N Datarkar. We build websites, web apps, SEO and digital
               marketing systems for businesses across India, and we design,

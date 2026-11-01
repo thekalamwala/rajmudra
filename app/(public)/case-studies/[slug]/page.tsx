@@ -19,7 +19,7 @@ export async function generateMetadata({
   const { slug } = await params;
   const cs = getCaseStudy(slug);
   if (!cs) return {};
-  const title = `${cs.name}, Case Study by Timewheel`;
+  const title = `${cs.name}, Case Study by Rajmudra`;
   const description = cs.metaDescription ?? cs.summary;
   return {
     title: { absolute: title },

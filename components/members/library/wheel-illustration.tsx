@@ -1,4 +1,4 @@
-// Decorative Timewheel illustration for upgrade panels: the wheel emblem on a
+// Decorative Rajmudra illustration for upgrade panels: the wheel emblem on a
 // stack of resource cards, in brand colours. Pure SVG, no external art.
 export function WheelIllustration({ className }: { className?: string }) {
   return (

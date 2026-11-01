@@ -19,7 +19,7 @@ import { organizationLd, breadcrumbLd } from "@/lib/jsonld";
 import { site } from "@/lib/site";
 import { InPageAnchor } from "@/components/shared/in-page-anchor";
 
-const TITLE = "Book a Demo of Our Products and Services | Timewheel";
+const TITLE = "Book a Demo of Our Products and Services | Rajmudra";
 const DESC =
   "See it live. Pick a demo, from Meeticulous and Ticket Dino to websites, marketing, SEO and AI automation. We reply with a time within one business day.";
 
@@ -46,7 +46,7 @@ const demos = [
 const serviceOptions = [...demos.map((d) => d.name), "Something else"];
 
 // Meeticulous booking page (we run demos on our own product). Swap to a
-// dedicated Timewheel booking page later via env, no code change needed.
+// dedicated Rajmudra booking page later via env, no code change needed.
 const BOOKING_URL =
   process.env.NEXT_PUBLIC_BAS_BOOKING_URL || "https://meeticulous.com/sndatarkar";
 

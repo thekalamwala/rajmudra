@@ -20,12 +20,12 @@ export default async function AdminLoginPage({ searchParams }: { searchParams: P
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/brand/svg/timewheel-icon.svg" alt="" width={40} height={40} />
           <span>
-            <span className="block font-heading text-lg font-bold leading-tight">Timewheel</span>
+            <span className="block font-heading text-lg font-bold leading-tight">Rajmudra</span>
             <span className="block text-[11px] font-semibold uppercase tracking-widest text-orange-300">Admin console</span>
           </span>
         </div>
         <div className="relative">
-          <p className="text-[11px] font-semibold uppercase tracking-widest text-orange-300">Timewheel Studios</p>
+          <p className="text-[11px] font-semibold uppercase tracking-widest text-orange-300">Rajmudra Studios</p>
           <p className="mt-3 max-w-sm font-heading text-3xl font-bold leading-tight">Invoices, leads, blog and members in one place.</p>
           <p className="mt-3 max-w-sm text-sm text-gray-300">Staff only. Every sign-in is rate limited and the session ends after 12 hours.</p>
         </div>
@@ -36,7 +36,7 @@ export default async function AdminLoginPage({ searchParams }: { searchParams: P
           <div className="mb-8 flex items-center gap-2.5 lg:hidden">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/brand/svg/timewheel-icon.svg" alt="" width={32} height={32} />
-            <span className="text-sm font-bold">Timewheel admin</span>
+            <span className="text-sm font-bold">Rajmudra admin</span>
           </div>
           <h1 className="font-heading text-2xl font-bold text-gray-900">Sign in</h1>
           <p className="mt-1 text-sm text-gray-600">Use the admin console credentials.</p>

@@ -16,8 +16,8 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ tag: string }> }): Promise<Metadata> {
   const { tag } = await params;
   const label = (await getAllTags()).find((t) => slugify(t) === tag) ?? tag;
-  const title = `${label} Articles and Guides, Timewheel Blog`;
-  const description = `Timewheel articles and guides on ${label}: practical, no-fluff advice for growing businesses on marketing, search, AI visibility and websites.`;
+  const title = `${label} Articles and Guides, Rajmudra Blog`;
+  const description = `Rajmudra articles and guides on ${label}: practical, no-fluff advice for growing businesses on marketing, search, AI visibility and websites.`;
   return {
     title: { absolute: title },
     description,

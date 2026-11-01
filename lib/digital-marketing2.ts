@@ -33,7 +33,7 @@ export const dmWhy = [
   {
     number: "02",
     title: "Customized Digital Marketing Solutions",
-    body: "At Timewheel, we understand that each business is unique, so we develop personalized Digital Marketing plans that cater to your business goals.",
+    body: "At Rajmudra, we understand that each business is unique, so we develop personalized Digital Marketing plans that cater to your business goals.",
     accent: "#269cef",
   },
   {
@@ -240,7 +240,7 @@ export const dmCaseStudies = [
 export const dmTestimonials = [
   {
     quote:
-      "I highly recommend Timewheel, a digital marketing firm in Nagpur! They offer diverse digital marketing services that help my business grow online. Their digital strategies, including SEO services and online marketing, have given us a strong online presence across various digital channels.",
+      "I highly recommend Rajmudra, a digital marketing firm in Nagpur! They offer diverse digital marketing services that help my business grow online. Their digital strategies, including SEO services and online marketing, have given us a strong online presence across various digital channels.",
   },
   {
     quote:
@@ -248,11 +248,11 @@ export const dmTestimonials = [
   },
   {
     quote:
-      "Timewheel digital marketing firm is top-notch! They provide the best digital marketing strategies, including SEO and social media campaigns. Their innovative approach helped us achieve our marketing goals and elevate our business online.",
+      "Rajmudra digital marketing firm is top-notch! They provide the best digital marketing strategies, including SEO and social media campaigns. Their innovative approach helped us achieve our marketing goals and elevate our business online.",
   },
   {
     quote:
-      "I've worked with a few marketing service providers, but Timewheel is the best. Their range of digital marketing services, from SEO to content marketing, has helped our business grow in the digital world. Their expertise and commitment to our marketing goals have been invaluable.",
+      "I've worked with a few marketing service providers, but Rajmudra is the best. Their range of digital marketing services, from SEO to content marketing, has helped our business grow in the digital world. Their expertise and commitment to our marketing goals have been invaluable.",
   },
   {
     quote:

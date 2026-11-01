@@ -231,7 +231,7 @@ export const jobs: Job[] = [
     },
     sections: [
       {
-        title: "About Timewheel",
+        title: "About Rajmudra",
         items: [
           "We build and run multiple web products: appointment booking and payments, creator monetization, community management, and event ticketing.",
           "We ship fast, work lean, and give interns real production work.",
@@ -380,7 +380,7 @@ export const jobs: Job[] = [
     },
     sections: [
       {
-        title: "About Timewheel",
+        title: "About Rajmudra",
         items: [
           "We build and run multiple web products: appointment booking and payments, creator monetization, community management, and event ticketing.",
           "We ship fast, work lean, and give interns real production work.",

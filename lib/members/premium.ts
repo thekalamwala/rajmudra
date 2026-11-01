@@ -24,5 +24,5 @@ export function premiumOffer() {
 }
 
 export function premiumPurpose(period: string) {
-  return `Timewheel Premium membership (${period})`;
+  return `Rajmudra Premium membership (${period})`;
 }

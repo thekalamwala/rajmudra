@@ -1,4 +1,4 @@
-// The Timewheel email design system. Every email (lead-facing and team) is a
+// The Rajmudra email design system. Every email (lead-facing and team) is a
 // plain data object rendered here into an HTML body and a text twin, so they
 // all share one look: centred wheel header, optional status band with an icon
 // badge, label/value rows, a tinted details box, a bordered callout, one solid
@@ -25,7 +25,7 @@ const C = {
 const BODY = "'Plus Jakarta Sans',Arial,Helvetica,sans-serif";
 const HEAD = "'Poppins',Arial,Helvetica,sans-serif";
 const LOGO = `${site.url}/brand/png/timewheel-icon-128.png`;
-export const COMPANY = "Timewheel Studios";
+export const COMPANY = "Rajmudra Studios";
 const WA = `https://wa.me/${site.contact.whatsappDigits}`;
 
 export type Tone = "brand" | "success" | "danger";
@@ -53,7 +53,7 @@ export type Email = {
   kicker?: string;
   title?: string;
   blocks: Block[];
-  signoff?: boolean; // "Regards, The Timewheel Team" (default on)
+  signoff?: boolean; // "Regards, The Rajmudra Team" (default on)
   help?: boolean; // "Questions? Reply, email or call" line (default on)
   footnote?: string; // why they got this email
 };
@@ -181,7 +181,7 @@ export function renderEmail(e: Email): Rendered {
   ].join("");
 
   const footer = [
-    signoff ? cell(`<p style="margin:0;${font(15)}">Regards,<br><strong>The Timewheel Team</strong><br>${link(site.url, site.url.replace(/^https?:\/\//, ""))}</p>`, "4px 32px 24px") : "",
+    signoff ? cell(`<p style="margin:0;${font(15)}">Regards,<br><strong>The Rajmudra Team</strong><br>${link(site.url, site.url.replace(/^https?:\/\//, ""))}</p>`, "4px 32px 24px") : "",
     help
       ? cell(`<div style="border-top:1px solid ${C.line};padding-top:18px;${font(13, 400, C.muted)}">Questions? Just reply to this email, write to ${link(`mailto:${email}`, email)}, call ${link(phoneHref, phone)} or ${link(WA, "WhatsApp us")}.</div>`, "0 32px 24px")
       : "",
@@ -224,7 +224,7 @@ export function renderEmail(e: Email): Rendered {
     ...(e.hero ? [e.hero.title + (e.hero.subtitle ? `\n${e.hero.subtitle}` : ""), ""] : []),
     ...(e.title ? [e.title, ""] : []),
     ...e.blocks.map((b) => blockText(b) + "\n"),
-    ...(signoff ? ["Regards,", "The Timewheel Team", site.url, ""] : []),
+    ...(signoff ? ["Regards,", "The Rajmudra Team", site.url, ""] : []),
     ...(help ? [`Questions? Reply to this email, write to ${email}, call ${phone} or WhatsApp ${WA}`, ""] : []),
     ...(e.footnote ? [e.footnote, ""] : []),
     `${COMPANY} · ${site.contact.city}, ${site.contact.region}`,

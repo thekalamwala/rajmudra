@@ -10,8 +10,8 @@ import { breadcrumbLd, organizationLd } from "@/lib/jsonld";
 import { jobs } from "@/lib/jobs";
 import { site } from "@/lib/site";
 
-const TITLE = "Careers at Timewheel | Open Roles in Nagpur";
-const DESC = `Open roles at Timewheel Studios in Nagpur: ${jobs
+const TITLE = "Careers at Rajmudra | Open Roles in Nagpur";
+const DESC = `Open roles at Rajmudra Studios in Nagpur: ${jobs
   .map((j) => j.title)
   .join(", ")}. Freshers welcome, internships available. Apply online.`;
 
@@ -62,7 +62,7 @@ export default function CareersPage() {
 
               <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">
                 <a
-                  href={`mailto:${site.contact.email}?subject=${encodeURIComponent("Careers at Timewheel")}`}
+                  href={`mailto:${site.contact.email}?subject=${encodeURIComponent("Careers at Rajmudra")}`}
                   className="btn btn-primary inline-flex items-center justify-center gap-2 rounded-lg px-6 py-3.5 text-sm font-semibold text-brand-foreground"
                 >
                   <Mail className="size-4" />

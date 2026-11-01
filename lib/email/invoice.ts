@@ -54,7 +54,7 @@ export function invoiceEmail(inv: InvoiceRow, link: string, message: string): Re
   ];
 
   return renderEmail({
-    subject: `${paid ? "Paid invoice" : "Invoice"} ${inv.number} from Timewheel (${total})`,
+    subject: `${paid ? "Paid invoice" : "Invoice"} ${inv.number} from Rajmudra (${total})`,
     preheader: paid ? `Your paid invoice ${inv.number} for ${total}.` : `Invoice ${inv.number} for ${total}${inv.due_date ? `, due ${fmt(inv.due_date)}` : ""}.`,
     kicker: "Invoice",
     title: paid ? `Invoice ${inv.number} is paid` : `Invoice ${inv.number}`,

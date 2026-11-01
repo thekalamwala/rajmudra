@@ -53,7 +53,7 @@ export function RegisterSection({
               </Link>
             )}
             <a
-              href={`mailto:${site.contact.email}?subject=${encodeURIComponent("Timewheel Academy question")}`}
+              href={`mailto:${site.contact.email}?subject=${encodeURIComponent("Rajmudra Academy question")}`}
               className="inline-flex items-center gap-1.5 text-muted-foreground hover:text-foreground"
             >
               Questions? {site.contact.email}

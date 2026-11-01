@@ -16,7 +16,7 @@ export default function Loading() {
         Work we designed, built and shipped
       </div>
       <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
-        The challenges, decisions and results behind real builds by Timewheel.
+        The challenges, decisions and results behind real builds by Rajmudra.
       </p>
 
       <SkeletonGroup label="Loading case studies" className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">

@@ -1,6 +1,6 @@
 // Content for /social-media-marketing-company-in-nagpur.
 // Blueprint-style service page following the existing lib/<service>.ts pattern.
-// Everything here is Timewheel capability copy; no fabricated stats, clients,
+// Everything here is Rajmudra capability copy; no fabricated stats, clients,
 // testimonials, case studies or awards are claimed anywhere on the page.
 import {
   CalendarCheck,
@@ -35,7 +35,7 @@ export type SmmFeedPost = {
 
 export const smm = {
   meta: {
-    title: "Social Media Marketing Company in Nagpur | Timewheel",
+    title: "Social Media Marketing Company in Nagpur | Rajmudra",
     description:
       "Social media marketing company in Nagpur for strategy, content, creative, community and paid social. One consistent brand voice and clear, honest reporting.",
   },
@@ -45,12 +45,12 @@ export const smm = {
     h1a: "Creative Social Media Company in Nagpur for",
     h1b: "Stronger Brand",
     h1c: "Presence",
-    sub: "Timewheel plans, creates and runs social media that earns attention and turns it into trust. Strategy, content, creative, community and performance, one consistent brand voice across every platform that matters to you.",
+    sub: "Rajmudra plans, creates and runs social media that earns attention and turns it into trust. Strategy, content, creative, community and performance, one consistent brand voice across every platform that matters to you.",
     primaryCta: { label: "Let's Talk", href: "#contact" },
     secondaryCta: { label: "See What We Do", href: "#services" },
     trustLine: "Strategy-led · Platform-specific · Clear monthly reporting",
     gallery: [
-      { src: "/hero/social.png", alt: "Social media content by Timewheel" },
+      { src: "/hero/social.png", alt: "Social media content by Rajmudra" },
       { src: "/hero/seo.png", alt: "Content strategy and planning" },
       { src: "/hero/web-dev.png", alt: "Campaign performance reporting" },
       { src: "/reels/coworking-reel-cover.jpg", alt: "Instagram reel cover by Eureka CoWorking" },
@@ -60,7 +60,7 @@ export const smm = {
   intro: {
     eyebrow: "Why it works",
     heading: "Posting is easy. Building a presence is not.",
-    body: "Most brands post because they feel they should. Timewheel treats social media as a discipline: a clear strategy, a defined position, and content engineered to serve a business goal, not just to fill a feed.",
+    body: "Most brands post because they feel they should. Rajmudra treats social media as a discipline: a clear strategy, a defined position, and content engineered to serve a business goal, not just to fill a feed.",
     pillars: [
       { title: "Strategy first", note: "A channel plan before any content is made", tone: B },
       { title: "Positioning", note: "A clear point of view your audience can remember", tone: V },
@@ -315,7 +315,7 @@ posts: [
   },
 
   why: {
-    label: "Why Timewheel",
+    label: "Why Rajmudra",
     heading: "A social partner, not just another poster.",
     body: "Lots of people can schedule posts. Very few build a presence that compounds. This is how we think about the work.",
     points: [
@@ -343,7 +343,7 @@ posts: [
   workflow: {
     label: "How an engagement runs",
     heading: "A working rhythm, not a one-off project.",
-    body: "From research to reporting, this is the system behind every Timewheel social media engagement.",
+    body: "From research to reporting, this is the system behind every Rajmudra social media engagement.",
     steps: [
       { title: "Research", body: "Brand, audience and competitor landscape understood before anything is made.", tone: B },
       { title: "Strategy", body: "Channels, positioning and goals agreed, in writing.", tone: V },

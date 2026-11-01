@@ -21,9 +21,9 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const job = getJob(slug);
-  if (!job) return { title: "Role not found, Timewheel" };
+  if (!job) return { title: "Role not found, Rajmudra" };
 
-  const title = `${job.title} in ${job.location}, Timewheel Careers`;
+  const title = `${job.title} in ${job.location}, Rajmudra Careers`;
   const description = `${job.summary} ${job.compensation[0]}. ${job.experience}. Apply online.`;
 
   return {
@@ -46,7 +46,7 @@ function jobPostingLd(job: (typeof jobs)[number]) {
     employmentType: job.employmentTypeSchema,
     hiringOrganization: {
       "@type": "Organization",
-      name: "Timewheel Studios",
+      name: "Rajmudra Studios",
       sameAs: site.url,
     },
     jobLocationType: job.locationType,

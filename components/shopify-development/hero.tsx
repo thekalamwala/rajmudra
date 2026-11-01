@@ -50,7 +50,7 @@ export function SdHero() {
           <div className="relative aspect-[4/3] overflow-hidden rounded-3xl border border-border bg-card shadow-sm">
             <Image
               src="/hero/shopify.png"
-              alt="Shopify development by Timewheel"
+              alt="Shopify development by Rajmudra"
               fill
               preload
               sizes="(min-width: 768px) 45vw, 90vw"

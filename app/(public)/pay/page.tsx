@@ -7,7 +7,7 @@ import { site } from "@/lib/site";
 // Utility page: kept out of search results, the sitemap and llms.txt.
 export const metadata: Metadata = {
   title: "Make a Payment",
-  description: "Pay Timewheel securely via Zoho Payments: UPI, cards and net banking.",
+  description: "Pay Rajmudra securely via Zoho Payments: UPI, cards and net banking.",
   alternates: { canonical: "/pay" },
   robots: { index: false, follow: false },
 };

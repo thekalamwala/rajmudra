@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { social } from "@/lib/metadata";
 
-const TITLE = "Disclaimer | Timewheel";
+const TITLE = "Disclaimer | Rajmudra";
 const DESC =
   "The limits of the information on timewheel.co.in: results we describe, third-party links and tools, product availability, and how to reach us with questions.";
 
@@ -27,7 +27,7 @@ export default function DisclaimerPage() {
           <h2 className="text-lg font-semibold text-foreground">1. General information</h2>
           <p>
             The content on timewheel.co.in, including blog posts, guides, free downloads and
-            reports, is published by Timewheel Studios for general information. It is
+            reports, is published by Rajmudra Studios for general information. It is
             not legal, financial or tax advice. Please speak to a qualified professional before
             acting on it for your business.
           </p>

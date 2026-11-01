@@ -10,7 +10,7 @@ import { FestiveBand } from "@/components/desi";
 
 const TITLE = "Solutions for Creators, Schools, Shops & Events";
 const DESC =
-  "Timewheel products for creators, schools and colleges, small businesses, event organizers, communities, sports clubs and D2C brands — booking, ticketing, memberships and stores on systems you own.";
+  "Rajmudra products for creators, schools and colleges, small businesses, event organizers, communities, sports clubs and D2C brands — booking, ticketing, memberships and stores on systems you own.";
 
 export const metadata: Metadata = {
   title: TITLE,

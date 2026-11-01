@@ -198,9 +198,9 @@ export const az = {
   },
   capabilities: {
     number: "05",
-    label: "WHAT TIMEWHEEL BUILT",
+    label: "WHAT RAJMUDRA BUILT",
     title: "A complete alumni platform,\nend to end.",
-    body: "Timewheel took Alluminaty from first workshop to a running production network, covering strategy, design, engineering, launch and ongoing support, so your institution ends up with a working alumni portal, not a software project.",
+    body: "Rajmudra took Alluminaty from first workshop to a running production network, covering strategy, design, engineering, launch and ongoing support, so your institution ends up with a working alumni portal, not a software project.",
     items: [
       {
         icon: "compass",
@@ -232,7 +232,7 @@ export const az = {
     number: "06",
     label: "LIVE DEPLOYMENT",
     title: "In use at NNAWCA, the JNV Nagpur alumni association.",
-    body: "Alluminaty is built from the platform Timewheel runs for the Nagpur Navodaya Alumni Welfare and Charitable Association (NNAWCA), the alumni body of Jawahar Navodaya Vidyalaya, Nagpur. Alumni there sign up by batch and house, get verified, and pay memberships online.",
+    body: "Alluminaty is built from the platform Rajmudra runs for the Nagpur Navodaya Alumni Welfare and Charitable Association (NNAWCA), the alumni body of Jawahar Navodaya Vidyalaya, Nagpur. Alumni there sign up by batch and house, get verified, and pay memberships online.",
     linkLabel: "Visit the NNAWCA network",
     linkHref: "https://nnawca.vercel.app",
     items: [
@@ -280,7 +280,7 @@ export const az = {
       },
       {
         q: "Does our institution own the alumni data?",
-        a: "Yes. The alumni network runs under your institution's name, your admins control who joins and what is allowed, and the member list can be exported to CSV whenever you need it. Timewheel builds and runs the platform; the alumni community and its data belong to your institution.",
+        a: "Yes. The alumni network runs under your institution's name, your admins control who joins and what is allowed, and the member list can be exported to CSV whenever you need it. Rajmudra builds and runs the platform; the alumni community and its data belong to your institution.",
       },
       {
         q: "Does it work on mobile phones?",

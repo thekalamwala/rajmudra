@@ -13,7 +13,7 @@ import {
   Users,
 } from "lucide-react";
 
-// Illustrative UI sample inside the TIMEWHEEL web app mockup. Not real data.
+// Illustrative UI sample inside the RAJMUDRA web app mockup. Not real data.
 const nav = [
   { label: "Dashboard", active: true },
   { label: "Projects", active: false },

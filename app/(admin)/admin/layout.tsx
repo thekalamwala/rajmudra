@@ -8,7 +8,7 @@ import { requireStaff } from "@/lib/members/session";
 // The admin console: its own Parliament-style shell, outside the member app.
 // Admins see every section; writers see only the blog editor. requireStaff
 // 404s for everyone else, and every page and action checks again.
-export const metadata: Metadata = { title: { default: "Admin console", template: "%s, Timewheel admin" }, robots: { index: false, follow: false } };
+export const metadata: Metadata = { title: { default: "Admin console", template: "%s, Rajmudra admin" }, robots: { index: false, follow: false } };
 
 const ENV: Record<string, string> = { production: "Production", preview: "Preview" };
 
