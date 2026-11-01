@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { social } from "@/lib/metadata";
 
-const TITLE = "Privacy Policy, How Timewheel Handles Your Data";
+const TITLE = "Privacy Policy, How Rajmudra Handles Your Data";
 const DESC =
-  "Learn how Timewheel collects, uses, stores and protects your personal information when you use our website, forms, payments and services, and your rights.";
+  "Learn how Rajmudra collects, uses, stores and protects your personal information when you use our website, forms, payments and services, and your rights.";
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
@@ -32,7 +32,7 @@ export default function PrivacyPage() {
           1. Introduction
         </h2>
         <p>
-          Timewheel (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) operates
+          Rajmudra (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) operates
           the timewheel.co.in website and related products and services (the
           &quot;Service&quot;). This Privacy Policy explains how we collect,
           use, disclose, and safeguard your information when you visit our
@@ -80,7 +80,7 @@ export default function PrivacyPage() {
         </ul>
         <h3 className="pt-2 font-semibold text-foreground">Member accounts and Sign in with Google</h3>
         <p>
-          If you create a Timewheel account we store your name, email address and
+          If you create a Rajmudra account we store your name, email address and
           sign-in details (a securely hashed password if you choose one; we never
           see or store it in readable form), your membership status, the files you
           download, and anything you post in the member community, which other
@@ -214,10 +214,10 @@ export default function PrivacyPage() {
         <p>
           To exercise any of these rights, contact us at{" "}
           <a
-            href="mailto:team@timewheel.co.in"
+            href="mailto:namaskar@rajmudramedia.com"
             className="text-brand hover:underline"
           >
-            team@timewheel.co.in
+            namaskar@rajmudramedia.com
           </a>
           .
         </p>
@@ -268,13 +268,13 @@ export default function PrivacyPage() {
         <p>
           Email:{" "}
           <a
-            href="mailto:team@timewheel.co.in"
+            href="mailto:namaskar@rajmudramedia.com"
             className="text-brand hover:underline"
           >
-            team@timewheel.co.in
+            namaskar@rajmudramedia.com
           </a>
         </p>
-        <p>Timewheel Studios · timewheel.co.in</p>
+        <p>Rajmudra Media · timewheel.co.in</p>
       </section>
       </article>
     </div>

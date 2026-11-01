@@ -5,9 +5,9 @@ import { social } from "@/lib/metadata";
 import { NewsletterForm } from "@/components/newsletter-form";
 import { getAllPosts } from "@/lib/blog";
 
-const TITLE = "The Timewheel Newsletter, Marketing and Web Notes for Builders";
+const TITLE = "The Rajmudra Newsletter, Marketing and Web Notes for Builders";
 const DESC =
-  "One email every fortnight from the Timewheel team in Nagpur: SEO, websites, ads and product lessons from real client work. No hacks, no noise. Unsubscribe anytime.";
+  "One email every fortnight from the Rajmudra team in Nagpur: SEO, websites, ads and product lessons from real client work. No hacks, no noise. Unsubscribe anytime.";
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
@@ -46,7 +46,7 @@ export default async function NewsletterPage() {
       {/* Hero */}
       <section className="mx-auto max-w-3xl px-6 pb-16 pt-24 text-center md:pt-32">
         <p className="text-xs font-bold uppercase tracking-[0.22em] text-brand-text">One email per fortnight</p>
-        <h1 className="mt-4 text-4xl font-black tracking-tight md:text-6xl">The Timewheel Newsletter</h1>
+        <h1 className="mt-4 text-4xl font-black tracking-tight md:text-6xl">The Rajmudra Newsletter</h1>
         <p className="mx-auto mt-5 max-w-xl text-lg leading-relaxed text-muted-foreground">
           Clear notes for people growing real businesses. Every second week we share what is working
           in SEO, websites, ads and products, straight from client work.

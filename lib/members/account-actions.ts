@@ -72,7 +72,7 @@ export async function deleteAccount(_: DeleteState, fd: FormData): Promise<Delet
     if (error) throw error;
   } catch (e) {
     console.error("deleteAccount:", e);
-    return { error: "We couldn't delete your account automatically. Email team@timewheel.co.in and we'll delete it for you." };
+    return { error: "We couldn't delete your account automatically. Email namaskar@rajmudramedia.com and we'll delete it for you." };
   }
 
   const supabase = await createClient();

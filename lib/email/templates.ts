@@ -90,7 +90,7 @@ export function enquiryReceived(o: { name: string; service: string; business: st
     preheader: `Thanks for reaching out about ${o.service}. A real person replies within one business day.`,
     title: `Hi ${first(o.name)},`,
     blocks: [
-      { type: "p", text: `Thanks for reaching out to Timewheel. We've got your enquiry and a real person will reply within one business day (${site.contact.hours}).` },
+      { type: "p", text: `Thanks for reaching out to Rajmudra. We've got your enquiry and a real person will reply within one business day (${site.contact.hours}).` },
       { type: "rows", rows: [["Service", o.service], ["Business", o.business], ["Sent on", ist(new Date())]] },
       { type: "quote", label: "Your message", text: o.message },
       { type: "p", text: "Need a faster answer? We're on WhatsApp." },
@@ -151,9 +151,9 @@ export function paymentReceipt(o: {
 
 export function newsletterWelcome(): Rendered {
   return renderEmail({
-    subject: "You're subscribed to Timewheel notes",
+    subject: "You're subscribed to Rajmudra notes",
     preheader: "Practical growth notes for Indian businesses. No spam.",
-    hero: { tone: "brand", icon: "check", title: "You're subscribed", subtitle: "Timewheel notes" },
+    hero: { tone: "brand", icon: "check", title: "You're subscribed", subtitle: "Rajmudra notes" },
     title: "Welcome aboard,",
     blocks: [
       { type: "p", text: "Thanks for subscribing. You'll get our notes on what's actually working for small and growing businesses in India." },
@@ -183,16 +183,16 @@ export function academyInterest(o: { name: string; program: string; programUrl: 
     greeting: `Hi ${first(o.name)},`,
     lines: [
       o.enrolling
-        ? `Thanks for applying to ${o.program} at Timewheel Digital Marketing Academy. We've got your details and will email you about next steps.`
-        : `Thanks for registering your interest in ${o.program} at Timewheel Digital Marketing Academy. We've got your details.`,
+        ? `Thanks for applying to ${o.program} at Rajmudra Digital Marketing Academy. We've got your details and will email you about next steps.`
+        : `Thanks for registering your interest in ${o.program} at Rajmudra Digital Marketing Academy. We've got your details.`,
       ...(o.enrolling
         ? []
         : ["The program isn't open for enrollment yet. When the first cohort is ready, we'll email you the dates, format and fees, and you can decide then. Registering doesn't commit you to anything."]),
-      "Every program includes a Timewheel certificate, help completing Google, Meta, HubSpot and LinkedIn certifications, and internships at Timewheel and our sister companies.",
+      "Every program includes a Rajmudra certificate, help completing Google, Meta, HubSpot and LinkedIn certifications, and internships at Rajmudra and our sister companies.",
       `The full curriculum and sample projects are here: [${o.programUrl.replace(/^https?:\/\//, "")}](${o.programUrl})`,
       "If you have a question, just reply to this email. A person reads every reply.",
     ],
-    signature: ["Thanks,", "Timewheel Digital Marketing Academy", "Timewheel Studios, Nagpur"],
+    signature: ["Thanks,", "Rajmudra Digital Marketing Academy", "Rajmudra Media, Nagpur"],
     footnote: "You're getting this because you registered on timewheel.co.in/academy. We only use your email for Academy updates; reply \"remove me\" and we'll delete your details.",
   });
 }
@@ -219,7 +219,7 @@ export function websiteLive(o: { name: string; siteUrl?: string }): Rendered {
       },
       { type: "button", href: url || WA, label: url ? "Open your website" : "Message us on WhatsApp" },
     ],
-    footnote: "You're receiving this because Timewheel built your website.",
+    footnote: "You're receiving this because Rajmudra built your website.",
   });
 }
 
@@ -244,7 +244,7 @@ export function growthUpsell(o: { name: string }): Rendered {
       { type: "p", text: "Want a quick, no-pressure chat about what would move the needle? Reply here or message us on WhatsApp." },
       { type: "button", href: WA, label: "Book a free growth chat" },
     ],
-    footnote: "You're receiving this because Timewheel built your website.",
+    footnote: "You're receiving this because Rajmudra built your website.",
   });
 }
 
@@ -301,7 +301,7 @@ export function teamLead(l: LeadEmail): Rendered {
           },
         ] as Block[])
       : []),
-    { type: "button", href: `mailto:${l.email}?subject=${encodeURIComponent("Re: your enquiry to Timewheel")}`, label: `Reply to ${first(l.name)}` },
+    { type: "button", href: `mailto:${l.email}?subject=${encodeURIComponent("Re: your enquiry to Rajmudra")}`, label: `Reply to ${first(l.name)}` },
   ];
   return renderEmail({
     subject: `${l.flag ? "[Check] " : ""}New lead: ${l.service}, ${l.business} (${l.source})`,

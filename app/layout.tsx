@@ -35,13 +35,13 @@ const siteUrl = "https://timewheel.co.in";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Timewheel, Build on systems you control forever",
-    template: "%s, Timewheel",
+    default: "Rajmudra, Build on systems you control forever",
+    template: "%s, Rajmudra",
   },
   description:
-    "Timewheel helps creators, consultants and growing businesses run bookings, payments, events and communities on systems they own, with no platform commissions.",
+    "Rajmudra helps creators, consultants and growing businesses run bookings, payments, events and communities on systems they own, with no platform commissions.",
   keywords: [
-    "Timewheel",
+    "Rajmudra",
     "self-hosted business tools",
     "bookings",
     "payments",
@@ -52,15 +52,15 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: siteUrl,
-    siteName: "Timewheel",
-    title: "Timewheel, Build on systems you control forever",
+    siteName: "Rajmudra Media",
+    title: "Rajmudra, Build on systems you control forever",
     description:
       "One connected ecosystem for bookings, payments, events, and communities, built for ownership, not dependency.",
     images: [SITE_CARD],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Timewheel, Build on systems you control forever",
+    title: "Rajmudra, Build on systems you control forever",
     description:
       "One connected ecosystem for bookings, payments, events, and communities, built for ownership.",
     images: [SITE_CARD],

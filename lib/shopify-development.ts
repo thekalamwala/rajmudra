@@ -16,7 +16,7 @@ export const sd = {
   ],
 
   meta: {
-    title: "Shopify Development Company in Nagpur | Timewheel",
+    title: "Shopify Development Company in Nagpur | Rajmudra",
     description:
       "Shopify development company in Nagpur to build, customize, migrate and scale stores. Shopify Plus, headless builds, apps and integrations, tuned for speed.",
   },
@@ -262,7 +262,7 @@ export const sd = {
   finalCta: {
     headingA: "Ready to build",
     headingB: "your Shopify store?",
-    body: "From your first D2C launch to enterprise Shopify Plus, Timewheel builds stores that are fast, scalable and made to sell.",
+    body: "From your first D2C launch to enterprise Shopify Plus, Rajmudra builds stores that are fast, scalable and made to sell.",
     primaryCta: { label: "Start Your Project", href: "/contact" },
     secondaryCta: { label: "Talk to Our Team", href: "/contact" },
   },

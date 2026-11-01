@@ -38,7 +38,7 @@ export function SdPortfolio() {
                 <div className="relative aspect-[16/9] overflow-hidden bg-secondary">
                   <Image
                     src={c.image}
-                    alt={`${c.name} store built by Timewheel`}
+                    alt={`${c.name} store built by Rajmudra`}
                     fill
                     sizes="(min-width: 640px) 450px, 90vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"

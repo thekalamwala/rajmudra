@@ -8,9 +8,9 @@ import { ContactLocate } from "@/components/contact/contact-locate";
 import { ContactFaq, faqs } from "@/components/contact/contact-faq";
 import { FestiveBand } from "@/components/desi";
 
-const TITLE = "Contact Timewheel, Web and Marketing Agency in Nagpur";
+const TITLE = "Contact Rajmudra, Web and Marketing Agency in Nagpur";
 const DESC =
-  "Contact Timewheel, a product idea, a project brief, or a question. We reply within one business day with a clear, scoped next step.";
+  "Contact Rajmudra, a product idea, a project brief, or a question. We reply within one business day with a clear, scoped next step.";
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
@@ -25,7 +25,7 @@ const jsonLd = {
   "@graph": [
     webPageLd({
       type: "ContactPage",
-      name: "Contact Timewheel",
+      name: "Contact Rajmudra",
       path: "/contact",
       mainEntity: orgRef(),
     }),

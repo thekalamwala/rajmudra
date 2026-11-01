@@ -15,7 +15,7 @@ import { NAV as ALL_NAV, activeItem, activeSection, sectionBadgeCount, type Badg
 
 // Two-level console shell modelled on The Parliament admin: full-width top
 // bar, then the icon-only primary rail + the secondary sidebar for the active
-// section + the page. Timewheel orange replaces Parliament's blue for primary
+// section + the page. Rajmudra orange replaces Parliament's blue for primary
 // actions and active accents; section icons keep their own colours.
 
 export type AdminIdentity = { name: string; email: string; avatarUrl: string | null };
@@ -291,7 +291,7 @@ export function AdminShell({
         <Link href={scope === "writer" ? "/admin/blog" : "/admin"} className="flex items-center gap-2.5">
           <Image src="/brand/svg/timewheel-icon.svg" alt="" width={32} height={32} />
           <span className="hidden sm:block">
-            <span className="block text-sm font-bold leading-tight text-gray-900">Timewheel</span>
+            <span className="block text-sm font-bold leading-tight text-gray-900">Rajmudra</span>
             <span className="block text-[10px] font-semibold uppercase tracking-wider text-[#C2410C]">{scope === "writer" ? "Blog editor" : "Admin console"}</span>
           </span>
         </Link>

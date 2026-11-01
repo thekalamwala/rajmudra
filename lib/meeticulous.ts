@@ -29,7 +29,7 @@ export const shots = {
 export const bas = {
   meta: {
     title:
-      "Meeticulous: Appointment Booking & Scheduling Software, Timewheel",
+      "Meeticulous: Appointment Booking & Scheduling Software, Rajmudra",
     description:
       "Meeticulous is India-first appointment booking software: 24/7 booking pages, UPI and Razorpay payments, Google Calendar sync, WhatsApp reminders, GST invoices.",
   },
@@ -51,7 +51,7 @@ export const bas = {
     shotUrl: "meeticulous.com",
     shot: "dashboard16x10",
     shotAlt: "Meeticulous marketing banner",
-    builtBy: "Built by Timewheel",
+    builtBy: "Built by Rajmudra",
   },
   intro: {
     number: "01",
@@ -171,7 +171,7 @@ export const bas = {
     number: "07",
     label: "WHAT WE BUILT",
     title: "From idea\nto production.",
-    body: "Timewheel designed and built Meeticulous as a complete digital product.",
+    body: "Rajmudra designed and built Meeticulous as a complete digital product.",
     items: [
       { icon: "compass", label: "Product Strategy" },
       { icon: "pen", label: "UX / UI Design" },
@@ -189,7 +189,7 @@ export const bas = {
     number: "08",
     label: "ONE PRODUCT IS ONLY THE BEGINNING.",
     title: "What could we build\nfor your business?",
-    body: "Meeticulous is one example of how Timewheel turns business ideas and workflows into real digital products.",
+    body: "Meeticulous is one example of how Rajmudra turns business ideas and workflows into real digital products.",
     examples: [
       "Booking Platforms",
       "SaaS Products",
@@ -201,7 +201,7 @@ export const bas = {
   },
   process: {
     number: "09",
-    label: "HOW TIMEWHEEL BUILDS",
+    label: "HOW RAJMUDRA BUILDS",
     title: "From idea\nto launch.",
     body: "A simple, proven process, the same one that took Meeticulous from an idea to a shipping product.",
     steps: [
@@ -512,8 +512,8 @@ export const bas = {
   final: {
     title: "Have an idea?",
     big: "Let's build it.",
-    body: "Meeticulous is one example of what Timewheel can build. Your product could be next.",
+    body: "Meeticulous is one example of what Rajmudra can build. Your product could be next.",
     primary: "Start a Project",
-    secondary: "Explore Timewheel",
+    secondary: "Explore Rajmudra",
   },
 };

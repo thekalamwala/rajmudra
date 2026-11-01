@@ -118,7 +118,7 @@ const getConsoleAdmin = cache(async (): Promise<Member | null> => {
   return {
     id: "",
     email,
-    name: "Timewheel Admin",
+    name: "Rajmudra Admin",
     firstName: "Admin",
     avatarUrl: null,
     providers: ["console"],

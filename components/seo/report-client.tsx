@@ -221,7 +221,7 @@ export function SeoReportClient() {
               <h1 className="text-3xl font-black tracking-tight md:text-5xl">{domain}</h1>
             </div>
             <p className="mt-3 text-sm text-white/60">
-              Prepared by Timewheel{today && ` · ${today}`}
+              Prepared by Rajmudra{today && ` · ${today}`}
               {result?.pageCount ? ` · ${result.pageCount} pages scanned` : ""}
             </p>
           </div>

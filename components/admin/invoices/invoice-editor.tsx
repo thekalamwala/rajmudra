@@ -82,7 +82,7 @@ export function InvoiceEditor({ id, initial, extras }: { id: string | null; init
               if (p) set("items", [...inv.items, { description: p.label, sac: p.sac, qty: 1, rate: p.rate }]);
             }}
           >
-            <option value="">+ Add a Timewheel service...</option>
+            <option value="">+ Add a Rajmudra service...</option>
             {SERVICE_PRESETS.map((p, i) => (
               <option key={p.label} value={i}>
                 {p.label} ({inr(p.rate)})

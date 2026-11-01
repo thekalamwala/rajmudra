@@ -3,12 +3,12 @@ import { getPost } from "@/lib/blog";
 
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
-export const alt = "Timewheel blog";
+export const alt = "Rajmudra blog";
 
 export default async function OgImage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const post = await getPost(slug);
-  const title = post?.meta.title ?? "Timewheel Blog";
+  const title = post?.meta.title ?? "Rajmudra Blog";
   const category = post?.meta.category ?? "Blog";
 
   return new ImageResponse(

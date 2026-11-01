@@ -59,7 +59,7 @@ export default async function MembersDashboard({ searchParams }: { searchParams:
             {greeting()}, {m.firstName}
           </h1>
           <p className="mt-2 text-[15px] text-muted-foreground">
-            {sp.welcome ? "Your Timewheel account is ready. Here's how to get the most out of it." : "Here's what's new in your member area."}
+            {sp.welcome ? "Your Rajmudra account is ready. Here's how to get the most out of it." : "Here's what's new in your member area."}
           </p>
         </header>
 

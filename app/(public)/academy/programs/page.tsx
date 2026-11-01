@@ -11,9 +11,9 @@ import { launchPrograms, programPath, programs, upcomingPrograms } from "@/lib/a
 import { breadcrumbLd, itemListLd, organizationLd, webPageLd } from "@/lib/jsonld";
 import { social } from "@/lib/metadata";
 
-const TITLE = "Digital Marketing Programs for Students | Timewheel Academy";
+const TITLE = "Digital Marketing Programs for Students | Rajmudra Academy";
 const DESC =
-  "Compare Timewheel Academy programs in SEO, content and social media marketing, AI for digital marketing, performance marketing and analytics: modules, duration, level, certificates and internships.";
+  "Compare Rajmudra Academy programs in SEO, content and social media marketing, AI for digital marketing, performance marketing and analytics: modules, duration, level, certificates and internships.";
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
@@ -33,7 +33,7 @@ const jsonLd = {
     organizationLd(),
     webPageLd({
       type: "CollectionPage",
-      name: "Timewheel Academy programs",
+      name: "Rajmudra Academy programs",
       path: "/academy/programs",
       description: DESC,
       mainEntity: itemListLd(programs.map((p) => ({ name: p.title, path: programPath(p) }))),
@@ -61,8 +61,8 @@ export default function ProgramsPage() {
         intro={
           <p>
             Each program is a structured path of modules, and every module ends in a piece of work for your
-            portfolio. Every program includes a Timewheel certificate, help with Google, Meta, HubSpot and LinkedIn
-            certifications, and internships at Timewheel and our sister companies. SEO, Content and Social Media, and
+            portfolio. Every program includes a Rajmudra certificate, help with Google, Meta, HubSpot and LinkedIn
+            certifications, and internships at Rajmudra and our sister companies. SEO, Content and Social Media, and
             AI for Digital Marketing come first. None is open for enrollment yet; registering interest gets you
             cohort details before you decide.
           </p>

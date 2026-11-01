@@ -10,7 +10,7 @@ import { Reveal } from "@/components/reveal";
 
 const TITLE = "Case Studies: Websites, Apps and Growth Work";
 const DESC =
-  "How Timewheel designs, builds and ships digital products, booking platforms, dashboards, automation and more, with the challenges and decisions behind each one.";
+  "How Rajmudra designs, builds and ships digital products, booking platforms, dashboards, automation and more, with the challenges and decisions behind each one.";
 
 const baseMetadata: Metadata = {
   title: TITLE,
@@ -64,7 +64,7 @@ export default async function CaseStudiesPage({ searchParams }: Props) {
           "@context": "https://schema.org",
           ...webPageLd({
             type: "CollectionPage",
-            name: "Timewheel Case Studies",
+            name: "Rajmudra Case Studies",
             path: "/case-studies",
             mainEntity: itemListLd(
               caseStudies.map((c) => ({ name: c.name, path: `/case-studies/${c.slug}` })),
@@ -82,7 +82,7 @@ export default async function CaseStudiesPage({ searchParams }: Props) {
           </h1>
           <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
             The challenges, decisions and results behind real builds by
-            Timewheel.
+            Rajmudra.
           </p>
         </Reveal>
 

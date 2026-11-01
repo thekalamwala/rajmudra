@@ -9,11 +9,11 @@ import "server-only";
 // Supabase (signInWithIdToken). Same Supabase user, same session cookies.
 //
 // Env (server only):
-//   GOOGLE_CLIENT_ID      the "Timewheel" OAuth client (same one Supabase's Google provider uses)
+//   GOOGLE_CLIENT_ID      the "Rajmudra" OAuth client (same one Supabase's Google provider uses)
 //   GOOGLE_CLIENT_SECRET  its secret
 // Unset -> falls back to Supabase's hosted Google flow.
 //
-// Google Cloud > Clients > Timewheel > Authorized redirect URIs must include
+// Google Cloud > Clients > Rajmudra > Authorized redirect URIs must include
 //   https://timewheel.co.in/auth/google/callback  (and http://localhost:3000/auth/google/callback)
 
 export const GOOGLE_STATE_COOKIE = "tw_google_oauth";

@@ -12,9 +12,9 @@ import { NO_PROMISES } from "@/lib/academy";
 import { breadcrumbLd, organizationLd, webPageLd } from "@/lib/jsonld";
 import { social } from "@/lib/metadata";
 
-const TITLE = "About the Academy: Mission and Teaching Approach | Timewheel Academy";
+const TITLE = "About the Academy: Mission and Teaching Approach | Rajmudra Academy";
 const DESC =
-  "Why Timewheel started a digital marketing academy for students, how it teaches (Learn, Execute, Measure, Prove), its certificates and internships, and what it won't promise.";
+  "Why Rajmudra started a digital marketing academy for students, how it teaches (Learn, Execute, Measure, Prove), its certificates and internships, and what it won't promise.";
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
@@ -32,7 +32,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     organizationLd(),
-    webPageLd({ type: "AboutPage", name: "About Timewheel Digital Marketing Academy", path: "/academy/about", description: DESC }),
+    webPageLd({ type: "AboutPage", name: "About Rajmudra Digital Marketing Academy", path: "/academy/about", description: DESC }),
     breadcrumbLd([{ name: "Home", path: "/" }, ...TRAIL]),
   ],
 };
@@ -77,7 +77,7 @@ export default function AcademyAboutPage() {
         title="Built by people who do the work."
         intro={
           <p>
-            Timewheel Digital Marketing Academy is a learning initiative by Timewheel Studios, a
+            Rajmudra Digital Marketing Academy is a learning initiative by Rajmudra Media, a
             digital marketing and web studio in Nagpur. Our mission: help students learn marketing by doing it, and
             leave with work that proves it.
           </p>
@@ -166,7 +166,7 @@ export default function AcademyAboutPage() {
         <Reveal className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div className="max-w-2xl">
             <p className="text-xs font-bold uppercase tracking-[0.22em] text-brand-text">Who runs it</p>
-            <h2 className="mt-5 font-black tracking-tight">Timewheel Studios</h2>
+            <h2 className="mt-5 font-black tracking-tight">Rajmudra Media</h2>
             <p className="mt-4 leading-relaxed text-muted-foreground">
               A Nagpur studio building websites and running SEO, social media and digital marketing for
               businesses. The Academy is taught from that day-to-day practice.
@@ -174,7 +174,7 @@ export default function AcademyAboutPage() {
           </div>
           <div className="flex flex-wrap gap-x-6 gap-y-3 text-sm font-semibold">
             <Link href="/about" className="inline-flex items-center gap-1.5 hover:text-brand-text">
-              About Timewheel
+              About Rajmudra
               <ArrowUpRight aria-hidden className="size-4" />
             </Link>
             <Link href="/case-studies" className="inline-flex items-center gap-1.5 hover:text-brand-text">

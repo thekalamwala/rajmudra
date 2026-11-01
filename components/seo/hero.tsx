@@ -116,7 +116,7 @@ function ImagePanel() {
     <div className="relative overflow-hidden rounded-2xl border border-border bg-card">
       <Image
         src="/hero/seo.png"
-        alt="Preview of the Timewheel SEO audit"
+        alt="Preview of the Rajmudra SEO audit"
         width={1536}
         height={1024}
         preload

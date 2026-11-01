@@ -21,14 +21,14 @@ export function AcademyHero() {
       <div className="mx-auto grid max-w-6xl gap-12 px-6 pb-20 pt-14 md:pb-28 md:pt-20 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-16">
         <Reveal>
           <p className="text-xs font-bold uppercase tracking-[0.22em] text-brand-text">
-            Timewheel Digital Marketing Academy
+            Rajmudra Digital Marketing Academy
           </p>
           <RevealHeading as="h1" className="mt-5 max-w-xl font-black tracking-tight">
             Learn Digital Marketing by Doing Real Work.
           </RevealHeading>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
             Build practical marketing skills, solve real business problems, and develop a portfolio that
-            demonstrates what you can do. Start learning with Timewheel Digital Marketing Academy.
+            demonstrates what you can do. Start learning with Rajmudra Digital Marketing Academy.
           </p>
           <div className="mt-8 flex flex-col gap-3 [&>*]:w-full [&>*]:justify-center sm:flex-row sm:flex-wrap sm:[&>*]:w-auto">
             <Link
@@ -47,8 +47,8 @@ export function AcademyHero() {
             </InPageAnchor>
           </div>
           <p className="mt-8 max-w-xl text-sm text-muted-foreground">
-            For college students, fresh graduates and beginners. Includes a Timewheel certificate, help with
-            Google, Meta, HubSpot and LinkedIn certifications, and internships. An initiative by Timewheel Studios, a digital marketing and web studio in Nagpur.
+            For college students, fresh graduates and beginners. Includes a Rajmudra certificate, help with
+            Google, Meta, HubSpot and LinkedIn certifications, and internships. An initiative by Rajmudra Media, a digital marketing and web studio in Nagpur.
           </p>
         </Reveal>
 

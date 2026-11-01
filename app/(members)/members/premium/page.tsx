@@ -61,7 +61,7 @@ export default async function PremiumPage() {
       ) : (
         <section className="grid gap-6 rounded-lg border border-brand/30 bg-brand/[0.05] p-6 sm:p-8 md:grid-cols-[minmax(0,1fr)_260px] md:items-center">
           <div>
-            <p className="text-xs font-bold uppercase tracking-[0.2em] text-brand-text">{m.isAdmin ? "Team access" : "Timewheel Premium"}</p>
+            <p className="text-xs font-bold uppercase tracking-[0.2em] text-brand-text">{m.isAdmin ? "Team access" : "Rajmudra Premium"}</p>
             <p className="mt-2 font-heading text-3xl font-extrabold tracking-tight">
               {offer.price ? (
                 <>
@@ -85,7 +85,7 @@ export default async function PremiumPage() {
                 <PremiumCheckout price={offer.price} period={offer.period} name={m.name} email={m.email} />
               ) : (
                 <a
-                  href={`mailto:${site.contact.email}?subject=${encodeURIComponent("Timewheel Premium membership")}`}
+                  href={`mailto:${site.contact.email}?subject=${encodeURIComponent("Rajmudra Premium membership")}`}
                   className="btn btn-primary inline-flex rounded-lg px-5 py-3 text-sm font-semibold text-brand-foreground"
                 >
                   Ask us about Premium

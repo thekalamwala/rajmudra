@@ -19,7 +19,7 @@ const DESC =
   "I'm building 30 websites in 30 days. Pay what you want, even ₹0. Fill the form, name your price, and get a real website of your own.";
 
 export const metadata: Metadata = {
-  title: { absolute: `${TITLE}, Timewheel` },
+  title: { absolute: `${TITLE}, Rajmudra` },
   description: DESC,
   ...social({ path: "/30-days-30-websites", title: TITLE, description: DESC }),
   alternates: { canonical: "/30-days-30-websites" },

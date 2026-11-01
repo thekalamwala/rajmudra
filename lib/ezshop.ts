@@ -12,7 +12,7 @@ export const ez = {
       "EZShop is an online store builder for Indian D2C brands and local shops: UPI, cards and COD via Razorpay, GST invoices, WhatsApp updates, zero order commission.",
   },
   hero: {
-    kicker: "Live now · EZShop by Timewheel",
+    kicker: "Live now · EZShop by Rajmudra",
     title: "Online store builder for D2C brands and local shops in India",
     // Answer-first definition, the block AI answers quote. Keep it under 60 words.
     definition:
@@ -208,7 +208,7 @@ export const ez = {
     number: "06",
     label: "HOW TO GO LIVE",
     title: "How do I take my shop online with EZShop?",
-    body: "Four steps from a call to your first paid order. Timewheel can do the setup for you.",
+    body: "Four steps from a call to your first paid order. Rajmudra can do the setup for you.",
     steps: [
       {
         name: "Book a demo",
@@ -229,7 +229,7 @@ export const ez = {
     ],
   },
   related: {
-    title: "Related from Timewheel",
+    title: "Related from Rajmudra",
     links: [
       { label: "Shopify development company in Nagpur", href: "/shopify-development-company-in-nagpur" },
       { label: "Website design for local businesses", href: "/website-design-company-in-nagpur" },
@@ -243,11 +243,11 @@ export const ez = {
     items: [
       {
         q: "What is EZShop?",
-        a: "EZShop is an online store builder from Timewheel for Indian D2C brands and local shops. It gives you your own branded store with Razorpay payments (UPI, cards, net banking), Cash on Delivery, GST invoices, Shiprocket shipping and WhatsApp order updates, running on your own domain and accounts.",
+        a: "EZShop is an online store builder from Rajmudra for Indian D2C brands and local shops. It gives you your own branded store with Razorpay payments (UPI, cards, net banking), Cash on Delivery, GST invoices, Shiprocket shipping and WhatsApp order updates, running on your own domain and accounts.",
       },
       {
         q: "How do I take my local shop online in India?",
-        a: "Pick a store builder that supports UPI and Cash on Delivery, add your products with photos and prices, set your delivery charges and the PIN codes you serve, add policy pages, and connect a payment gateway such as Razorpay. With EZShop, Timewheel can set all of this up for you.",
+        a: "Pick a store builder that supports UPI and Cash on Delivery, add your products with photos and prices, set your delivery charges and the PIN codes you serve, add policy pages, and connect a payment gateway such as Razorpay. With EZShop, Rajmudra can set all of this up for you.",
       },
       {
         q: "Is EZShop a Shopify alternative for Indian brands?",
@@ -255,7 +255,7 @@ export const ez = {
       },
       {
         q: "Is EZShop live?",
-        a: "Yes. EZShop is live: Razorpay payments, email and WhatsApp order updates are tested end to end on live accounts. Book a demo and Timewheel will set up your store.",
+        a: "Yes. EZShop is live: Razorpay payments, email and WhatsApp order updates are tested end to end on live accounts. Book a demo and Rajmudra will set up your store.",
       },
       {
         q: "Does EZShop support UPI, cards and Cash on Delivery?",
@@ -283,7 +283,7 @@ export const ez = {
       },
       {
         q: "How much does EZShop cost?",
-        a: "Pricing depends on your store and how much setup you want Timewheel to do, so we quote it after a short call. Book a demo and we will share the cost along with what your provider accounts will cost.",
+        a: "Pricing depends on your store and how much setup you want Rajmudra to do, so we quote it after a short call. Book a demo and we will share the cost along with what your provider accounts will cost.",
       },
     ],
   },

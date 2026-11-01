@@ -15,7 +15,7 @@ export function SmmIntro() {
             </RevealHeading>
             <p className="mt-5 text-muted-foreground md:text-lg">{smm.intro.body}</p>
             <p className="mt-5 text-sm text-muted-foreground">
-              That&apos;s the gap Timewheel closes, with a working system, not a
+              That&apos;s the gap Rajmudra closes, with a working system, not a
               content calendar full of guesses.
             </p>
           </Reveal>

@@ -9,7 +9,7 @@ import { membersConfigured } from "@/lib/supabase/server";
 
 export const metadata: Metadata = {
   title: "Log in",
-  description: "Log in to your Timewheel account for free downloads, the Premium library and the member community.",
+  description: "Log in to your Rajmudra account for free downloads, the Premium library and the member community.",
   alternates: { canonical: "/login" },
 };
 
@@ -25,7 +25,7 @@ export default async function LoginPage({ searchParams }: { searchParams: Promis
       intro="Welcome back. Pick up where you left off."
       footer={
         <>
-          New to Timewheel?{" "}
+          New to Rajmudra?{" "}
           <Link href={registerHref} className="font-semibold text-brand-text hover:underline">
             Create a free account
           </Link>

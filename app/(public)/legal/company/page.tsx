@@ -3,9 +3,9 @@ import { social } from "@/lib/metadata";
 import { site } from "@/lib/site";
 import { SELLER } from "@/lib/admin/invoice-calc";
 
-const TITLE = "GST and Company Details | Timewheel";
+const TITLE = "GST and Company Details | Rajmudra";
 const DESC =
-  "Company details for Timewheel Studios: legal name, CIN, GSTIN, PAN, registered state and billing contact for invoices and vendor forms.";
+  "Company details for Rajmudra Media: legal name, CIN, GSTIN, PAN, registered state and billing contact for invoices and vendor forms.";
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
@@ -19,8 +19,8 @@ export const metadata: Metadata = {
 export default function CompanyPage() {
   const c = site.contact;
   const rows: [string, string][] = [
-    ["Legal name", "Timewheel Studios"],
-    ["Brand name", "Timewheel"],
+    ["Legal name", "Rajmudra Media"],
+    ["Brand name", "Rajmudra"],
     ["CIN", process.env.COMPANY_CIN || SELLER.cin],
     ["GSTIN", process.env.INVOICE_GSTIN || SELLER.gstin],
     ["PAN", process.env.INVOICE_PAN || SELLER.pan],

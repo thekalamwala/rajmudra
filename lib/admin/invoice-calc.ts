@@ -41,7 +41,7 @@ export type Invoice = {
  * business. Bank/UPI come from env; GSTIN/PAN/CIN fall back to the public
  * registration numbers. */
 export const SELLER = {
-  name: "Timewheel Studios",
+  name: "Rajmudra Media",
   registeredOffice: "Jajpur Road, Jajpur, Odisha 755019",
   address: "Eureka Coworking, Mate Square, Pratap Nagar, Nagpur, Maharashtra 440022",
   state: "Odisha",
@@ -49,7 +49,7 @@ export const SELLER = {
   gstin: "21AAMCT8270C1ZF",
   pan: "AAMCT8270C",
   cin: "U62012OD2026PTC052654",
-  email: "team@timewheel.co.in",
+  email: "namaskar@rajmudramedia.com",
   phone: "+91 79041 09359",
   website: "timewheel.co.in",
 };

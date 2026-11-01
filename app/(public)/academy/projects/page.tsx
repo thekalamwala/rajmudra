@@ -11,9 +11,9 @@ import { getProgram, programPath, SAMPLE_PROJECT_NOTE, sampleProjects } from "@/
 import { breadcrumbLd, organizationLd, webPageLd } from "@/lib/jsonld";
 import { social } from "@/lib/metadata";
 
-const TITLE = "Practical Digital Marketing Projects for Students | Timewheel Academy";
+const TITLE = "Practical Digital Marketing Projects for Students | Rajmudra Academy";
 const DESC =
-  "Sample SEO, content, AI and campaign analysis projects from Timewheel Academy: SEO audits, content clusters, a 30-day content calendar, landing-page plans and AI workflows.";
+  "Sample SEO, content, AI and campaign analysis projects from Rajmudra Academy: SEO audits, content clusters, a 30-day content calendar, landing-page plans and AI workflows.";
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },

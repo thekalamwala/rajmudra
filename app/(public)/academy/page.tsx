@@ -24,9 +24,9 @@ import {
 import { breadcrumbLd, itemListLd, organizationLd, webPageLd } from "@/lib/jsonld";
 import { social } from "@/lib/metadata";
 
-const TITLE = "Digital Marketing Academy for Students | Timewheel";
+const TITLE = "Digital Marketing Academy for Students | Rajmudra";
 const DESC =
-  "Learn SEO, content marketing, AI, and growth marketing through practical projects with Timewheel Digital Marketing Academy.";
+  "Learn SEO, content marketing, AI, and growth marketing through practical projects with Rajmudra Digital Marketing Academy.";
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
@@ -44,7 +44,7 @@ const jsonLd = {
     organizationLd(),
     webPageLd({
       type: "CollectionPage",
-      name: "Timewheel Digital Marketing Academy",
+      name: "Rajmudra Digital Marketing Academy",
       path: "/academy",
       description: DESC,
       mainEntity: itemListLd(programs.map((p) => ({ name: p.title, path: programPath(p) }))),

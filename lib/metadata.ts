@@ -11,14 +11,14 @@ import { site } from "@/lib/site";
 const card = (file: string, alt: string) => ({ url: `/og/${file}.png`, width: 1200, height: 630, alt });
 
 export const OG_CARDS = {
-  home: card("home", "Timewheel: growth systems for brands that want to scale"),
-  about: card("about", "About Timewheel: the team behind the work"),
-  blog: card("blog", "Timewheel blog: notes on SEO, ads, web and growth"),
-  caseStudy: card("case-study", "Timewheel case study: the brief, the build and the results"),
-  contact: card("contact", "Contact Timewheel: tell us what you're building"),
-  legal: card("legal", "Timewheel legal: policies, terms and the fine print"),
-  product: card("product", "Timewheel products: software built for how Indian businesses run"),
-  services: card("services", "Timewheel services: what we do, and how we do it"),
+  home: card("home", "Rajmudra: growth systems for brands that want to scale"),
+  about: card("about", "About Rajmudra: the team behind the work"),
+  blog: card("blog", "Rajmudra blog: notes on SEO, ads, web and growth"),
+  caseStudy: card("case-study", "Rajmudra case study: the brief, the build and the results"),
+  contact: card("contact", "Contact Rajmudra: tell us what you're building"),
+  legal: card("legal", "Rajmudra legal: policies, terms and the fine print"),
+  product: card("product", "Rajmudra products: software built for how Indian businesses run"),
+  services: card("services", "Rajmudra services: what we do, and how we do it"),
 };
 
 /** Default card for pages with no better match (and the root layout). */

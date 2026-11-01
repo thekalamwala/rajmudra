@@ -8,7 +8,7 @@ const members = [
   {
     name: "Shubham N Datarkar",
     role: "Founder",
-    line: "Founds and leads Timewheel. Ships the studio's own products and runs SEO, AI-search and growth work for clients across India.",
+    line: "Founds and leads Rajmudra. Ships the studio's own products and runs SEO, AI-search and growth work for clients across India.",
     img: "/team/shubham.png",
     accent: "#fe5100",
   },

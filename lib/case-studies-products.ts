@@ -1,4 +1,4 @@
-// Case studies for the Timewheel product ecosystem (lib/products.ts), kept in
+// Case studies for the Rajmudra product ecosystem (lib/products.ts), kept in
 // their own file so the ~10 entries stay reviewable next to the client work in
 // lib/case-studies.ts. Type-only import, so no runtime cycle.
 //
@@ -72,7 +72,7 @@ export const productCaseStudies: CaseStudy[] = [
         {
           eyebrow: "What's Shipped",
           title: "Built and run in production, live at NNAWCA.",
-          body: "Alluminaty is built from the platform Timewheel runs for the Nagpur Navodaya Alumni Welfare and Charitable Association (NNAWCA), the alumni body of Jawahar Navodaya Vidyalaya, Nagpur. Alumni there sign up by batch and house, get verified, and pay memberships online. Pricing is set per institution, so it is quoted after a short demo rather than listed here.",
+          body: "Alluminaty is built from the platform Rajmudra runs for the Nagpur Navodaya Alumni Welfare and Charitable Association (NNAWCA), the alumni body of Jawahar Navodaya Vidyalaya, Nagpur. Alumni there sign up by batch and house, get verified, and pay memberships online. Pricing is set per institution, so it is quoted after a short demo rather than listed here.",
         },
       ],
       closing: {
@@ -505,7 +505,7 @@ export const productCaseStudies: CaseStudy[] = [
     },
     quote: {
       text: "The hard part was never the products. It was making a retail subscriber, a horeca buyer and a walk-in customer all feel like the store was built for them.",
-      name: "Timewheel",
+      name: "Rajmudra",
       role: "Shopify development",
     },
     faq: [

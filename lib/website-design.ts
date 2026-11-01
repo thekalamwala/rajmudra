@@ -1,6 +1,6 @@
-// Content for /website-design, Timewheel's premium web design services page.
+// Content for /website-design, Rajmudra's premium web design services page.
 // Palette is page-scoped (blue/purple/orange/green/dark/soft). Numbers stay
-// true to shipped Timewheel products (lib/products.ts); no invented client stats.
+// true to shipped Rajmudra products (lib/products.ts); no invented client stats.
 
 export const palette = {
   blue: "#47143D",
@@ -28,7 +28,7 @@ export type WdPortfolioProject = {
 
 export const wd = {
   meta: {
-    title: "Top Web Design Company in Nagpur | Timewheel",
+    title: "Top Web Design Company in Nagpur | Rajmudra",
     description:
       "Website design company in Nagpur creating premium websites for startups and growing businesses, with strategy, UI design and clean development under one roof.",
   },
@@ -195,7 +195,7 @@ export const wd = {
   },
 
   why: {
-    label: "Why Timewheel",
+    label: "Why Rajmudra",
     title: "Not another template. Not another website.",
     body: "Plenty of studios can make a page. We make websites that carry your business, here's how we work.",
     reasons: [
@@ -269,7 +269,7 @@ export const wd = {
       },
       {
         q: "Do you design and develop the website?",
-        a: "Yes. Design and development live under one roof at Timewheel, strategy, UI design, copy placement and build. That means fewer handoffs, fewer misunderstandings, and a site that looks exactly like the design you approved.",
+        a: "Yes. Design and development live under one roof at Rajmudra, strategy, UI design, copy placement and build. That means fewer handoffs, fewer misunderstandings, and a site that looks exactly like the design you approved.",
       },
       {
         q: "Can you redesign an existing website?",

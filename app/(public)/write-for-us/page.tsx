@@ -3,9 +3,9 @@ import { ArrowRight, Check, X } from "lucide-react";
 import { social } from "@/lib/metadata";
 import { site } from "@/lib/site";
 
-const TITLE = "Write for Us, Guest Posts on the Timewheel Blog";
+const TITLE = "Write for Us, Guest Posts on the Rajmudra Blog";
 const DESC =
-  "Pitch a guest post to the Timewheel blog. We publish practical, original writing on SEO, websites, ads, social media and building products for Indian businesses.";
+  "Pitch a guest post to the Rajmudra blog. We publish practical, original writing on SEO, websites, ads, social media and building products for Indian businesses.";
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
@@ -46,7 +46,7 @@ export default function WriteForUsPage() {
         <p className="text-xs font-bold uppercase tracking-[0.22em] text-brand-text">Write for us</p>
         <h1 className="mt-4 text-4xl font-black tracking-tight md:text-6xl">Share what you&apos;ve learned</h1>
         <p className="mx-auto mt-5 max-w-xl text-lg leading-relaxed text-muted-foreground">
-          The Timewheel blog publishes practical writing for business owners and marketers. If you
+          The Rajmudra blog publishes practical writing for business owners and marketers. If you
           have done the work and can explain it clearly, we want to hear from you.
         </p>
         <a href={mail} className="btn btn-primary group mt-8 inline-flex items-center gap-2 rounded-lg px-6 py-3 font-semibold text-brand-foreground">

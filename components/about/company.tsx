@@ -46,7 +46,7 @@ export function AboutCompany() {
             <br className="hidden sm:block" /> growth team in one.
           </RevealHeading>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
-            TIMEWHEEL is a digital design and development studio based in
+            RAJMUDRA is a digital design and development studio based in
             Nagpur. We build websites, web apps and marketing systems for
             businesses across India and worldwide.
           </p>

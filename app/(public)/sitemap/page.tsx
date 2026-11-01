@@ -7,7 +7,7 @@ import { realCaseStudies } from "@/lib/services";
 import { programPath, programs } from "@/lib/academy";
 import { jobs } from "@/lib/jobs";
 
-const TITLE = "Sitemap | Timewheel";
+const TITLE = "Sitemap | Rajmudra";
 const DESC =
   "Every page on timewheel.co.in in one place: services, products, case studies, blog posts, Academy programs, careers, community and legal pages.";
 
@@ -36,7 +36,7 @@ export default async function SitemapPage() {
   return (
     <div className="mx-auto max-w-6xl px-6 py-24 md:py-32">
       <p className="text-xs font-bold uppercase tracking-[0.22em] text-brand-text">Sitemap</p>
-      <h1 className="mt-3 text-4xl font-black tracking-tight md:text-5xl">Everything on Timewheel</h1>
+      <h1 className="mt-3 text-4xl font-black tracking-tight md:text-5xl">Everything on Rajmudra</h1>
       <p className="mt-4 max-w-xl text-muted-foreground">
         Every page on the site, grouped. Looking for the search engine version? It lives at{" "}
         <a href="/sitemap.xml" className="text-brand hover:underline">/sitemap.xml</a>.

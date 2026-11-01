@@ -8,7 +8,7 @@ export function PostCta() {
     <section className="mt-14 grid gap-6 rounded-3xl border border-border bg-secondary/50 p-8 md:grid-cols-2 md:p-10">
       <div>
         <p className="inline-flex items-center gap-2 rounded-full border border-brand/20 bg-brand/5 px-3 py-1 text-xs font-bold uppercase tracking-wide text-brand">
-          <Sparkles className="size-3.5" /> Work with Timewheel
+          <Sparkles className="size-3.5" /> Work with Rajmudra
         </p>
         <h2 className="mt-4 text-2xl font-extrabold tracking-tight">Want this done for you?</h2>
         <p className="mt-3 text-sm text-muted-foreground md:text-base">

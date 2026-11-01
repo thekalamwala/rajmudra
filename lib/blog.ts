@@ -74,7 +74,7 @@ const LIST_COLUMNS =
 const ACCENT = "#fe5100";
 
 function toAuthor(row: AuthorRow): Author {
-  const name = row?.name || "Timewheel";
+  const name = row?.name || "Rajmudra";
   return {
     name,
     role: row?.title || "Author",
@@ -118,7 +118,7 @@ function toMeta(r: ListRow): PostMeta {
     excerpt: r.excerpt || r.meta_description,
     date: r.published_at,
     updated: r.updated_at,
-    author: author?.name || "Timewheel",
+    author: author?.name || "Rajmudra",
     category: r.category || "Blog",
     tags: r.tags ?? [],
     ogTitle: r.og_title || undefined,

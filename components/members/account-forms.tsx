@@ -69,7 +69,7 @@ export function EmailPrefsForm({ replies, announcements }: { replies: boolean; a
         <input type="checkbox" name="announcements" defaultChecked={announcements} className="mt-0.5 size-4 accent-[var(--brand)]" />
         <span>
           <span className="block text-sm font-semibold">Announcements and new resources</span>
-          <span className="block text-xs text-muted-foreground">Occasional emails from the Timewheel team about new downloads, courses and events.</span>
+          <span className="block text-xs text-muted-foreground">Occasional emails from the Rajmudra team about new downloads, courses and events.</span>
         </span>
       </label>
       <SubmitButton variant="outline" pendingText="Saving...">

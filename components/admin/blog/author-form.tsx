@@ -83,7 +83,7 @@ export function AuthorForm({ author, onDone }: { author: BlogAuthor | null; onDo
         </div>
         <div>
           <label htmlFor={`title-${id}`} className={field.label}>Role or title</label>
-          <input id={`title-${id}`} name="title" maxLength={160} defaultValue={author?.title ?? ""} placeholder="e.g. Founder, Timewheel" className={field.input} />
+          <input id={`title-${id}`} name="title" maxLength={160} defaultValue={author?.title ?? ""} placeholder="e.g. Founder, Rajmudra" className={field.input} />
         </div>
       </div>
       <div>

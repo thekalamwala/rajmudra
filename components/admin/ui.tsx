@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 
 // Console primitives, after The Parliament's admin-ui.tsx: gray-50 page,
 // white panels with hairline borders, 3 to 5px radii, 11px uppercase micro
-// labels, compact tables. Primary actions use Timewheel orange.
+// labels, compact tables. Primary actions use Rajmudra orange.
 
 export const btn = {
   primary: "inline-flex h-9 items-center gap-1.5 rounded-[3px] bg-[#F45B0A] px-4 text-sm font-medium text-white transition-colors hover:bg-[#D94E06] disabled:opacity-60",

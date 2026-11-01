@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { social } from "@/lib/metadata";
 
-const TITLE = "Cookie Policy, How Timewheel Uses Cookies";
+const TITLE = "Cookie Policy, How Rajmudra Uses Cookies";
 const DESC =
-  "Learn which cookies Timewheel uses on timewheel.co.in, why we use them for analytics and ads, and how to accept, decline or change your cookie preferences.";
+  "Learn which cookies Rajmudra uses on timewheel.co.in, why we use them for analytics and ads, and how to accept, decline or change your cookie preferences.";
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
@@ -232,10 +232,10 @@ export default function CookiesPage() {
         <p>
           If you have questions about our use of cookies, please contact us at{" "}
           <a
-            href="mailto:team@timewheel.co.in"
+            href="mailto:namaskar@rajmudramedia.com"
             className="text-brand hover:underline"
           >
-            team@timewheel.co.in
+            namaskar@rajmudramedia.com
           </a>
           .
         </p>

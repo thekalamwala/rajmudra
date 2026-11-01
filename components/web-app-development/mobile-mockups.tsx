@@ -15,7 +15,7 @@ import {
   Wifi,
 } from "lucide-react";
 
-// Illustrative mobile UI for the same fictional TIMEWHEEL app shown in the
+// Illustrative mobile UI for the same fictional RAJMUDRA app shown in the
 // desktop mockup. Fixed-width frames so the three screens read as a phone stack.
 
 const avatars = [

@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const program = getProgram(slug);
   if (!program) return {};
 
-  const title = `${program.title} Program for Students | Timewheel Academy`;
+  const title = `${program.title} Program for Students | Rajmudra Academy`;
   const description = `${program.summary} ${program.level}, ${program.duration.toLowerCase()}. Certificate and internships included. ${STATUS_META[program.status].label}.`;
   return {
     title: { absolute: title },

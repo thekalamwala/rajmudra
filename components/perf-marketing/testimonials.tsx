@@ -8,7 +8,7 @@ import { RevealHeading } from "@/components/anim/reveal-heading";
 const pmTestimonials = [
   {
     quote:
-      "Within six months our website was ranking on page one for the keywords that matter in Nagpur. Enquiries from Google have more than doubled, and Timewheel kept the reporting clear the whole way.",
+      "Within six months our website was ranking on page one for the keywords that matter in Nagpur. Enquiries from Google have more than doubled, and Rajmudra kept the reporting clear the whole way.",
   },
   {
     quote:
@@ -24,7 +24,7 @@ const pmTestimonials = [
   },
   {
     quote:
-      "Everything is transparent. The monthly report shows rankings, leads, and conversions in plain language. That trust is why we keep working with Timewheel.",
+      "Everything is transparent. The monthly report shows rankings, leads, and conversions in plain language. That trust is why we keep working with Rajmudra.",
   },
 ];
 

@@ -24,13 +24,13 @@ function Seam() {
 }
 
 const description =
-  "Timewheel is a Nagpur design and development partner helping ambitious businesses build clear, modern websites and digital experiences that grow.";
+  "Rajmudra is a Nagpur design and development partner helping ambitious businesses build clear, modern websites and digital experiences that grow.";
 
 export const metadata: Metadata = {
   title: "About, Digital Design & Development",
   description,
   alternates: { canonical: `${site.url}/about` },
-  ...social({ path: "/about", title: "About Timewheel, Digital Design & Development", description }),
+  ...social({ path: "/about", title: "About Rajmudra, Digital Design & Development", description }),
 };
 
 const aboutLd = {

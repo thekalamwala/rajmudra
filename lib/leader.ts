@@ -6,12 +6,12 @@
 export const leader = {
   path: "/products/leader",
   meta: {
-    title: "Leader: Build Contact-Ready Lead Lists From Google Maps | Timewheel",
+    title: "Leader: Build Contact-Ready Lead Lists From Google Maps | Rajmudra",
     description:
-      "Leader sweeps a city by area and category on Google Maps, dedupes to one row per business, flags who is missing an email or website, grades every lead and exports CSV, JSON or XLSX. Runs on your own machine, built by Timewheel.",
+      "Leader sweeps a city by area and category on Google Maps, dedupes to one row per business, flags who is missing an email or website, grades every lead and exports CSV, JSON or XLSX. Runs on your own machine, built by Rajmudra.",
   },
   hero: {
-    eyebrow: "Leader, by Timewheel",
+    eyebrow: "Leader, by Rajmudra",
     title: "Turn a city and a category into a",
     titleAccent: "contact-ready lead list.",
     answer:
@@ -92,7 +92,7 @@ export const leader = {
       "found_count popularity signal",
       "Multi-branch detection",
       "Semrush backlink enrichment",
-      "Timewheel digital-gap track",
+      "Rajmudra digital-gap track",
       "Resumable jobs",
       "Local SQLite storage",
       "No accounts or API keys",
@@ -198,7 +198,7 @@ export const leader = {
     items: [
       {
         q: "What is Leader?",
-        a: "Leader is a local web app for building contact-ready lead lists, built by Timewheel. It sweeps a city on Google Maps across every area and search term you give it, dedupes the results to one row per business, flags missing contact details, scores and grades each lead, and exports CSV, JSON or XLSX.",
+        a: "Leader is a local web app for building contact-ready lead lists, built by Rajmudra. It sweeps a city on Google Maps across every area and search term you give it, dedupes the results to one row per business, flags missing contact details, scores and grades each lead, and exports CSV, JSON or XLSX.",
       },
       {
         q: "Who is Leader for?",

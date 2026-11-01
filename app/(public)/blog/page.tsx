@@ -7,7 +7,7 @@ import { BlogListing } from "@/components/blog/blog-listing";
 
 const TITLE = "Digital Marketing, SEO and AI Search Blog";
 const DESC =
-  "Practical guides on digital marketing, SEO, AI search and building without platform lock-in, written by the Timewheel team for growing businesses.";
+  "Practical guides on digital marketing, SEO, AI search and building without platform lock-in, written by the Rajmudra team for growing businesses.";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -33,7 +33,7 @@ export default async function BlogPage() {
       />
       <div className="mx-auto max-w-5xl px-6 py-20 md:py-28">
         <p className="text-sm font-semibold uppercase tracking-wide text-brand-text">Resources</p>
-        <h1 className="mt-3 text-4xl font-black tracking-tight md:text-5xl">The Timewheel blog</h1>
+        <h1 className="mt-3 text-4xl font-black tracking-tight md:text-5xl">The Rajmudra blog</h1>
         <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
           Guides on digital marketing, SEO, AI search and building on systems you own.
         </p>

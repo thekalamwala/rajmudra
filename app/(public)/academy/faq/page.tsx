@@ -10,9 +10,9 @@ import { breadcrumbLd, faqLd, organizationLd, webPageLd } from "@/lib/jsonld";
 import { social } from "@/lib/metadata";
 import { site } from "@/lib/site";
 
-const TITLE = "Academy FAQ: Fees, Format and Enrollment | Timewheel Academy";
+const TITLE = "Academy FAQ: Fees, Format and Enrollment | Rajmudra Academy";
 const DESC =
-  "Answers about Timewheel Digital Marketing Academy: who it's for, enrollment status, fees, format, projects, certificates, Google, Meta, HubSpot and LinkedIn certifications, internships and how your details are used.";
+  "Answers about Rajmudra Digital Marketing Academy: who it's for, enrollment status, fees, format, projects, certificates, Google, Meta, HubSpot and LinkedIn certifications, internships and how your details are used.";
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
@@ -31,7 +31,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     organizationLd(),
-    webPageLd({ name: "Timewheel Academy FAQ", path: "/academy/faq", description: DESC }),
+    webPageLd({ name: "Rajmudra Academy FAQ", path: "/academy/faq", description: DESC }),
     breadcrumbLd([{ name: "Home", path: "/" }, ...TRAIL]),
     faqLd(academyFaqs),
   ],
@@ -59,7 +59,7 @@ export default function AcademyFaqPage() {
           </p>
           <div className="mt-5 flex flex-col gap-3 [&>*]:w-full [&>*]:justify-center sm:flex-row sm:flex-wrap sm:[&>*]:w-auto">
             <a
-              href={`mailto:${site.contact.email}?subject=${encodeURIComponent("Timewheel Academy question")}`}
+              href={`mailto:${site.contact.email}?subject=${encodeURIComponent("Rajmudra Academy question")}`}
               className="btn btn-primary inline-flex items-center gap-2 rounded-lg px-5 py-2.5 text-sm font-semibold"
             >
               <Mail aria-hidden className="size-4" />

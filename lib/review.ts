@@ -1,9 +1,9 @@
 import { REVIEW_SAMPLES } from "@/lib/review-samples";
 
 // /review: a customer picks the service they used and gets a sample review
-// to edit, copy and paste into Timewheel's Google review form.
+// to edit, copy and paste into Rajmudra's Google review form.
 
-export const BRAND = "Timewheel";
+export const BRAND = "Rajmudra";
 
 // Google Business "write a review" link. Set NEXT_PUBLIC_GOOGLE_REVIEW_URL to the
 // real deep link (Google Business Profile -> Ask for reviews -> copy the short
@@ -12,7 +12,7 @@ export const BRAND = "Timewheel";
 // goes somewhere sensible in dev.
 export const GOOGLE_REVIEW_URL =
   process.env.NEXT_PUBLIC_GOOGLE_REVIEW_URL ||
-  "https://www.google.com/search?q=Timewheel+reviews";
+  "https://www.google.com/search?q=Rajmudra+reviews";
 
 // ── Two-step flow: pick a service, copy a sample review ─────────────────────
 // 30 samples per service live in lib/review-samples. Each is copied at most

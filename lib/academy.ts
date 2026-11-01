@@ -1,4 +1,4 @@
-// Timewheel Digital Marketing Academy. Single source of truth: every Academy
+// Rajmudra Digital Marketing Academy. Single source of truth: every Academy
 // page, the interest form's program list, the API's slug check, the sitemap and
 // the JSON-LD read from here, so a program is only ever edited in one place.
 // To add or change a program, edit `programs` below; the pages follow.
@@ -612,11 +612,11 @@ export const OUTCOMES = [
   },
   {
     title: "Preparation for entry-level and freelance work",
-    text: "The vocabulary, habits and work samples that entry-level marketing roles and first freelance projects ask for, plus internships at Timewheel and our sister companies.",
+    text: "The vocabulary, habits and work samples that entry-level marketing roles and first freelance projects ask for, plus internships at Rajmudra and our sister companies.",
   },
   {
     title: "Certificates to show for it",
-    text: "A Timewheel certificate, and help completing online certifications from Google, Meta, HubSpot and LinkedIn.",
+    text: "A Rajmudra certificate, and help completing online certifications from Google, Meta, HubSpot and LinkedIn.",
   },
 ] as const;
 
@@ -624,16 +624,16 @@ export const NO_PROMISES =
   "We do not guarantee jobs, income or search rankings. Nobody honestly can. What we can do is help you build skills, evidence of them, and a first step into the work through our internships.";
 
 // ── Certificates and internships ─────────────────────────────────────────────
-// Real offerings (confirmed by Timewheel, 2026-10-10). Online certifications are
+// Real offerings (confirmed by Rajmudra, 2026-10-10). Online certifications are
 // issued by the platforms themselves; we help students prepare and complete them.
 
-export const CERTIFICATE_LINE = "Timewheel Digital Marketing Academy certificate on completion";
+export const CERTIFICATE_LINE = "Rajmudra Digital Marketing Academy certificate on completion";
 
 export const CAREER_SUPPORT = [
   {
     key: "certificate",
-    title: "A Timewheel certificate",
-    text: "Complete your program and receive a Timewheel Digital Marketing Academy certificate, backed by the portfolio work that shows what you learned.",
+    title: "A Rajmudra certificate",
+    text: "Complete your program and receive a Rajmudra Digital Marketing Academy certificate, backed by the portfolio work that shows what you learned.",
   },
   {
     key: "online",
@@ -643,7 +643,7 @@ export const CAREER_SUPPORT = [
   {
     key: "internships",
     title: "Internships",
-    text: "Internships in-house at Timewheel and at our sister companies, so you can put what you learned to work with a working team.",
+    text: "Internships in-house at Rajmudra and at our sister companies, so you can put what you learned to work with a working team.",
   },
 ] as const;
 
@@ -664,7 +664,7 @@ export type SampleProject = {
 };
 
 export const SAMPLE_PROJECT_NOTE =
-  "These are sample exercises. The businesses in them are fictional, or are public websites you choose to study. None of this is client work for Timewheel or for the businesses named. Real client work happens in our internships.";
+  "These are sample exercises. The businesses in them are fictional, or are public websites you choose to study. None of this is client work for Rajmudra or for the businesses named. Real client work happens in our internships.";
 
 export const sampleProjects: SampleProject[] = [
   {
@@ -745,7 +745,7 @@ export const sampleProjects: SampleProject[] = [
 
 export const academyFaqs: Faq[] = [
   {
-    q: "Who is the Timewheel Digital Marketing Academy for?",
+    q: "Who is the Rajmudra Digital Marketing Academy for?",
     a: "College students, fresh graduates and beginners who want to become digital marketers, especially in SEO, content, AI-assisted marketing and growth. No marketing background is needed for the launch programs.",
   },
   {
@@ -762,23 +762,23 @@ export const academyFaqs: Faq[] = [
   },
   {
     q: "Is it online or in person?",
-    a: "The first cohort is being planned as online so students can join from anywhere. Timewheel is based in Nagpur; if we add in-person sessions, the program page will say so.",
+    a: "The first cohort is being planned as online so students can join from anywhere. Rajmudra is based in Nagpur; if we add in-person sessions, the program page will say so.",
   },
   {
     q: "Will I work on real client projects?",
-    a: "Not in the program assignments. They use sample briefs for fictional businesses, practice websites, or public websites you choose to study, and are clearly labelled as exercises. Real work happens in our internships, in-house at Timewheel and at our sister companies.",
+    a: "Not in the program assignments. They use sample briefs for fictional businesses, practice websites, or public websites you choose to study, and are clearly labelled as exercises. Real work happens in our internships, in-house at Rajmudra and at our sister companies.",
   },
   {
     q: "Do you offer internships?",
-    a: "Yes. We offer internships in-house at Timewheel and at our sister companies. They are a chance to put what you learned to work with a working team, on top of the portfolio you build in the program.",
+    a: "Yes. We offer internships in-house at Rajmudra and at our sister companies. They are a chance to put what you learned to work with a working team, on top of the portfolio you build in the program.",
   },
   {
     q: "Will the Academy get me a job?",
-    a: "We do not guarantee jobs or income. The programs are designed to help you build real skills, a portfolio that shows them and internship experience, which is what entry-level roles and freelance clients tend to ask for. Open roles at Timewheel are always listed on our careers page.",
+    a: "We do not guarantee jobs or income. The programs are designed to help you build real skills, a portfolio that shows them and internship experience, which is what entry-level roles and freelance clients tend to ask for. Open roles at Rajmudra are always listed on our careers page.",
   },
   {
     q: "Do I get a certificate?",
-    a: "Yes. You receive a Timewheel Digital Marketing Academy certificate when you complete your program. Your portfolio of case studies and work samples sits alongside it as proof of what you can do.",
+    a: "Yes. You receive a Rajmudra Digital Marketing Academy certificate when you complete your program. Your portfolio of case studies and work samples sits alongside it as proof of what you can do.",
   },
   {
     q: "Can you help me get Google, Meta, HubSpot or LinkedIn certifications?",
@@ -798,6 +798,6 @@ export const academyFaqs: Faq[] = [
   },
   {
     q: "How is my information used?",
-    a: "Only to contact you about the Academy. We do not sell or share it, and it is never shown publicly. Email team@timewheel.co.in to have it deleted at any time.",
+    a: "Only to contact you about the Academy. We do not sell or share it, and it is never shown publicly. Email namaskar@rajmudramedia.com to have it deleted at any time.",
   },
 ];

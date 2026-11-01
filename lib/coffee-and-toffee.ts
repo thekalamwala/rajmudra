@@ -227,7 +227,7 @@ export const cf = {
     label: "BUILT FOR INDIA",
     title: "Built around Indian payments",
     body:
-      "Coffee & Toffee is made by Timewheel, a product studio in Nagpur. These are the pieces that matter when your supporters are in India.",
+      "Coffee & Toffee is made by Rajmudra, a product studio in Nagpur. These are the pieces that matter when your supporters are in India.",
     items: [
       { icon: "wallet", label: "Razorpay checkout: UPI, cards, net banking" },
       { icon: "repeat", label: "Memberships by UPI AutoPay or card" },
@@ -245,7 +245,7 @@ export const cf = {
     label: "YOUR OWN SITE",
     title: "Want your own support website instead?",
     body:
-      "Some creators want a support site on their own domain, with supporters paying straight into their own Razorpay account. For them, Timewheel sells a single-creator Coffee & Toffee site licence.",
+      "Some creators want a support site on their own domain, with supporters paying straight into their own Razorpay account. For them, Rajmudra sells a single-creator Coffee & Toffee site licence.",
     includesTitle: "What the site licence gives you",
     includes: [
       "Your own support site on your own domain, for one creator",
@@ -270,7 +270,7 @@ export const cf = {
     items: [
       {
         q: "Is there a Buy Me a Coffee alternative made for India?",
-        a: "Yes. Coffee & Toffee is a creator support page built for India by Timewheel. Supporters pay in rupees by UPI, card or net banking through Razorpay, the money is transferred to the creator's Indian bank account, and tips carry no platform fee.",
+        a: "Yes. Coffee & Toffee is a creator support page built for India by Rajmudra. Supporters pay in rupees by UPI, card or net banking through Razorpay, the money is transferred to the creator's Indian bank account, and tips carry no platform fee.",
       },
       {
         q: "How do I accept tips from fans in India by UPI?",
@@ -306,7 +306,7 @@ export const cf = {
       },
       {
         q: "Can I have my own support website instead of a hosted page?",
-        a: "Yes. Timewheel sells a single-creator Coffee & Toffee site licence for your own domain, with payments going to your own Razorpay account. Premium is ₹3,650 for the first year including GST (₹2,499 for the first 100 founding creators), then ₹999 a year. Sales open soon.",
+        a: "Yes. Rajmudra sells a single-creator Coffee & Toffee site licence for your own domain, with payments going to your own Razorpay account. Premium is ₹3,650 for the first year including GST (₹2,499 for the first 100 founding creators), then ₹999 a year. Sales open soon.",
       },
     ],
   },

@@ -24,7 +24,7 @@ export function AboutHero() {
         {/* copy */}
         <div>
           <p className="flex items-center gap-2.5 text-xs font-bold uppercase tracking-[0.22em] text-brand">
-            About Timewheel
+            About Rajmudra
           </p>
 
           <RevealHeading as="h1" className="mt-6 text-[2.35rem] font-black leading-[1.08] tracking-tight text-foreground sm:text-5xl lg:text-[3.25rem]">
@@ -34,7 +34,7 @@ export function AboutHero() {
           </RevealHeading>
 
           <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
-            TIMEWHEEL is a digital design and development partner helping
+            RAJMUDRA is a digital design and development partner helping
             ambitious businesses build websites and digital experiences that
             are clear, modern, and built to grow.
           </p>
@@ -65,7 +65,7 @@ export function AboutHero() {
           <div className="relative overflow-hidden rounded-[1.5rem] border border-border bg-card shadow-[0_50px_100px_-40px_rgba(15,17,17,0.3)] h-[380px] lg:h-[440px]">
             <Image
               src="/portfolio/about1.png"
-              alt="About Timewheel, our team and workspace"
+              alt="About Rajmudra, our team and workspace"
               width={735}
               height={1102}
               className="h-full w-full object-cover"
