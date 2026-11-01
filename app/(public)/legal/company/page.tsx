@@ -5,7 +5,7 @@ import { SELLER } from "@/lib/admin/invoice-calc";
 
 const TITLE = "GST and Company Details | Rajmudra";
 const DESC =
-  "Company details for Rajmudra Studios: legal name, CIN, GSTIN, PAN, registered state and billing contact for invoices and vendor forms.";
+  "Company details for Rajmudra Media: legal name, CIN, GSTIN, PAN, registered state and billing contact for invoices and vendor forms.";
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 export default function CompanyPage() {
   const c = site.contact;
   const rows: [string, string][] = [
-    ["Legal name", "Rajmudra Studios"],
+    ["Legal name", "Rajmudra Media"],
     ["Brand name", "Rajmudra"],
     ["CIN", process.env.COMPANY_CIN || SELLER.cin],
     ["GSTIN", process.env.INVOICE_GSTIN || SELLER.gstin],

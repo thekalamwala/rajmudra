@@ -274,7 +274,7 @@ export default function PrivacyPage() {
             team@timewheel.co.in
           </a>
         </p>
-        <p>Rajmudra Studios · timewheel.co.in</p>
+        <p>Rajmudra Media · timewheel.co.in</p>
       </section>
       </article>
     </div>

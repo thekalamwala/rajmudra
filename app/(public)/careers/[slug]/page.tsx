@@ -46,7 +46,7 @@ function jobPostingLd(job: (typeof jobs)[number]) {
     employmentType: job.employmentTypeSchema,
     hiringOrganization: {
       "@type": "Organization",
-      name: "Rajmudra Studios",
+      name: "Rajmudra Media",
       sameAs: site.url,
     },
     jobLocationType: job.locationType,

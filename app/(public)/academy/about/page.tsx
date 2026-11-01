@@ -77,7 +77,7 @@ export default function AcademyAboutPage() {
         title="Built by people who do the work."
         intro={
           <p>
-            Rajmudra Digital Marketing Academy is a learning initiative by Rajmudra Studios, a
+            Rajmudra Digital Marketing Academy is a learning initiative by Rajmudra Media, a
             digital marketing and web studio in Nagpur. Our mission: help students learn marketing by doing it, and
             leave with work that proves it.
           </p>
@@ -166,7 +166,7 @@ export default function AcademyAboutPage() {
         <Reveal className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div className="max-w-2xl">
             <p className="text-xs font-bold uppercase tracking-[0.22em] text-brand-text">Who runs it</p>
-            <h2 className="mt-5 font-black tracking-tight">Rajmudra Studios</h2>
+            <h2 className="mt-5 font-black tracking-tight">Rajmudra Media</h2>
             <p className="mt-4 leading-relaxed text-muted-foreground">
               A Nagpur studio building websites and running SEO, social media and digital marketing for
               businesses. The Academy is taught from that day-to-day practice.

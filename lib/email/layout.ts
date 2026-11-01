@@ -24,8 +24,8 @@ const C = {
 };
 const BODY = "'Plus Jakarta Sans',Arial,Helvetica,sans-serif";
 const HEAD = "'Poppins',Arial,Helvetica,sans-serif";
-const LOGO = `${site.url}/brand/png/timewheel-icon-128.png`;
-export const COMPANY = "Rajmudra Studios";
+const LOGO = `${site.url}/brand/rajmudra/email-logo.png`;
+export const COMPANY = "Rajmudra Media";
 const WA = `https://wa.me/${site.contact.whatsappDigits}`;
 
 export type Tone = "brand" | "success" | "danger";

@@ -27,7 +27,7 @@ export default function DisclaimerPage() {
           <h2 className="text-lg font-semibold text-foreground">1. General information</h2>
           <p>
             The content on timewheel.co.in, including blog posts, guides, free downloads and
-            reports, is published by Rajmudra Studios for general information. It is
+            reports, is published by Rajmudra Media for general information. It is
             not legal, financial or tax advice. Please speak to a qualified professional before
             acting on it for your business.
           </p>

@@ -48,7 +48,7 @@ export function AcademyHero() {
           </div>
           <p className="mt-8 max-w-xl text-sm text-muted-foreground">
             For college students, fresh graduates and beginners. Includes a Rajmudra certificate, help with
-            Google, Meta, HubSpot and LinkedIn certifications, and internships. An initiative by Rajmudra Studios, a digital marketing and web studio in Nagpur.
+            Google, Meta, HubSpot and LinkedIn certifications, and internships. An initiative by Rajmudra Media, a digital marketing and web studio in Nagpur.
           </p>
         </Reveal>
 

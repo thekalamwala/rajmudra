@@ -11,7 +11,7 @@ import { jobs } from "@/lib/jobs";
 import { site } from "@/lib/site";
 
 const TITLE = "Careers at Rajmudra | Open Roles in Nagpur";
-const DESC = `Open roles at Rajmudra Studios in Nagpur: ${jobs
+const DESC = `Open roles at Rajmudra Media in Nagpur: ${jobs
   .map((j) => j.title)
   .join(", ")}. Freshers welcome, internships available. Apply online.`;
 
