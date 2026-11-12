@@ -18,7 +18,7 @@ export function AboutValues() {
     <section className="border-y border-white/10 bg-navy">
       <div className="mx-auto max-w-6xl px-6 py-16 md:py-20">
         <Reveal>
-          <p className="text-center text-sm font-semibold uppercase tracking-[0.18em] text-brand">
+          <p className="text-center text-sm font-semibold uppercase tracking-[0.18em] text-brand-text">
             How we think
           </p>
           <RevealHeading as="h2" className="mx-auto mt-3 max-w-xl text-center text-3xl font-extrabold tracking-tight text-white md:text-4xl">

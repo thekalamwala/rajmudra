@@ -183,7 +183,7 @@ export default function CookiesPage() {
               href="https://tools.google.com/dlpage/gaoptout"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-brand hover:underline"
+              className="text-brand-text hover:underline"
             >
               Google Analytics Opt-Out Browser Add-on
             </a>
@@ -233,7 +233,7 @@ export default function CookiesPage() {
           If you have questions about our use of cookies, please contact us at{" "}
           <a
             href="mailto:namaskar@rajmudramedia.com"
-            className="text-brand hover:underline"
+            className="text-brand-text hover:underline"
           >
             namaskar@rajmudramedia.com
           </a>

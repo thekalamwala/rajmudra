@@ -16,7 +16,7 @@ export function AboutTestimonials() {
       <div className="mx-auto max-w-6xl px-6">
         <Reveal className="max-w-2xl">
           <div className="flex items-center gap-3">
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-brand">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-brand-text">
               {wd.testimonials.label}
             </p>
             <span className="h-px w-12 bg-brand/40" />

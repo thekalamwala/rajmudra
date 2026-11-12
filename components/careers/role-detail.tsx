@@ -170,7 +170,7 @@ export function JobDetail({ job }: { job: Job }) {
         <aside className="lg:sticky lg:top-24 lg:self-start">
           <Reveal>
             <div className="rounded-2xl border border-border bg-card p-6">
-              <p className="text-xs font-bold uppercase tracking-[0.18em] text-brand">
+              <p className="text-xs font-bold uppercase tracking-[0.18em] text-brand-text">
                 At a glance
               </p>
               <dl className="mt-5 space-y-4">
@@ -178,7 +178,7 @@ export function JobDetail({ job }: { job: Job }) {
                   const Icon = FACT_ICON[f.k];
                   return (
                     <div key={f.k} className="flex gap-3">
-                      <span className="mt-0.5 grid size-8 shrink-0 place-items-center rounded-lg bg-brand/10 text-brand">
+                      <span className="mt-0.5 grid size-8 shrink-0 place-items-center rounded-lg bg-brand/10 text-brand-text">
                         {Icon ? (
                           <Icon className="size-4" strokeWidth={1.9} />
                         ) : (

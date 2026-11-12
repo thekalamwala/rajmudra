@@ -46,7 +46,7 @@ export function PostCard({ post }: { post: PostMeta }) {
         <span className="text-[11px] font-bold uppercase tracking-wide text-brand-text">{post.category}</span>
         <p className="mt-2 text-lg font-bold leading-snug text-foreground">{post.title}</p>
         <p className="mt-3 line-clamp-6 text-sm leading-relaxed text-muted-foreground">{post.excerpt}</p>
-        <span className="mt-auto inline-flex items-center gap-1 pt-4 text-sm font-semibold text-brand">
+        <span className="mt-auto inline-flex items-center gap-1 pt-4 text-sm font-semibold text-brand-text">
           Read <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-0.5" />
         </span>
       </div>

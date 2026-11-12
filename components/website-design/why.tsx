@@ -18,7 +18,7 @@ export function WdWhy() {
           {/* copy + reasons */}
           <div>
             <div>
-              <p className="text-sm font-semibold uppercase tracking-widest text-brand">{wd.why.label}</p>
+              <p className="text-sm font-semibold uppercase tracking-widest text-brand-text">{wd.why.label}</p>
               <RevealHeading as="h2" className="mt-3 text-3xl font-extrabold leading-[1.12] tracking-tight md:text-[2.75rem]">
                 {wd.why.title}
               </RevealHeading>

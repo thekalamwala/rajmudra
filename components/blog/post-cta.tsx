@@ -7,7 +7,7 @@ export function PostCta() {
   return (
     <section className="mt-14 grid gap-6 rounded-3xl border border-border bg-secondary/50 p-8 md:grid-cols-2 md:p-10">
       <div>
-        <p className="inline-flex items-center gap-2 rounded-full border border-brand/20 bg-brand/5 px-3 py-1 text-xs font-bold uppercase tracking-wide text-brand">
+        <p className="inline-flex items-center gap-2 rounded-full border border-brand/20 bg-brand/5 px-3 py-1 text-xs font-bold uppercase tracking-wide text-brand-text">
           <Sparkles className="size-3.5" /> Work with Rajmudra
         </p>
         <h2 className="mt-4 text-2xl font-extrabold tracking-tight">Want this done for you?</h2>
@@ -24,7 +24,7 @@ export function PostCta() {
           </Link>
           <Link
             href="/contact"
-            className="inline-flex items-center rounded-lg border border-border px-5 py-2.5 text-sm font-semibold transition-colors hover:border-brand hover:text-brand"
+            className="inline-flex items-center rounded-lg border border-border px-5 py-2.5 text-sm font-semibold transition-colors hover:border-brand hover:text-brand-text"
           >
             Talk to us
           </Link>

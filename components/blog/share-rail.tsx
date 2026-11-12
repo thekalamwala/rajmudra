@@ -57,7 +57,7 @@ export function ShareRail({ url, title }: { url: string; title: string }) {
           target="_blank"
           rel="noopener noreferrer"
           aria-label={label}
-          className="grid size-10 place-items-center rounded-full border border-border text-muted-foreground transition-colors hover:border-brand hover:text-brand"
+          className="grid size-10 place-items-center rounded-full border border-border text-muted-foreground transition-colors hover:border-brand hover:text-brand-text"
         >
           <Icon />
         </a>
@@ -66,7 +66,7 @@ export function ShareRail({ url, title }: { url: string; title: string }) {
         type="button"
         onClick={copy}
         aria-label="Copy link"
-        className="grid size-10 place-items-center rounded-full border border-border text-muted-foreground transition-colors hover:border-brand hover:text-brand"
+        className="grid size-10 place-items-center rounded-full border border-border text-muted-foreground transition-colors hover:border-brand hover:text-brand-text"
       >
         {copied ? <Check className="size-4 text-rating" /> : <Link2 className="size-4" />}
       </button>

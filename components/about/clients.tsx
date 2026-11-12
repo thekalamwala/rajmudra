@@ -26,7 +26,7 @@ export function AboutClients() {
         <Reveal className="mx-auto max-w-xl text-center">
           <div className="flex items-center justify-center gap-3">
             <span className="h-px w-12 bg-brand/40" />
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-brand">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-brand-text">
               Who we work with
             </p>
             <span className="h-px w-12 bg-brand/40" />

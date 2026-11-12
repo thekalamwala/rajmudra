@@ -243,7 +243,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
             {meta.takeaways && meta.takeaways.length > 0 && (
               <aside className="mb-8 rounded-2xl border border-brand/20 bg-brand/5 p-6">
-                <p className="text-xs font-bold uppercase tracking-wide text-brand">Key takeaways</p>
+                <p className="text-xs font-bold uppercase tracking-wide text-brand-text">Key takeaways</p>
                 <ul className="mt-3 space-y-2">
                   {meta.takeaways.map((t) => (
                     <li key={t} className="flex gap-2.5 text-sm text-foreground/80">
@@ -276,7 +276,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                   <Link
                     key={t}
                     href={`/blog/tag/${slugify(t)}`}
-                    className="rounded-full border border-border px-3 py-1 text-xs font-medium text-muted-foreground transition-colors hover:border-brand hover:text-brand"
+                    className="rounded-full border border-border px-3 py-1 text-xs font-medium text-muted-foreground transition-colors hover:border-brand hover:text-brand-text"
                   >
                     #{t}
                   </Link>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { ArrowRight, Handshake, Megaphone, Users } from "lucide-react";
 import { social } from "@/lib/metadata";
 import { site } from "@/lib/site";
+import { PageMotif } from "@/components/desi";
 
 const TITLE = "Partner with Rajmudra, Referral and Agency Partnerships";
 const DESC =
@@ -42,7 +43,8 @@ export default function PartnersPage() {
   const mail = `mailto:${site.contact.email}?subject=${encodeURIComponent("Partnership with Rajmudra")}`;
 
   return (
-    <div className="overflow-x-clip">
+    <div className="relative overflow-x-clip">
+      <PageMotif />
       <section className="mx-auto max-w-3xl px-6 pb-16 pt-24 text-center md:pt-32">
         <p className="text-xs font-bold uppercase tracking-[0.22em] text-brand-text">Partner with us</p>
         <h1 className="mt-4 text-4xl font-black tracking-tight md:text-6xl">Grow together with Rajmudra</h1>
@@ -81,7 +83,7 @@ export default function PartnersPage() {
         </ol>
         <p className="mt-8 text-sm text-muted-foreground">
           Write to{" "}
-          <a href={mail} className="text-brand hover:underline">{site.contact.email}</a>{" "}
+          <a href={mail} className="text-brand-text hover:underline">{site.contact.email}</a>{" "}
           or call {site.contact.phone}.
         </p>
       </section>

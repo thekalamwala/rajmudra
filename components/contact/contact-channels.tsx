@@ -47,10 +47,10 @@ export function ContactChannels() {
                 className="group flex h-full flex-col rounded-2xl border border-border bg-card p-6 transition-colors hover:border-brand/50"
               >
                 <div className="flex items-center justify-between">
-                  <span className="grid size-11 place-items-center rounded-xl bg-brand/10 text-brand">
+                  <span className="grid size-11 place-items-center rounded-xl bg-brand/10 text-brand-text">
                     <c.icon className="size-5" strokeWidth={1.9} />
                   </span>
-                  <ArrowUpRight className="size-4 text-muted-foreground transition-all group-hover:translate-x-0.5 group-hover:text-brand" />
+                  <ArrowUpRight className="size-4 text-muted-foreground transition-all group-hover:translate-x-0.5 group-hover:text-brand-text" />
                 </div>
                 <h2 className="mt-4 text-lg font-bold">{c.title}</h2>
                 <p className="mt-1 text-sm font-semibold text-foreground">{c.value}</p>

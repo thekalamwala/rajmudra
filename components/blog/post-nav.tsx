@@ -11,7 +11,7 @@ export function PostNav({ prev, next }: { prev: PostMeta | null; next: PostMeta 
           <span className="flex items-center gap-1.5 text-xs font-semibold text-muted-foreground">
             <ArrowLeft className="size-3.5" /> Previous
           </span>
-          <p className="mt-1.5 font-semibold leading-snug text-foreground group-hover:text-brand">{prev.title}</p>
+          <p className="mt-1.5 font-semibold leading-snug text-foreground group-hover:text-brand-text">{prev.title}</p>
         </Link>
       ) : (
         <span />
@@ -21,7 +21,7 @@ export function PostNav({ prev, next }: { prev: PostMeta | null; next: PostMeta 
           <span className="flex items-center justify-end gap-1.5 text-xs font-semibold text-muted-foreground">
             Next <ArrowRight className="size-3.5" />
           </span>
-          <p className="mt-1.5 font-semibold leading-snug text-foreground group-hover:text-brand">{next.title}</p>
+          <p className="mt-1.5 font-semibold leading-snug text-foreground group-hover:text-brand-text">{next.title}</p>
         </Link>
       )}
     </nav>

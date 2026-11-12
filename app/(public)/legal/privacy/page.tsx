@@ -72,7 +72,7 @@ export default function PrivacyPage() {
             </span>{" "}
             We use cookies and similar technologies to maintain sessions,
             remember preferences, and analyze usage patterns. See our{" "}
-            <a href="/legal/cookies" className="text-brand hover:underline">
+            <a href="/legal/cookies" className="text-brand-text hover:underline">
               Cookie Policy
             </a>{" "}
             for details.
@@ -97,7 +97,7 @@ export default function PrivacyPage() {
           information received from Google APIs adheres to the{" "}
           <a
             href="https://developers.google.com/terms/api-services-user-data-policy"
-            className="text-brand hover:underline"
+            className="text-brand-text hover:underline"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -215,7 +215,7 @@ export default function PrivacyPage() {
           To exercise any of these rights, contact us at{" "}
           <a
             href="mailto:namaskar@rajmudramedia.com"
-            className="text-brand hover:underline"
+            className="text-brand-text hover:underline"
           >
             namaskar@rajmudramedia.com
           </a>
@@ -269,7 +269,7 @@ export default function PrivacyPage() {
           Email:{" "}
           <a
             href="mailto:namaskar@rajmudramedia.com"
-            className="text-brand hover:underline"
+            className="text-brand-text hover:underline"
           >
             namaskar@rajmudramedia.com
           </a>

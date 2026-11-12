@@ -22,7 +22,7 @@ export function JobFaq({ job }: { job: Job }) {
   return (
     <section className="mx-auto max-w-3xl px-6 py-20 md:py-24" id="faq">
       <Reveal>
-        <p className="text-xs font-bold uppercase tracking-[0.22em] text-brand">
+        <p className="text-xs font-bold uppercase tracking-[0.22em] text-brand-text">
           Questions
         </p>
         <RevealHeading as="h2" className="mt-5 font-black tracking-tight">

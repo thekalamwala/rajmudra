@@ -21,7 +21,7 @@ export function WebsitesShowcase({ filled = 0, total = 30 }: { filled?: number; 
     <section className="border-b border-border/60">
       <div className="mx-auto max-w-6xl px-6 py-16 md:py-20">
         <Reveal className="max-w-2xl">
-          <p className="text-xs font-bold uppercase tracking-[0.22em] text-brand">
+          <p className="text-xs font-bold uppercase tracking-[0.22em] text-brand-text">
             Websites for everyone
           </p>
           <RevealHeading as="h2" className="mt-4 text-3xl font-extrabold tracking-tight md:text-4xl">

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { ArrowRight, Check, X } from "lucide-react";
 import { social } from "@/lib/metadata";
 import { site } from "@/lib/site";
+import { PageMotif } from "@/components/desi";
 
 const TITLE = "Write for Us, Guest Posts on the Rajmudra Blog";
 const DESC =
@@ -41,7 +42,8 @@ export default function WriteForUsPage() {
   const mail = `mailto:${site.contact.email}?subject=${encodeURIComponent("Guest post pitch")}`;
 
   return (
-    <div className="overflow-x-clip">
+    <div className="relative overflow-x-clip">
+      <PageMotif />
       <section className="mx-auto max-w-3xl px-6 pb-16 pt-24 text-center md:pt-32">
         <p className="text-xs font-bold uppercase tracking-[0.22em] text-brand-text">Write for us</p>
         <h1 className="mt-4 text-4xl font-black tracking-tight md:text-6xl">Share what you&apos;ve learned</h1>
@@ -100,7 +102,7 @@ export default function WriteForUsPage() {
             <li>We reply within a week. Accepted drafts are edited with you and published under your byline.</li>
           </ol>
           <p className="mt-6 text-sm text-muted-foreground">
-            Email <a href={mail} className="text-brand hover:underline">{site.contact.email}</a> with
+            Email <a href={mail} className="text-brand-text hover:underline">{site.contact.email}</a> with
             the subject &quot;Guest post pitch&quot;.
           </p>
         </div>

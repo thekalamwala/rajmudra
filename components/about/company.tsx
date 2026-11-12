@@ -36,7 +36,7 @@ export function AboutCompany() {
       <div className="grid gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-16">
         <Reveal className="max-w-2xl">
           <div className="flex items-center gap-3">
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-brand">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-brand-text">
               About the company
             </p>
             <span className="h-px w-12 bg-brand/40" />

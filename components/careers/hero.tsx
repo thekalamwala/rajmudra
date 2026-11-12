@@ -22,7 +22,7 @@ export function CareersHero() {
       </div>
 
       <Reveal className="relative mx-auto max-w-6xl px-6 py-20 md:py-28">
-        <p className="flex items-center gap-2.5 text-xs font-bold uppercase tracking-[0.22em] text-brand">
+        <p className="flex items-center gap-2.5 text-xs font-bold uppercase tracking-[0.22em] text-brand-text">
           <span className="size-1.5 rounded-full bg-brand" />
           Careers at Rajmudra
         </p>

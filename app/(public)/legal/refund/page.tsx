@@ -93,7 +93,7 @@ export default function RefundPage() {
             Email{" "}
             <a
               href="mailto:namaskar@rajmudramedia.com"
-              className="text-brand hover:underline"
+              className="text-brand-text hover:underline"
             >
               namaskar@rajmudramedia.com
             </a>{" "}
@@ -226,7 +226,7 @@ export default function RefundPage() {
               </tr>
               <tr className="border-b border-border/50">
                 <td className="py-3 pr-6">
-                  <span className="inline-block rounded-full bg-brand/10 px-2 py-0.5 text-xs font-medium text-brand">
+                  <span className="inline-block rounded-full bg-brand/10 px-2 py-0.5 text-xs font-medium text-brand-text">
                     High
                   </span>
                 </td>
@@ -283,7 +283,7 @@ export default function RefundPage() {
           For refund requests or SLA inquiries, please contact us at{" "}
           <a
             href="mailto:namaskar@rajmudramedia.com"
-            className="text-brand hover:underline"
+            className="text-brand-text hover:underline"
           >
             namaskar@rajmudramedia.com
           </a>

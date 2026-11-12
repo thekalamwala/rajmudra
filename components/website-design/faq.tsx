@@ -13,7 +13,7 @@ export function WdFaq() {
   return (
     <section className="mx-auto max-w-3xl px-6 py-20 md:py-28">
       <Reveal>
-        <p className="text-center text-sm font-semibold uppercase tracking-widest text-brand">{wd.faq.label}</p>
+        <p className="text-center text-sm font-semibold uppercase tracking-widest text-brand-text">{wd.faq.label}</p>
         <RevealHeading as="h2" className="mt-3 text-center text-3xl font-extrabold tracking-tight md:text-[2.75rem]">
           {wd.faq.title}
         </RevealHeading>

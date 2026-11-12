@@ -38,7 +38,7 @@ export function ContactLocate() {
       <div className="mx-auto max-w-6xl px-6 py-20 md:py-28">
         {/* Intro */}
         <Reveal className="text-center">
-          <p className="text-xs font-bold uppercase tracking-[0.28em] text-brand">Contact us</p>
+          <p className="text-xs font-bold uppercase tracking-[0.28em] text-brand-text">Contact us</p>
           <RevealHeading as="h2" className="mx-auto mt-4 max-w-2xl text-4xl font-extrabold tracking-tight md:text-5xl">
             Our{" "}
             <span className="underline decoration-brand decoration-4 underline-offset-8">team</span>{" "}
@@ -51,7 +51,7 @@ export function ContactLocate() {
           {cards.map((c) => (
             <Reveal key={c.title} className="h-full">
               <div className="flex h-full flex-col items-center rounded-2xl border border-border bg-card px-6 py-8 text-center">
-                <span className="grid size-12 place-items-center rounded-xl bg-brand/10 text-brand">
+                <span className="grid size-12 place-items-center rounded-xl bg-brand/10 text-brand-text">
                   <c.icon className="size-5" strokeWidth={1.9} />
                 </span>
                 <h3 className="mt-4 text-base font-bold">{c.title}</h3>

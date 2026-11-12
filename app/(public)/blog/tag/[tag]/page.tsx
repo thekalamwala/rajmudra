@@ -66,7 +66,7 @@ export default async function TagPage({ params }: { params: Promise<{ tag: strin
               <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">{p.excerpt}</p>
               <span className="mt-5 flex items-center justify-between text-xs text-muted-foreground">
                 <span>{formatDate(p.date)} · {p.readingTime} min read</span>
-                <span className="inline-flex items-center gap-1 font-semibold text-brand">
+                <span className="inline-flex items-center gap-1 font-semibold text-brand-text">
                   Read <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-0.5" />
                 </span>
               </span>

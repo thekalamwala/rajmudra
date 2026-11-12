@@ -17,7 +17,7 @@ export function SeoComparison() {
             <div className="border-b border-l border-border px-4 py-3 text-center font-semibold text-muted-foreground">
               Typical agency
             </div>
-            <div className="border-b border-l border-border bg-brand/5 px-4 py-3 text-center font-bold text-brand">
+            <div className="border-b border-l border-border bg-brand/5 px-4 py-3 text-center font-bold text-brand-text">
               Us
             </div>
             {seo.comparison.rows.map((r) => (

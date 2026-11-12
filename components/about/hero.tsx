@@ -23,7 +23,7 @@ export function AboutHero() {
       <Reveal className="relative mx-auto grid w-full max-w-6xl flex-1 items-center gap-14 px-6 py-16 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12">
         {/* copy */}
         <div>
-          <p className="flex items-center gap-2.5 text-xs font-bold uppercase tracking-[0.22em] text-brand">
+          <p className="flex items-center gap-2.5 text-xs font-bold uppercase tracking-[0.22em] text-brand-text">
             About Rajmudra
           </p>
 

@@ -72,7 +72,7 @@ export default function DisclaimerPage() {
           <h2 className="text-lg font-semibold text-foreground">6. Contact</h2>
           <p>
             Questions about anything on this site? Email{" "}
-            <a href="mailto:namaskar@rajmudramedia.com" className="text-brand hover:underline">
+            <a href="mailto:namaskar@rajmudramedia.com" className="text-brand-text hover:underline">
               namaskar@rajmudramedia.com
             </a>
             .

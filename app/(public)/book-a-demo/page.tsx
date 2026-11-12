@@ -18,6 +18,7 @@ import { JsonLd } from "@/components/json-ld";
 import { organizationLd, breadcrumbLd } from "@/lib/jsonld";
 import { site } from "@/lib/site";
 import { InPageAnchor } from "@/components/shared/in-page-anchor";
+import { PageMotif } from "@/components/desi";
 
 const TITLE = "Book a Demo of Our Products and Services | Rajmudra";
 const DESC =
@@ -63,14 +64,15 @@ const jsonLd = {
 
 export default function BookADemoPage() {
   return (
-    <>
+    <div className="relative overflow-x-clip">
       <JsonLd data={jsonLd} />
+      <PageMotif />
 
       {/* Hero */}
       <section className="border-b border-border/60 bg-secondary/40">
         <div className="mx-auto max-w-6xl px-6 py-20 text-center md:py-28">
           <Reveal>
-            <p className="text-xs font-bold uppercase tracking-[0.22em] text-brand">Book a demo</p>
+            <p className="text-xs font-bold uppercase tracking-[0.22em] text-brand-text">Book a demo</p>
             <RevealHeading
               as="h1"
               className="mx-auto mt-5 max-w-3xl text-4xl font-black tracking-tight md:text-6xl"
@@ -111,7 +113,7 @@ export default function BookADemoPage() {
                   rel="noopener noreferrer"
                   className="group block h-full rounded-2xl border border-border bg-card p-5 transition-colors hover:border-brand/50"
                 >
-                  <span className="grid size-10 place-items-center rounded-xl bg-brand/10 text-brand">
+                  <span className="grid size-10 place-items-center rounded-xl bg-brand/10 text-brand-text">
                     <d.icon className="size-5" strokeWidth={1.9} />
                   </span>
                   <h2 className="mt-4 text-base font-bold tracking-tight">{d.name}</h2>
@@ -141,6 +143,6 @@ export default function BookADemoPage() {
         idPrefix="demo"
         source="Book a demo"
       />
-    </>
+    </div>
   );
 }

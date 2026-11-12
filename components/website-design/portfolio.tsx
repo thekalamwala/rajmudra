@@ -157,7 +157,7 @@ export function WdPortfolio() {
     <section id="work" className="border-y border-border/60 bg-soft/60">
       <div className="mx-auto max-w-6xl px-6 py-20 md:py-28">
         <Reveal className="max-w-2xl">
-          <p className="text-sm font-semibold uppercase tracking-widest text-brand">{wd.portfolio.label}</p>
+          <p className="text-sm font-semibold uppercase tracking-widest text-brand-text">{wd.portfolio.label}</p>
           <RevealHeading as="h2" className="mt-3 text-3xl font-extrabold tracking-tight md:text-[2.75rem]">
             {wd.portfolio.title}
           </RevealHeading>

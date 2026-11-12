@@ -109,7 +109,7 @@ export function AuditLeadPanel({ onClose, domain, scores, findings, findingsTota
       <button
         type="button"
         onClick={onClose}
-        className="inline-flex items-center gap-1.5 text-xs font-semibold text-muted-foreground transition-colors hover:text-brand"
+        className="inline-flex items-center gap-1.5 text-xs font-semibold text-muted-foreground transition-colors hover:text-brand-text"
       >
         <ArrowLeft className="size-3.5" /> Back to results
       </button>

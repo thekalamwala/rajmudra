@@ -9,6 +9,7 @@ import { CareersRoles } from "@/components/careers/roles";
 import { breadcrumbLd, organizationLd } from "@/lib/jsonld";
 import { jobs } from "@/lib/jobs";
 import { site } from "@/lib/site";
+import { PageMotif } from "@/components/desi";
 
 const TITLE = "Careers at Rajmudra | Open Roles in Nagpur";
 const DESC = `Open roles at Rajmudra Media in Nagpur: ${jobs
@@ -37,7 +38,8 @@ const jsonLd = {
 
 export default function CareersPage() {
   return (
-    <div className="overflow-x-clip">
+    <div className="relative overflow-x-clip">
+      <PageMotif />
       <JsonLd data={jsonLd} />
       <CareersHero />
       <CareersRoles />
@@ -48,7 +50,7 @@ export default function CareersPage() {
           <Reveal>
             <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
               <div className="max-w-2xl">
-                <p className="text-xs font-bold uppercase tracking-[0.22em] text-brand">
+                <p className="text-xs font-bold uppercase tracking-[0.22em] text-brand-text">
                   Nothing that fits today
                 </p>
                 <h2 className="mt-5 font-black tracking-tight">

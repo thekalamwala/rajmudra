@@ -113,7 +113,7 @@ export function AboutPrinciples() {
       <div className="relative z-10 mx-auto max-w-6xl px-6">
         <Reveal className="max-w-2xl">
           <div className="flex items-center gap-3">
-            <span className="text-sm font-semibold uppercase tracking-[0.18em] text-brand">
+            <span className="text-sm font-semibold uppercase tracking-[0.18em] text-brand-text">
               What guides us
             </span>
             <span className="h-px w-12 bg-brand/40" />

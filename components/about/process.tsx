@@ -35,7 +35,7 @@ export function AboutProcess() {
       <div className="mx-auto max-w-6xl px-6 py-20 md:py-24">
         <Reveal>
           <div className="flex items-center gap-3">
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-brand">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-brand-text">
               Our process
             </p>
             <span className="h-px w-12 bg-brand/40" />

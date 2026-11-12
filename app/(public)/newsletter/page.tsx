@@ -4,6 +4,7 @@ import { ArrowUpRight, Check, X } from "lucide-react";
 import { social } from "@/lib/metadata";
 import { NewsletterForm } from "@/components/newsletter-form";
 import { getAllPosts } from "@/lib/blog";
+import { PageMotif } from "@/components/desi";
 
 const TITLE = "The Rajmudra Newsletter, Marketing and Web Notes for Builders";
 const DESC =
@@ -42,7 +43,8 @@ export default async function NewsletterPage() {
   const recent = (await getAllPosts()).slice(0, 4);
 
   return (
-    <div className="overflow-x-clip">
+    <div className="relative overflow-x-clip">
+      <PageMotif />
       {/* Hero */}
       <section className="mx-auto max-w-3xl px-6 pb-16 pt-24 text-center md:pt-32">
         <p className="text-xs font-bold uppercase tracking-[0.22em] text-brand-text">One email per fortnight</p>
@@ -96,7 +98,7 @@ export default async function NewsletterPage() {
                 <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">{p.category}</p>
                 <h3 className="mt-2 flex items-start justify-between gap-3 text-lg font-bold leading-snug">
                   {p.title}
-                  <ArrowUpRight className="size-5 shrink-0 text-muted-foreground transition-colors group-hover:text-brand" />
+                  <ArrowUpRight className="size-5 shrink-0 text-muted-foreground transition-colors group-hover:text-brand-text" />
                 </h3>
                 <p className="mt-2 line-clamp-2 text-sm text-muted-foreground">{p.description || p.excerpt}</p>
               </Link>

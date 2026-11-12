@@ -26,7 +26,7 @@ export function NewsletterForm() {
 
   if (state === "ok")
     return (
-      <p role="status" className="mt-6 text-sm text-brand">Thanks, you&apos;re on the list.</p>
+      <p role="status" className="mt-6 text-sm text-brand-text">Thanks, you&apos;re on the list.</p>
     );
 
   const busy = state === "loading";

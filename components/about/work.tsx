@@ -126,7 +126,7 @@ export function AboutWork() {
       <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
         <Reveal className="max-w-2xl">
           <div className="flex items-center gap-3">
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-brand">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-brand-text">
               Selected work
             </p>
             <span className="h-px w-12 bg-brand/40" />
@@ -140,7 +140,7 @@ export function AboutWork() {
         <Reveal delay={0.05}>
           <Link
             href="/case-studies"
-            className="group inline-flex shrink-0 items-center gap-1.5 text-sm font-bold text-brand transition-colors hover:text-navy"
+            className="group inline-flex shrink-0 items-center gap-1.5 text-sm font-bold text-brand-text transition-colors hover:text-navy"
           >
             View All Work
             <ArrowRight className="size-4 transition-transform duration-300 group-hover:translate-x-0.5" />
@@ -173,7 +173,7 @@ export function AboutWork() {
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{p.desc}</p>
                 <Link
                   href={p.href}
-                  className="mt-auto inline-flex items-center gap-1.5 pt-5 text-sm font-bold text-brand transition-colors hover:text-navy"
+                  className="mt-auto inline-flex items-center gap-1.5 pt-5 text-sm font-bold text-brand-text transition-colors hover:text-navy"
                 >
                   View project
                   <ArrowUpRight className="size-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />

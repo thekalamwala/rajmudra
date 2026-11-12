@@ -7,7 +7,7 @@ export function AboutIntro() {
       <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:gap-16">
         <Reveal>
           <div className="flex items-center gap-3">
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-brand">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-brand-text">
               Who we are
             </p>
             <span className="h-px w-12 bg-brand/40" />

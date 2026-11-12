@@ -49,7 +49,7 @@ export default function TermsPage() {
           limited to booking systems, payment processing, event management,
           community platforms, and digital marketing tools. Specific features
           and pricing are described on our{" "}
-          <a href="/pricing" className="text-brand hover:underline">
+          <a href="/pricing" className="text-brand-text hover:underline">
             pricing page
           </a>
           .
@@ -129,7 +129,7 @@ export default function TermsPage() {
           </li>
           <li>
             All fees are non-refundable except as outlined in our{" "}
-            <a href="/legal/refund" className="text-brand hover:underline">
+            <a href="/legal/refund" className="text-brand-text hover:underline">
               Refund &amp; SLA
             </a>{" "}
             policy.
@@ -152,7 +152,7 @@ export default function TermsPage() {
         <p>
           We strive to maintain high availability. Our service-level targets
           and commitments are detailed in our{" "}
-          <a href="/legal/refund" className="text-brand hover:underline">
+          <a href="/legal/refund" className="text-brand-text hover:underline">
             Refund &amp; SLA
           </a>{" "}
           page. Scheduled maintenance windows will be communicated in advance
@@ -166,7 +166,7 @@ export default function TermsPage() {
         </h2>
         <p>
           Your use of the Service is also governed by our{" "}
-          <a href="/legal/privacy" className="text-brand hover:underline">
+          <a href="/legal/privacy" className="text-brand-text hover:underline">
             Privacy Policy
           </a>
           , which describes how we collect, use, and protect your personal
@@ -240,7 +240,7 @@ export default function TermsPage() {
           If you have questions about these Terms, please contact us at{" "}
           <a
             href="mailto:namaskar@rajmudramedia.com"
-            className="text-brand hover:underline"
+            className="text-brand-text hover:underline"
           >
             namaskar@rajmudramedia.com
           </a>

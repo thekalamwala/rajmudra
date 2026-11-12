@@ -9,7 +9,7 @@ export function CareersRoles() {
   return (
     <section className="mx-auto max-w-6xl px-6 py-20 md:py-28" id="open-roles">
       <Reveal>
-        <p className="text-xs font-bold uppercase tracking-[0.22em] text-brand">
+        <p className="text-xs font-bold uppercase tracking-[0.22em] text-brand-text">
           Open positions
         </p>
         <RevealHeading as="h2" className="mt-5 max-w-2xl font-black tracking-tight">
