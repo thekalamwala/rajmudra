@@ -1,7 +1,7 @@
 # GEO Audit Report: Timewheel
 
 **Audit Date:** 2026-10-07
-**URL:** https://timewheel.co.in
+**URL:** https://rajmudramedia.com
 **Business Type:** Local Agency / Services (Nagpur digital agency) + own products (Book A Sloth, Alluminaty, Ticket Dino, Coffee and Toffee)
 **Pages Analyzed:** ~20 live pages sampled from the sitemap (home, about, contact, case studies, blog, product pages, 5 service microsites, campaign pages)
 **Method:** 4 parallel audit streams (Technical, Schema, Content/Citability, Brand/Platform), with fixes applied on branch `fix/geo-audit-oct-2026`
@@ -116,10 +116,10 @@ Strengths: named, dated author on the blog; legal name and address present. Weak
 All key pages return 200, are SSR, carry self-referencing canonicals and meta descriptions. AI crawlers explicitly allowed in `robots.ts`. Gaps were security headers, stale sitemap dates, missing og:url, and one doubled title; all fixed here.
 
 ### Schema & Structured Data (~90 live, 95 after)
-Organization (logo, address, sameAs), LocalBusiness, Person author, Service, FAQPage, BreadcrumbList across microsites. This PR links every page to the single `https://timewheel.co.in/#organization` entity and fills schema on the newer pages.
+Organization (logo, address, sameAs), LocalBusiness, Person author, Service, FAQPage, BreadcrumbList across microsites. This PR links every page to the single `https://rajmudramedia.com/#organization` entity and fills schema on the newer pages.
 
 ### Platform Optimization (58)
-On-site readiness is high; discovery is the gap. No Bing verification tag, no IndexNow key, and the scripted web search could not surface timewheel.co.in for its own domain name. Fixing Bing + Wikidata is the highest-leverage move for ChatGPT, Copilot and Perplexity.
+On-site readiness is high; discovery is the gap. No Bing verification tag, no IndexNow key, and the scripted web search could not surface rajmudramedia.com for its own domain name. Fixing Bing + Wikidata is the highest-leverage move for ChatGPT, Copilot and Perplexity.
 
 ---
 

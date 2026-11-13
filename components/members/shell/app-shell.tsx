@@ -128,7 +128,7 @@ function AccountMenu({ member }: { member: ShellMember }) {
             </Link>
           )}
           <Link href="/" className={item}>
-            <ArrowUpRight className="size-4" /> Back to timewheel.co.in
+            <ArrowUpRight className="size-4" /> Back to rajmudramedia.com
           </Link>
           <form action="/auth/signout" method="post" className="mt-1 border-t border-border pt-1">
             <button type="submit" className={cn(item, "w-full text-destructive hover:text-destructive")}>

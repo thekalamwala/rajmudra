@@ -3,7 +3,7 @@
 // sync). Templates live in lib/email/templates.ts.
 //
 // Best-effort and dependency-free (direct REST, like the rest of the integrations).
-// Requires RESEND_API_KEY + a verified sending domain (timewheel.co.in). Unset or
+// Requires RESEND_API_KEY + a verified sending domain (rajmudramedia.com). Unset or
 // unverified -> the send fails and we log, never throwing.
 import type { Rendered } from "@/lib/email/layout";
 import {

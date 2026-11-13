@@ -39,35 +39,35 @@ preferences and bookmarks. Run it **before** merging the member-app PR.
 Google Cloud console, project `timewheel-511216`:
 
 1. **Google Auth Platform > Branding**: app name `Timewheel`, support email
-   `team@timewheel.co.in`, logo `public/brand/png/timewheel-app-icon-512.png`
-   (Google wants 120x120 or larger, square), home page `https://timewheel.co.in`,
-   privacy policy `https://timewheel.co.in/legal/privacy`, terms
-   `https://timewheel.co.in/legal/terms`, authorized domain `timewheel.co.in`.
+   `team@rajmudramedia.com`, logo `public/brand/png/timewheel-app-icon-512.png`
+   (Google wants 120x120 or larger, square), home page `https://rajmudramedia.com`,
+   privacy policy `https://rajmudramedia.com/legal/privacy`, terms
+   `https://rajmudramedia.com/legal/terms`, authorized domain `rajmudramedia.com`.
 2. **Audience**: External. After testing, click **Publish app**.
 3. **Data access**: only `openid`, `.../auth/userinfo.email`, `.../auth/userinfo.profile`.
    These are non-sensitive, so there is no security review, only brand verification.
 4. **Clients > Create client**: type **Web application**, name **Timewheel**.
-   - Authorized JavaScript origins: `https://timewheel.co.in`, `http://localhost:3000`
+   - Authorized JavaScript origins: `https://rajmudramedia.com`, `http://localhost:3000`
    - Authorized redirect URI: `https://nefmwittrybufjqhpxip.supabase.co/auth/v1/callback`
 5. Copy the Client ID and Client secret (keep the secret out of chat and git).
 
 Supabase > Authentication > Sign In / Providers > **Google**: enable, paste both, save.
 
-**Show "timewheel.co.in", not the Supabase URL, on Google's screen.** Add
-`https://timewheel.co.in/auth/google/callback` and
+**Show "rajmudramedia.com", not the Supabase URL, on Google's screen.** Add
+`https://rajmudramedia.com/auth/google/callback` and
 `http://localhost:3000/auth/google/callback` to the client's Authorized redirect URIs
 (keep the Supabase one too), and set `GOOGLE_CLIENT_ID` + `GOOGLE_CLIENT_SECRET` on
 Vercel. The button then sends Google back to our own domain and the site signs the
 member in to Supabase with Google's ID token (`lib/members/google.ts`). Without those
 two variables it falls back to Supabase's hosted flow. To show the **Timewheel** name
 and logo instead of the domain, submit **Branding > Verify branding** in Google
-(needs `timewheel.co.in` verified in Google Search Console).
+(needs `rajmudramedia.com` verified in Google Search Console).
 
 ### 3. Supabase Auth settings
 
 Authentication > **URL Configuration**:
-- Site URL: `https://timewheel.co.in`
-- Redirect URLs: `https://timewheel.co.in/**`, `http://localhost:3000/**`
+- Site URL: `https://rajmudramedia.com`
+- Redirect URLs: `https://rajmudramedia.com/**`, `http://localhost:3000/**`
   (add `https://*-timewheel.vercel.app/**` style preview URLs only if you test previews)
 
 Authentication > Sign In / Providers > **Email**: enabled, **Confirm email ON**,
@@ -76,9 +76,9 @@ minimum password length 8. Turn on leaked-password protection if your plan has i
 Authentication > **SMTP Settings** (required: Supabase's built-in mailer only sends to
 your own team and a few emails an hour, so real visitors would never get the link).
 Use the Workspace mailbox, which lands in Gmail's Primary tab:
-- Host `smtp.gmail.com`, port `465`, username `team@timewheel.co.in`,
+- Host `smtp.gmail.com`, port `465`, username `team@rajmudramedia.com`,
   password = a Google app password for team@ (same kind as `SMTP_PASS` on Vercel)
-- Sender email `team@timewheel.co.in`, sender name `Timewheel`
+- Sender email `team@rajmudramedia.com`, sender name `Timewheel`
 
 Then Authentication > Rate Limits: raise "emails per hour" to something like 100.
 
@@ -117,7 +117,7 @@ Authentication > Emails > Templates:
 | `NEXT_PUBLIC_SUPABASE_URL` | `https://nefmwittrybufjqhpxip.supabase.co` (falls back to `SUPABASE_URL`) |
 | `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` | Supabase > Settings > API keys > publishable key. **Required**: without it the login pages say accounts aren't switched on yet. |
 | `SUPABASE_SECRET_KEY` | already set (admin pages, downloads, account deletion) |
-| `MEMBERS_ADMIN_EMAILS` | optional, comma-separated. Defaults to `team@timewheel.co.in` |
+| `MEMBERS_ADMIN_EMAILS` | optional, comma-separated. Defaults to `team@rajmudramedia.com` |
 | `PREMIUM_PRICE_INR` | optional, default `999` (rupees per period). `off` = no online checkout; the Premium page shows "Ask us about Premium" |
 | `PREMIUM_DAYS` | optional, default `365` |
 
@@ -125,7 +125,7 @@ Premium checkout also needs the existing Zoho Payments variables (it reuses `/pa
 
 ### 6. Become an admin
 
-Sign up on the live site with `team@timewheel.co.in` (Google is quickest). Any address
+Sign up on the live site with `team@rajmudramedia.com` (Google is quickest). Any address
 in `MEMBERS_ADMIN_EMAILS` is an admin once its email is verified. To make someone else an
 admin, use **Make admin** on `/admin/members`.
 

@@ -150,7 +150,7 @@ export function DashboardMockup() {
         <span className="size-2.5 rounded-full bg-accent-blue" />
         <span className="ml-2 flex flex-1 items-center gap-1.5 rounded-lg bg-background px-2.5 py-1 text-[11px] font-medium text-muted-foreground">
           <Lock className="size-3 text-rating" />
-          app.timewheel.co.in/dashboard
+          app.rajmudramedia.com/dashboard
         </span>
         <span className="hidden items-center gap-1.5 rounded-full bg-background px-2 py-0.5 text-[10px] font-bold text-brand sm:inline-flex">
           <span className="size-1.5 animate-pulse rounded-full bg-brand" />

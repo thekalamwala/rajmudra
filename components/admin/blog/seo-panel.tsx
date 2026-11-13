@@ -11,7 +11,7 @@ import { analyzeSeo, scoreTone } from "@/lib/blog-seo";
 // SEO / Social / Advanced tabs with a live Google snippet, a social card
 // preview and a scored checklist (as in the adetc blog admin).
 
-const DOMAIN = "timewheel.co.in";
+const DOMAIN = "rajmudramedia.com";
 const TONE = { good: "bg-emerald-500", fair: "bg-amber-500", poor: "bg-rose-500" } as const;
 
 export type SeoValues = {

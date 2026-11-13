@@ -33,7 +33,7 @@ export default function PrivacyPage() {
         </h2>
         <p>
           Rajmudra (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) operates
-          the timewheel.co.in website and related products and services (the
+          the rajmudramedia.com website and related products and services (the
           &quot;Service&quot;). This Privacy Policy explains how we collect,
           use, disclose, and safeguard your information when you visit our
           website or use our Service.
@@ -274,7 +274,7 @@ export default function PrivacyPage() {
             namaskar@rajmudramedia.com
           </a>
         </p>
-        <p>Rajmudra Media · timewheel.co.in</p>
+        <p>Rajmudra Media · rajmudramedia.com</p>
       </section>
       </article>
     </div>

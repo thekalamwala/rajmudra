@@ -51,7 +51,7 @@ export default async function OgImage({ params }: { params: Promise<{ slug: stri
           </div>
         </div>
         <div style={{ display: "flex", fontSize: 26, fontWeight: 600, color: "#141110" }}>
-          timewheel.co.in
+          rajmudramedia.com
         </div>
       </div>
     ),
