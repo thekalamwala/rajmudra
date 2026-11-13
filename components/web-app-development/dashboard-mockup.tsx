@@ -161,7 +161,7 @@ export function DashboardMockup() {
       {/* app top bar */}
       <div className="flex items-center justify-between gap-4 border-b border-border bg-card px-4 py-2.5">
         <p className="font-heading text-sm font-black tracking-tight">
-          TIME<span className="text-brand">WHEEL</span>
+          RAJ<span className="text-brand">MUDRA</span>
         </p>
         <nav className="hidden items-center gap-1 md:flex">
           {nav.map((n) => (

@@ -167,7 +167,7 @@ export function ReviewFlow() {
                       className="group flex items-center justify-between rounded-xl border border-border bg-card px-5 py-4 text-left text-base font-semibold transition-colors hover:border-brand"
                     >
                       {s.label}
-                      <ArrowRight className="size-4 text-muted-foreground transition-transform group-hover:translate-x-0.5 group-hover:text-brand" />
+                      <ArrowRight className="size-4 text-muted-foreground transition-transform group-hover:translate-x-0.5 group-hover:text-brand-text" />
                     </button>
                   ))}
                 </div>
@@ -233,7 +233,7 @@ export function ReviewFlow() {
                 {copied && (
                   <p role="status" className="mt-3 text-center text-sm text-muted-foreground">
                     Google didn&apos;t open?{" "}
-                    <a href={GOOGLE_REVIEW_URL} target="_blank" rel="noopener noreferrer" className="text-brand hover:underline">
+                    <a href={GOOGLE_REVIEW_URL} target="_blank" rel="noopener noreferrer" className="text-brand-text hover:underline">
                       Open it here
                     </a>
                     . Your review is on the clipboard.

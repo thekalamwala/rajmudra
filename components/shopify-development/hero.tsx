@@ -18,7 +18,7 @@ export function SdHero() {
 
       <div className="relative mx-auto grid max-w-6xl items-center gap-10 px-6 pb-16 pt-8 md:grid-cols-2 md:pb-20 md:pt-12">
         <Reveal>
-          <span className="inline-flex items-center gap-2 rounded-full border border-border bg-white/70 px-3.5 py-1.5 text-xs font-bold uppercase tracking-widest text-brand backdrop-blur">
+          <span className="inline-flex items-center gap-2 rounded-full border border-border bg-white/70 px-3.5 py-1.5 text-xs font-bold uppercase tracking-widest text-brand-text backdrop-blur">
             <BadgeCheck className="size-3.5" />
             {sd.hero.eyebrow}
           </span>

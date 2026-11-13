@@ -13,7 +13,7 @@ export default function Loading() {
   );
   return (
     <section className="mx-auto max-w-xl px-6 py-16 md:py-24">
-      <p className="text-sm font-semibold uppercase tracking-[0.18em] text-brand">Payments</p>
+      <p className="text-sm font-semibold uppercase tracking-[0.18em] text-brand-text">Payments</p>
       <div className="mt-4 text-3xl font-extrabold tracking-tight md:text-4xl">Make a payment</div>
       <div className="skeleton-delay">
         <Skeleton className="mt-3 h-4 w-full" />

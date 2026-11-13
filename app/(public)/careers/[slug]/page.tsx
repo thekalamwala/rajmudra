@@ -102,7 +102,7 @@ export default async function JobPage({ params }: { params: Promise<{ slug: stri
       <section id="apply" className="border-t border-border/60 bg-secondary/40">
         <div className="mx-auto grid max-w-6xl gap-10 px-6 py-20 md:py-28 lg:grid-cols-[0.9fr_1.1fr] lg:gap-14">
           <div>
-            <p className="text-xs font-bold uppercase tracking-[0.22em] text-brand">
+            <p className="text-xs font-bold uppercase tracking-[0.22em] text-brand-text">
               Apply now
             </p>
             <h2 className="mt-5 font-black tracking-tight">

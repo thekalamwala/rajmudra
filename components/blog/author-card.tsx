@@ -18,14 +18,14 @@ export function AuthorCard({ author }: { author: Author }) {
       <div>
         <p className="font-bold text-foreground">
           {author.url ? (
-            <a href={author.url} className="hover:text-brand" rel="author">
+            <a href={author.url} className="hover:text-brand-text" rel="author">
               {author.name}
             </a>
           ) : (
             author.name
           )}
         </p>
-        <p className="text-sm font-medium text-brand">{author.role}</p>
+        <p className="text-sm font-medium text-brand-text">{author.role}</p>
         {author.bio && <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{author.bio}</p>}
       </div>
     </div>

@@ -16,7 +16,7 @@ export function LearningLoop({
     <section id={id} className="scroll-mt-32 bg-foreground text-background">
       <div className="mx-auto max-w-6xl px-6 py-20 md:py-28">
         <Reveal className="max-w-2xl">
-          <p className="text-xs font-bold uppercase tracking-[0.22em] text-brand">The method</p>
+          <p className="text-xs font-bold uppercase tracking-[0.22em] text-brand-text">The method</p>
           <RevealHeading as="h2" className="mt-5 font-black tracking-tight">
             {title}
           </RevealHeading>

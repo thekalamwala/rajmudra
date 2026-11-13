@@ -115,7 +115,7 @@ export default async function ChallengePage() {
         </div>
         <div className="relative mx-auto max-w-6xl px-6 py-20 text-center md:py-28">
           <Reveal>
-            <p className="text-xs font-bold uppercase tracking-[0.22em] text-brand">
+            <p className="text-xs font-bold uppercase tracking-[0.22em] text-brand-text">
               30 days · 30 websites
             </p>
             <h1 className="mx-auto mt-5 max-w-3xl text-4xl font-extrabold tracking-tight md:text-6xl">
@@ -127,7 +127,7 @@ export default async function ChallengePage() {
             </p>
             <div className="mx-auto mt-9 max-w-md">
               <div className="flex items-baseline justify-between text-sm font-semibold">
-                <span><span className="text-brand">{filled}</span> / {TOTAL} spots filled</span>
+                <span><span className="text-brand-text">{filled}</span> / {TOTAL} spots filled</span>
                 <span className="text-muted-foreground">{TOTAL - filled} left</span>
               </div>
               <div className="mt-2 h-2.5 overflow-hidden rounded-full bg-brand/15">
@@ -173,7 +173,7 @@ export default async function ChallengePage() {
         <div className="mx-auto max-w-6xl px-6 py-20 md:py-28">
           <div className="grid gap-12 lg:grid-cols-5">
             <Reveal className="lg:sticky lg:top-24 lg:col-span-2 lg:self-start">
-              <p className="text-xs font-bold uppercase tracking-[0.22em] text-brand">
+              <p className="text-xs font-bold uppercase tracking-[0.22em] text-brand-text">
                 Join the challenge
               </p>
               <h2 className="mt-4 text-3xl font-extrabold tracking-tight md:text-4xl">
@@ -189,7 +189,7 @@ export default async function ChallengePage() {
                 <div className="flex items-baseline justify-between">
                   <span className="text-sm font-semibold">Spots filled</span>
                   <span className="text-sm font-bold">
-                    <span className="text-brand">{filled}</span>
+                    <span className="text-brand-text">{filled}</span>
                     <span className="text-muted-foreground"> / {TOTAL}</span>
                   </span>
                 </div>
@@ -231,7 +231,7 @@ export default async function ChallengePage() {
               <div className="mt-6 grid max-w-md grid-cols-3 gap-3">
                 {trust.map((t) => (
                   <div key={t.k} className="rounded-xl border border-border bg-card px-3 py-3.5 text-center">
-                    <div className="text-lg font-extrabold text-brand">{t.v}</div>
+                    <div className="text-lg font-extrabold text-brand-text">{t.v}</div>
                     <div className="mt-0.5 text-[11px] leading-tight text-muted-foreground">{t.k}</div>
                   </div>
                 ))}

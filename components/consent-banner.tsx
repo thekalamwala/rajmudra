@@ -32,7 +32,7 @@ export function ConsentBanner() {
         <p className="text-sm leading-relaxed text-muted-foreground">
           We use cookies to understand traffic and improve your experience. Analytics
           and ad measurement load only if you accept. See our{" "}
-          <a href="/legal/privacy" className="font-semibold text-brand underline underline-offset-2">
+          <a href="/legal/privacy" className="font-semibold text-brand-text underline underline-offset-2">
             Privacy Policy
           </a>
           .

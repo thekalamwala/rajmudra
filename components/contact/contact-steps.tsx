@@ -34,7 +34,7 @@ export function ContactSteps() {
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 <div className="flex items-center gap-3">
-                  <span className="grid size-10 place-items-center rounded-xl bg-brand/10 text-brand">
+                  <span className="grid size-10 place-items-center rounded-xl bg-brand/10 text-brand-text">
                     <s.icon className="size-5" strokeWidth={1.9} />
                   </span>
                   <span className="text-xs font-bold uppercase tracking-widest text-muted-foreground">

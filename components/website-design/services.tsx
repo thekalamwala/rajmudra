@@ -9,7 +9,7 @@ export function WdServices() {
   return (
     <section id="services" className="mx-auto max-w-6xl px-6 py-20 md:py-28">
       <div className="max-w-2xl">
-        <p className="text-sm font-semibold uppercase tracking-widest text-brand">{wd.services.label}</p>
+        <p className="text-sm font-semibold uppercase tracking-widest text-brand-text">{wd.services.label}</p>
         <RevealHeading as="h2" className="mt-3 text-3xl font-extrabold tracking-tight md:text-[2.75rem]">{wd.services.title}</RevealHeading>
         <p className="mt-4 text-muted-foreground md:text-lg">{wd.services.body}</p>
       </div>

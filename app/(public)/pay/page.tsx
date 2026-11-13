@@ -25,7 +25,7 @@ export default async function PayPage({
 
   return (
     <section className="mx-auto max-w-xl px-6 py-16 md:py-24">
-      <p className="text-sm font-semibold uppercase tracking-[0.18em] text-brand">Payments</p>
+      <p className="text-sm font-semibold uppercase tracking-[0.18em] text-brand-text">Payments</p>
       <h1 className="mt-4 text-3xl font-extrabold tracking-tight md:text-4xl">Make a payment</h1>
       <p className="mt-3 text-muted-foreground">
         Pay an invoice, deposit or project milestone. You&apos;ll get an email receipt, and our team is

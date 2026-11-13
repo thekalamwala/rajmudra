@@ -18,7 +18,7 @@ export function WaHero() {
       <div className="relative mx-auto max-w-6xl px-6 pb-16 pt-8 md:pb-20 md:pt-12">
         {/* marketing content */}
         <Reveal className="mx-auto max-w-3xl text-center">
-          <span className="inline-flex items-center gap-2 rounded-full border border-border bg-white/70 px-3.5 py-1.5 text-xs font-bold uppercase tracking-widest text-brand backdrop-blur">
+          <span className="inline-flex items-center gap-2 rounded-full border border-border bg-white/70 px-3.5 py-1.5 text-xs font-bold uppercase tracking-widest text-brand-text backdrop-blur">
             {wa.hero.eyebrow}
           </span>
           <RevealHeading as="h1" className="mt-5 text-4xl font-black leading-[1.05] tracking-tight md:text-6xl">

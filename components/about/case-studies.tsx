@@ -11,7 +11,7 @@ export function AboutCaseStudies() {
       <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
         <Reveal className="max-w-2xl">
           <div className="flex items-center gap-3">
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-brand">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-brand-text">
               Case studies
             </p>
             <span className="h-px w-12 bg-brand/40" />
@@ -29,7 +29,7 @@ export function AboutCaseStudies() {
         <Reveal delay={0.05}>
           <Link
             href="/case-studies"
-            className="group inline-flex shrink-0 items-center gap-1.5 text-sm font-bold text-brand transition-colors hover:text-navy"
+            className="group inline-flex shrink-0 items-center gap-1.5 text-sm font-bold text-brand-text transition-colors hover:text-navy"
           >
             View All Case Studies
             <ArrowRight className="size-4 transition-transform duration-300 group-hover:translate-x-0.5" />

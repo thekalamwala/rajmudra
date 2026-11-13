@@ -176,7 +176,7 @@ export function MemberAppShell({
           <Link href="/members" className="flex shrink-0 items-center gap-2">
             <Image src="/brand/svg/timewheel-icon.svg" alt="" width={30} height={30} />
             <span className="hidden font-heading text-[17px] font-extrabold tracking-tight sm:inline">
-              TIME<span className="text-brand">WHEEL</span>
+              RAJ<span className="text-brand">MUDRA</span>
             </span>
             <span className="ml-1 hidden border-l border-border pl-3 text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground md:inline">
               Members

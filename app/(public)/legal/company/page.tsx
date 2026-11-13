@@ -80,7 +80,7 @@ export default function CompanyPage() {
           <h2 className="text-lg font-semibold text-foreground">Vendor forms and documents</h2>
           <p>
             Need a GST certificate, cancelled cheque or a filled vendor form? Email{" "}
-            <a href={`mailto:${c.email}`} className="text-brand hover:underline">
+            <a href={`mailto:${c.email}`} className="text-brand-text hover:underline">
               {c.email}
             </a>{" "}
             and we will send it within one business day.

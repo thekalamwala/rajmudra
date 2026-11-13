@@ -31,7 +31,7 @@ function Thumb({ post, className = "", eager = false }: { post: PostMeta; classN
   ) : (
     <div className={`flex w-full items-center justify-center bg-gradient-to-br from-brand/25 to-brand/5 ${className}`}>
       <span className="text-lg font-black tracking-tight text-brand/80">
-        TIME<span className="text-foreground/50">WHEEL</span>
+        RAJ<span className="text-foreground/50">MUDRA</span>
       </span>
     </div>
   );
@@ -58,7 +58,7 @@ function Card({ post }: { post: PostMeta }) {
         <span className="text-[11px] font-bold uppercase tracking-wide text-brand-text">{post.category}</span>
         <p className="mt-2 text-lg font-bold leading-snug text-foreground">{post.title}</p>
         <p className="mt-3 line-clamp-6 text-sm leading-relaxed text-muted-foreground">{post.excerpt}</p>
-        <span className="mt-auto inline-flex items-center gap-1 pt-4 text-sm font-semibold text-brand">
+        <span className="mt-auto inline-flex items-center gap-1 pt-4 text-sm font-semibold text-brand-text">
           Read <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-0.5" />
         </span>
       </div>
@@ -79,7 +79,7 @@ function Featured({ post }: { post: PostMeta }) {
         <p className="mt-3 text-sm text-muted-foreground md:text-base">{post.excerpt}</p>
         <span className="mt-5 flex items-center gap-3 text-xs text-muted-foreground">
           {fmt(post.date)} · {post.readingTime} min read
-          <span className="inline-flex items-center gap-1 font-semibold text-brand">
+          <span className="inline-flex items-center gap-1 font-semibold text-brand-text">
             Read <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-0.5" />
           </span>
         </span>
@@ -111,7 +111,7 @@ export function BlogListing({ posts }: { posts: PostMeta[] }) {
               aria-pressed={cat === c}
               onClick={() => { setCat(c); setCount(PAGE); }}
               className={`rounded-full border px-4 py-1.5 text-sm font-semibold transition-colors ${
-                cat === c ? "border-brand bg-brand/10 text-brand" : "border-border text-muted-foreground hover:border-brand/50"
+                cat === c ? "border-brand bg-brand/10 text-brand-text" : "border-border text-muted-foreground hover:border-brand/50"
               }`}
             >
               {c}
@@ -136,7 +136,7 @@ export function BlogListing({ posts }: { posts: PostMeta[] }) {
             <div className="mt-10 text-center">
               <button
                 onClick={() => setCount((c) => c + PAGE)}
-                className="inline-flex items-center rounded-lg border border-border px-6 py-2.5 text-sm font-semibold transition-colors hover:border-brand hover:text-brand"
+                className="inline-flex items-center rounded-lg border border-border px-6 py-2.5 text-sm font-semibold transition-colors hover:border-brand hover:text-brand-text"
               >
                 Load more
               </button>

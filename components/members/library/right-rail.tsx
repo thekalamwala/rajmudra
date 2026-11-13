@@ -76,7 +76,7 @@ export function MembershipCard({ member, premiumCount, price, period }: { member
             </li>
           ))}
         </ul>
-        <Link href="/members/premium" className="mt-4 block text-center text-[13px] font-semibold text-brand hover:underline">
+        <Link href="/members/premium" className="mt-4 block text-center text-[13px] font-semibold text-brand-text hover:underline">
           Membership & billing
         </Link>
       </section>

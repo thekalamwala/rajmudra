@@ -6,6 +6,7 @@ import { getAllPosts } from "@/lib/blog";
 import { realCaseStudies } from "@/lib/services";
 import { programPath, programs } from "@/lib/academy";
 import { jobs } from "@/lib/jobs";
+import { PageMotif } from "@/components/desi";
 
 const TITLE = "Sitemap | Rajmudra";
 const DESC =
@@ -34,12 +35,13 @@ export default async function SitemapPage() {
   ].filter((g) => g.links.length > 0);
 
   return (
-    <div className="mx-auto max-w-6xl px-6 py-24 md:py-32">
+    <div className="relative overflow-x-clip mx-auto max-w-6xl px-6 py-24 md:py-32">
+      <PageMotif />
       <p className="text-xs font-bold uppercase tracking-[0.22em] text-brand-text">Sitemap</p>
       <h1 className="mt-3 text-4xl font-black tracking-tight md:text-5xl">Everything on Rajmudra</h1>
       <p className="mt-4 max-w-xl text-muted-foreground">
         Every page on the site, grouped. Looking for the search engine version? It lives at{" "}
-        <a href="/sitemap.xml" className="text-brand hover:underline">/sitemap.xml</a>.
+        <a href="/sitemap.xml" className="text-brand-text hover:underline">/sitemap.xml</a>.
       </p>
 
       <div className="mt-14 columns-1 gap-6 sm:columns-2 lg:columns-3">
@@ -49,7 +51,7 @@ export default async function SitemapPage() {
             <ul className="mt-4 space-y-2">
               {g.links.map((l) => (
                 <li key={l.href}>
-                  <Link href={l.href} className="text-sm text-muted-foreground hover:text-brand">{l.label}</Link>
+                  <Link href={l.href} className="text-sm text-muted-foreground hover:text-brand-text">{l.label}</Link>
                 </li>
               ))}
             </ul>
@@ -66,7 +68,7 @@ export default async function SitemapPage() {
           <ul className="mt-4 grid gap-x-8 gap-y-2 md:grid-cols-2">
             {posts.map((p) => (
               <li key={p.slug}>
-                <Link href={`/blog/${p.slug}`} className="text-sm text-muted-foreground hover:text-brand">{p.title}</Link>
+                <Link href={`/blog/${p.slug}`} className="text-sm text-muted-foreground hover:text-brand-text">{p.title}</Link>
               </li>
             ))}
           </ul>

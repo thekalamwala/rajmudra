@@ -201,7 +201,7 @@ export function renderEmail(e: Email): Rendered {
     <tr><td align="center" style="padding:0 0 22px">
       <table role="presentation" cellpadding="0" cellspacing="0"><tr>
         <td style="padding-right:10px"><img src="${LOGO}" width="34" height="34" alt="" style="display:block;border:0"></td>
-        <td style="${font(19, 800, C.ink, HEAD, 1)};letter-spacing:.06em">TIME<span style="color:${C.brand}">WHEEL</span></td>
+        <td style="${font(19, 800, C.ink, HEAD, 1)};letter-spacing:.06em">RAJ<span style="color:${C.brand}">MUDRA</span></td>
       </tr></table>
     </td></tr>
     <tr><td style="background:#ffffff;border:1px solid ${C.line};border-radius:14px">

@@ -175,7 +175,7 @@ export function Navbar() {
               onMouseEnter={openServices}
               onMouseLeave={scheduleClose}
             >
-                <div className="overflow-hidden rounded-[22px] border-2 border-[var(--desi-orange)]/25 bg-[var(--desi-cream)] shadow-[0_32px_80px_-32px_rgba(71,20,61,0.45)]">
+                <div className="overflow-hidden rounded-[22px] border-2 border-[var(--desi-orange)]/25 bg-[var(--desi-cream)] shadow-[var(--shadow-festive)]">
                   {/* festive crown — the poster temple-arch lace */}
                   <FestiveBand height={10} />
                   <div className="grid grid-cols-[1.55fr_0.85fr]">
@@ -290,7 +290,7 @@ export function Navbar() {
         <div className="flex items-center gap-2">
           <Link
             href={site.demoUrl}
-            className="btn btn-primary hidden rounded-full px-5 py-2 text-sm font-bold text-brand-foreground shadow-[0_14px_32px_-14px_rgba(254,81,0,0.75)] ring-1 ring-inset ring-[var(--desi-marigold)]/50 md:inline-block"
+            className="btn btn-primary hidden rounded-full px-5 py-2 text-sm font-bold text-brand-foreground shadow-[var(--shadow-brand)] ring-1 ring-inset ring-[var(--desi-marigold)]/50 md:inline-block"
           >
             Book A Meeting
           </Link>
@@ -393,7 +393,7 @@ export function Navbar() {
 
           <Link
             href={site.demoUrl}
-            className="btn btn-primary mt-6 block rounded-full px-4 py-3 text-center text-sm font-bold text-brand-foreground shadow-[0_14px_32px_-14px_rgba(254,81,0,0.75)]"
+            className="btn btn-primary mt-6 block rounded-full px-4 py-3 text-center text-sm font-bold text-brand-foreground shadow-[var(--shadow-brand)]"
             onClick={() => setMobileOpen(false)}
           >
             Book A Meeting
