@@ -26,7 +26,7 @@ export default async function OgImage({ params }: { params: Promise<{ slug: stri
         }}
       >
         <div style={{ display: "flex", fontSize: 34, fontWeight: 800, letterSpacing: 1, color: "#141110" }}>
-          TIME<span style={{ color: "#ffffff" }}>WHEEL</span>
+          RAJ<span style={{ color: "#ffffff" }}>MUDRA</span>
         </div>
         <div style={{ display: "flex", flexDirection: "column" }}>
           <div

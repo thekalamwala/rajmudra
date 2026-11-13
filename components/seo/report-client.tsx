@@ -199,7 +199,7 @@ export function SeoReportClient() {
         {/* Report cover header */}
         <div className="overflow-hidden rounded-3xl border border-border bg-navy text-white">
           <div className="flex items-center justify-between border-b border-white/10 px-6 py-4 md:px-8">
-            <span className="text-sm font-black tracking-wide">TIME<span className="text-brand">WHEEL</span></span>
+            <span className="text-sm font-black tracking-wide">RAJ<span className="text-brand">MUDRA</span></span>
             <span className="inline-flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-wide text-white/60">
               <ShieldCheck className="size-3.5" /> Confidential audit
             </span>

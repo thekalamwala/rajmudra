@@ -218,7 +218,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           ) : (
             <div className="flex min-h-[240px] items-center justify-center rounded-3xl border border-brand/25 bg-gradient-to-br from-brand/25 to-brand/5">
               <span className="text-2xl font-black tracking-tight text-brand/80 md:text-3xl">
-                TIME<span className="text-foreground/50">WHEEL</span>
+                RAJ<span className="text-foreground/50">MUDRA</span>
               </span>
             </div>
           )}

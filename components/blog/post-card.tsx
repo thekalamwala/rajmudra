@@ -19,7 +19,7 @@ export function Thumb({ post, className = "", eager = false }: { post: PostMeta;
   ) : (
     <div className={`flex w-full items-center justify-center bg-gradient-to-br from-brand/25 to-brand/5 ${className}`}>
       <span className="text-lg font-black tracking-tight text-brand/80">
-        TIME<span className="text-foreground/50">WHEEL</span>
+        RAJ<span className="text-foreground/50">MUDRA</span>
       </span>
     </div>
   );
