@@ -4,7 +4,7 @@ import "server-only";
 //
 // With Supabase's hosted OAuth, Google's account picker says "to continue to
 // <project>.supabase.co", and that domain can't be brand-verified because we
-// don't own it. Instead Google returns to https://timewheel.co.in/auth/google/callback,
+// don't own it. Instead Google returns to https://rajmudramedia.com/auth/google/callback,
 // we swap the code for Google's ID token server-side, and hand that token to
 // Supabase (signInWithIdToken). Same Supabase user, same session cookies.
 //
@@ -14,7 +14,7 @@ import "server-only";
 // Unset -> falls back to Supabase's hosted Google flow.
 //
 // Google Cloud > Clients > Rajmudra > Authorized redirect URIs must include
-//   https://timewheel.co.in/auth/google/callback  (and http://localhost:3000/auth/google/callback)
+//   https://rajmudramedia.com/auth/google/callback  (and http://localhost:3000/auth/google/callback)
 
 export const GOOGLE_STATE_COOKIE = "tw_google_oauth";
 export const GOOGLE_STATE_PATH = "/auth/google";

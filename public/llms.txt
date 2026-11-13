@@ -3,72 +3,72 @@
 > Rajmudra Studios is a Nagpur-based digital partner that builds and grows businesses online: websites, web apps, SEO, digital marketing, ads and social, on self-hosted systems you own rather than rented SaaS platforms.
 
 Based in Nagpur, Maharashtra, India. Serving clients across India and worldwide.
-Contact: hello@timewheel.co.in
-Sitemap: https://timewheel.co.in/sitemap.xml
+Contact: hello@rajmudramedia.com
+Sitemap: https://rajmudramedia.com/sitemap.xml
 
 ## Services
-- [Digital Marketing Company in Nagpur (paid ads focus)](https://timewheel.co.in/digital-marketing-company-in-nagpur): ROI-focused paid ads, SEO, social and content.
-- [SEO Company in Nagpur](https://timewheel.co.in/seo-company-in-nagpur): Local SEO, technical SEO, content and AI-search (AEO) visibility, with a free instant audit.
-- [Web Development Company in Nagpur](https://timewheel.co.in/web-development-company-in-nagpur): Fast, SEO-ready websites and web applications built on a fixed price.
-- [Website Design Company in Nagpur](https://timewheel.co.in/website-design-company-in-nagpur): Conversion-focused website design.
-- [Web App Development Company in Nagpur](https://timewheel.co.in/web-app-development-company-in-nagpur): Custom web applications.
-- [Shopify Development Company in Nagpur](https://timewheel.co.in/shopify-development-company-in-nagpur): Shopify store design, build and optimisation.
-- [Social Media Marketing Company in Nagpur](https://timewheel.co.in/social-media-marketing-company-in-nagpur): Social media strategy, content and management.
-- [Restaurant Marketing](https://timewheel.co.in/restaurant-marketing): Marketing for restaurants and cafes.
-- [30 Days, 30 Websites](https://timewheel.co.in/30-days-30-websites): A challenge to build 30 websites in 30 days on a pay-what-you-want basis, including ₹0.
+- [Digital Marketing Company in Nagpur (paid ads focus)](https://rajmudramedia.com/digital-marketing-company-in-nagpur): ROI-focused paid ads, SEO, social and content.
+- [SEO Company in Nagpur](https://rajmudramedia.com/seo-company-in-nagpur): Local SEO, technical SEO, content and AI-search (AEO) visibility, with a free instant audit.
+- [Web Development Company in Nagpur](https://rajmudramedia.com/web-development-company-in-nagpur): Fast, SEO-ready websites and web applications built on a fixed price.
+- [Website Design Company in Nagpur](https://rajmudramedia.com/website-design-company-in-nagpur): Conversion-focused website design.
+- [Web App Development Company in Nagpur](https://rajmudramedia.com/web-app-development-company-in-nagpur): Custom web applications.
+- [Shopify Development Company in Nagpur](https://rajmudramedia.com/shopify-development-company-in-nagpur): Shopify store design, build and optimisation.
+- [Social Media Marketing Company in Nagpur](https://rajmudramedia.com/social-media-marketing-company-in-nagpur): Social media strategy, content and management.
+- [Restaurant Marketing](https://rajmudramedia.com/restaurant-marketing): Marketing for restaurants and cafes.
+- [30 Days, 30 Websites](https://rajmudramedia.com/30-days-30-websites): A challenge to build 30 websites in 30 days on a pay-what-you-want basis, including ₹0.
 
 ## Products
-- [Meeticulous](https://timewheel.co.in/products/meeticulous): An India-first appointment booking and scheduling platform Rajmudra designed and built. 24/7 booking pages, UPI and Razorpay payments, two-way Google Calendar sync, WhatsApp and email reminders, GST invoicing, and a business dashboard. Live at https://meeticulous.com.
-- [Alluminaty](https://timewheel.co.in/products/alluminaty): Alumni management software for schools, colleges and universities: a verified alumni database and directory the institution owns, batch and house groups, events with paid registration, Razorpay membership fees, fundraising with receipts, and an admin console.
-- [The Parliament](https://timewheel.co.in/products/the-parliament): An online community platform for communities that outgrew WhatsApp groups: feed, groups, events with paid registration, paid memberships via Razorpay, DMs, video calls, moderation and WhatsApp broadcasts.
-- [EZShop](https://timewheel.co.in/products/ezshop): An online store builder for Indian D2C brands and local shops: Razorpay UPI, cards and Cash on Delivery, GST invoices, Shiprocket shipping, and WhatsApp order updates, with no commission on orders.
-- [Ticket Dino](https://timewheel.co.in/products/ticket-dino): An event ticketing and management platform for organizers, covering ticket sales, attendee management and analytics. Launching soon.
-- [Coffee & Toffee](https://timewheel.co.in/coffee-and-toffee): A Buy Me a Coffee alternative for India: creators accept tips and memberships by UPI, cards and net banking with 0% platform fee on tips, payouts to their bank via Razorpay Route, plus an own-site licence for a single creator.
+- [Meeticulous](https://rajmudramedia.com/products/meeticulous): An India-first appointment booking and scheduling platform Rajmudra designed and built. 24/7 booking pages, UPI and Razorpay payments, two-way Google Calendar sync, WhatsApp and email reminders, GST invoicing, and a business dashboard. Live at https://meeticulous.com.
+- [Alluminaty](https://rajmudramedia.com/products/alluminaty): Alumni management software for schools, colleges and universities: a verified alumni database and directory the institution owns, batch and house groups, events with paid registration, Razorpay membership fees, fundraising with receipts, and an admin console.
+- [The Parliament](https://rajmudramedia.com/products/the-parliament): An online community platform for communities that outgrew WhatsApp groups: feed, groups, events with paid registration, paid memberships via Razorpay, DMs, video calls, moderation and WhatsApp broadcasts.
+- [EZShop](https://rajmudramedia.com/products/ezshop): An online store builder for Indian D2C brands and local shops: Razorpay UPI, cards and Cash on Delivery, GST invoices, Shiprocket shipping, and WhatsApp order updates, with no commission on orders.
+- [Ticket Dino](https://rajmudramedia.com/products/ticket-dino): An event ticketing and management platform for organizers, covering ticket sales, attendee management and analytics. Launching soon.
+- [Coffee & Toffee](https://rajmudramedia.com/coffee-and-toffee): A Buy Me a Coffee alternative for India: creators accept tips and memberships by UPI, cards and net banking with 0% platform fee on tips, payouts to their bank via Razorpay Route, plus an own-site licence for a single creator.
 
 ## Case Studies
-- [All case studies](https://timewheel.co.in/case-studies): How Rajmudra designs, builds and ships websites, products and marketing, with the challenges and decisions behind each one.
-- [Occasion Cakes](https://timewheel.co.in/case-studies/occasion-cakes): Ranking a UAE cake shop #1 for 40+ local searches.
-- [Khiladi Adda](https://timewheel.co.in/case-studies/khiladi-adda): Ad copy that cut cost-per-install for a gaming app.
-- [Stone & Acres](https://timewheel.co.in/case-studies/stone-acres): Selling land by turning plots into life stories.
-- [Corart](https://timewheel.co.in/case-studies/corart): Meta lead-gen that turned clicks into customers.
-- [Everything Powerlifting](https://timewheel.co.in/case-studies/everything-powerlifting): Tripling organic traffic for a powerlifting-gear brand.
-- [DRU Foundation](https://timewheel.co.in/case-studies/dru-foundation): An NGO site that makes its work findable.
-- [Eureka Coworking](https://timewheel.co.in/case-studies/eureka-coworking): A coworking brand built to convert enquiries.
-- [Rising Sun Electric](https://timewheel.co.in/case-studies/rising-sun-electric): Solar EPC, explained without the jargon.
-- [WeCos](https://timewheel.co.in/case-studies/wecos): Seven services, one front door.
-- [Shubham Datarkar](https://timewheel.co.in/case-studies/shubham-datarkar): Turning a consultant into a product business.
-- [AdEtc Studios](https://timewheel.co.in/case-studies/adetc-studios): A production studio site showing the work, not the studio.
-- [Power Consilium](https://timewheel.co.in/case-studies/power-consilium): A pan-India UPS supplier, made reachable online.
-- [Ashlar Studio](https://timewheel.co.in/case-studies/ashlar-studio): An architecture site that gives the work room on the page.
-- [Alpha Adventures](https://timewheel.co.in/case-studies/alpha-adventures): Selling a trek in a scrolling feed.
-- [Edulocus](https://timewheel.co.in/case-studies/edulocus): Guiding a student through a decision that lasts years.
-- [Linestory Studio](https://timewheel.co.in/case-studies/linestory-studio): A portfolio that reads like a drawing set.
-- [Alluminaty build](https://timewheel.co.in/case-studies/alluminaty): The social network for your alumni.
-- [Meeticulous build](https://timewheel.co.in/case-studies/meeticulous): Booking, payments and reminders in one system.
-- [Coffee and Toffee build](https://timewheel.co.in/case-studies/coffee-for-me): Direct audience-to-creator support.
-- [Ticket Dino build](https://timewheel.co.in/case-studies/ticket-dino): Event ticketing that holds at scale.
-- [The Parliament](https://timewheel.co.in/case-studies/the-parliament): Memberships, billing and access control.
-- [Leo Coffee](https://timewheel.co.in/case-studies/leo-coffee): Subscriptions, horeca bulk orders and a store locator in one Shopify build.
+- [All case studies](https://rajmudramedia.com/case-studies): How Rajmudra designs, builds and ships websites, products and marketing, with the challenges and decisions behind each one.
+- [Occasion Cakes](https://rajmudramedia.com/case-studies/occasion-cakes): Ranking a UAE cake shop #1 for 40+ local searches.
+- [Khiladi Adda](https://rajmudramedia.com/case-studies/khiladi-adda): Ad copy that cut cost-per-install for a gaming app.
+- [Stone & Acres](https://rajmudramedia.com/case-studies/stone-acres): Selling land by turning plots into life stories.
+- [Corart](https://rajmudramedia.com/case-studies/corart): Meta lead-gen that turned clicks into customers.
+- [Everything Powerlifting](https://rajmudramedia.com/case-studies/everything-powerlifting): Tripling organic traffic for a powerlifting-gear brand.
+- [DRU Foundation](https://rajmudramedia.com/case-studies/dru-foundation): An NGO site that makes its work findable.
+- [Eureka Coworking](https://rajmudramedia.com/case-studies/eureka-coworking): A coworking brand built to convert enquiries.
+- [Rising Sun Electric](https://rajmudramedia.com/case-studies/rising-sun-electric): Solar EPC, explained without the jargon.
+- [WeCos](https://rajmudramedia.com/case-studies/wecos): Seven services, one front door.
+- [Shubham Datarkar](https://rajmudramedia.com/case-studies/shubham-datarkar): Turning a consultant into a product business.
+- [AdEtc Studios](https://rajmudramedia.com/case-studies/adetc-studios): A production studio site showing the work, not the studio.
+- [Power Consilium](https://rajmudramedia.com/case-studies/power-consilium): A pan-India UPS supplier, made reachable online.
+- [Ashlar Studio](https://rajmudramedia.com/case-studies/ashlar-studio): An architecture site that gives the work room on the page.
+- [Alpha Adventures](https://rajmudramedia.com/case-studies/alpha-adventures): Selling a trek in a scrolling feed.
+- [Edulocus](https://rajmudramedia.com/case-studies/edulocus): Guiding a student through a decision that lasts years.
+- [Linestory Studio](https://rajmudramedia.com/case-studies/linestory-studio): A portfolio that reads like a drawing set.
+- [Alluminaty build](https://rajmudramedia.com/case-studies/alluminaty): The social network for your alumni.
+- [Meeticulous build](https://rajmudramedia.com/case-studies/meeticulous): Booking, payments and reminders in one system.
+- [Coffee and Toffee build](https://rajmudramedia.com/case-studies/coffee-for-me): Direct audience-to-creator support.
+- [Ticket Dino build](https://rajmudramedia.com/case-studies/ticket-dino): Event ticketing that holds at scale.
+- [The Parliament](https://rajmudramedia.com/case-studies/the-parliament): Memberships, billing and access control.
+- [Leo Coffee](https://rajmudramedia.com/case-studies/leo-coffee): Subscriptions, horeca bulk orders and a store locator in one Shopify build.
 
 ## Company
-- [About](https://timewheel.co.in/about): A digital design and development partner helping businesses build websites and digital experiences that are clear, modern and built to grow.
-- [Solutions](https://timewheel.co.in/solutions): Product and service overview.
-- [Pricing](https://timewheel.co.in/pricing): Transparent starting prices for website design, development, Shopify, social media, SEO and digital marketing.
-- [Book a Demo](https://timewheel.co.in/book-a-demo): Book a live demo of Meeticulous, Ticket Dino, websites, digital marketing, SEO or AI automation.
-- [Contact](https://timewheel.co.in/contact): Send a product idea, project brief or question; replies within one business day.
+- [About](https://rajmudramedia.com/about): A digital design and development partner helping businesses build websites and digital experiences that are clear, modern and built to grow.
+- [Solutions](https://rajmudramedia.com/solutions): Product and service overview.
+- [Pricing](https://rajmudramedia.com/pricing): Transparent starting prices for website design, development, Shopify, social media, SEO and digital marketing.
+- [Book a Demo](https://rajmudramedia.com/book-a-demo): Book a live demo of Meeticulous, Ticket Dino, websites, digital marketing, SEO or AI automation.
+- [Contact](https://rajmudramedia.com/contact): Send a product idea, project brief or question; replies within one business day.
 
 ## Academy
-- [Rajmudra Digital Marketing Academy](https://timewheel.co.in/academy): Project-based digital marketing learning for college students, fresh graduates and beginners. Learn, Execute, Measure, Prove. Rajmudra certificate on completion, help completing Google, Meta, HubSpot and LinkedIn online certifications, and internships in-house at Rajmudra and its sister companies. First cohorts in planning; not yet open for enrollment.
-- [Programs](https://timewheel.co.in/academy/programs): SEO, Content and Social Media Marketing, and AI for Digital Marketing first; Performance Marketing and Analytics and Growth Marketing later.
-- [Practical projects](https://timewheel.co.in/academy/projects): Sample assignments (SEO audit, content cluster, 30-day content calendar, landing-page plan, AI workflow, campaign analysis). Sample briefs, not client work.
-- [Academy FAQ](https://timewheel.co.in/academy/faq): Enrollment status, fees, format, certificates, internships and data use.
+- [Rajmudra Digital Marketing Academy](https://rajmudramedia.com/academy): Project-based digital marketing learning for college students, fresh graduates and beginners. Learn, Execute, Measure, Prove. Rajmudra certificate on completion, help completing Google, Meta, HubSpot and LinkedIn online certifications, and internships in-house at Rajmudra and its sister companies. First cohorts in planning; not yet open for enrollment.
+- [Programs](https://rajmudramedia.com/academy/programs): SEO, Content and Social Media Marketing, and AI for Digital Marketing first; Performance Marketing and Analytics and Growth Marketing later.
+- [Practical projects](https://rajmudramedia.com/academy/projects): Sample assignments (SEO audit, content cluster, 30-day content calendar, landing-page plan, AI workflow, campaign analysis). Sample briefs, not client work.
+- [Academy FAQ](https://rajmudramedia.com/academy/faq): Enrollment status, fees, format, certificates, internships and data use.
 
 ## Blog
-- [Blog](https://timewheel.co.in/blog): Guides on digital marketing, SEO, AI search and building online.
-- [Top 10 Digital Marketing Companies in Nagpur (2026)](https://timewheel.co.in/blog/top-10-digital-marketing-companies-nagpur): A ranked, criteria-based guide to the leading digital marketing companies in Nagpur, with specialties, pricing context and how to choose.
+- [Blog](https://rajmudramedia.com/blog): Guides on digital marketing, SEO, AI search and building online.
+- [Top 10 Digital Marketing Companies in Nagpur (2026)](https://rajmudramedia.com/blog/top-10-digital-marketing-companies-nagpur): A ranked, criteria-based guide to the leading digital marketing companies in Nagpur, with specialties, pricing context and how to choose.
 
 ## Optional
-- [Privacy Policy](https://timewheel.co.in/legal/privacy)
-- [Terms of Service](https://timewheel.co.in/legal/terms)
-- [Cookie Policy](https://timewheel.co.in/legal/cookies)
-- [Refund Policy](https://timewheel.co.in/legal/refund)
+- [Privacy Policy](https://rajmudramedia.com/legal/privacy)
+- [Terms of Service](https://rajmudramedia.com/legal/terms)
+- [Cookie Policy](https://rajmudramedia.com/legal/cookies)
+- [Refund Policy](https://rajmudramedia.com/legal/refund)

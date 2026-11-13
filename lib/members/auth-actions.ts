@@ -144,7 +144,7 @@ export async function signInWithGoogle(fd: FormData) {
   const origin = await requestOrigin();
 
   // Preferred: Google returns to our own domain (lib/members/google.ts), so the
-  // account picker says timewheel.co.in instead of the Supabase project URL.
+  // account picker says rajmudramedia.com instead of the Supabase project URL.
   if (googleConfigured()) {
     const state = randomBytes(24).toString("base64url");
     (await cookies()).set(GOOGLE_STATE_COOKIE, JSON.stringify({ state, next }), {

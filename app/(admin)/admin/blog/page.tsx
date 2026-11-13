@@ -23,7 +23,7 @@ export default async function BlogPostsPage({ searchParams }: { searchParams: Pr
     <>
       <PageHeader
         title="Blog posts"
-        description="Write, schedule and optimise posts for timewheel.co.in/blog."
+        description="Write, schedule and optimise posts for rajmudramedia.com/blog."
         actions={
           <Link href="/admin/blog/new" className={btn.primary}>
             <Plus size={16} weight="bold" /> New post

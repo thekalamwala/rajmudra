@@ -1,7 +1,7 @@
 # Load testing (k6)
 
 Load tests run against a local production build that is cut off from every real
-service. Never point them at timewheel.co.in or a Vercel preview: `/api/lead`
+service. Never point them at rajmudramedia.com or a Vercel preview: `/api/lead`
 saves leads, sends emails and fires Meta conversions, `/api/pay/order` creates
 payment orders, and `/api/seo-audit` drives the crawler on shubhamdatarkar.com.
 The k6 script refuses any host other than `localhost`, `127.0.0.1` or

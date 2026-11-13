@@ -61,7 +61,7 @@ export function challengeWelcome(o: { name: string; business: string; price: num
     hero: { tone: "brand", icon: "spark", title: "Your spot is reserved", subtitle: CHALLENGE },
     title: `Hi ${first(o.name)},`,
     blocks,
-    footnote: `You're receiving this because you signed up for ${CHALLENGE} on timewheel.co.in.`,
+    footnote: `You're receiving this because you signed up for ${CHALLENGE} on rajmudramedia.com.`,
   });
 }
 
@@ -82,7 +82,7 @@ export function enquiryReceived(o: { name: string; service: string; business: st
         { type: "p", text: "Want to talk it through sooner? We're on WhatsApp." },
         { type: "button", href: WA, label: "Message us on WhatsApp" },
       ],
-      footnote: "You're receiving this because you requested a growth blueprint on timewheel.co.in.",
+      footnote: "You're receiving this because you requested a growth blueprint on rajmudramedia.com.",
     });
   }
   return renderEmail({
@@ -96,7 +96,7 @@ export function enquiryReceived(o: { name: string; service: string; business: st
       { type: "p", text: "Need a faster answer? We're on WhatsApp." },
       { type: "button", href: WA, label: "Message us on WhatsApp" },
     ],
-    footnote: "You're receiving this because you sent an enquiry on timewheel.co.in.",
+    footnote: "You're receiving this because you sent an enquiry on rajmudramedia.com.",
   });
 }
 
@@ -117,7 +117,7 @@ export function seoReport(o: {
       { type: "button", href: o.reportUrl, label: "See all fixes in your full report" },
       { type: "p", text: "Want our team to walk you through the plan? Just reply to this email.", muted: true },
     ],
-    footnote: "You're receiving this because you asked for your SEO fixes on timewheel.co.in.",
+    footnote: "You're receiving this because you asked for your SEO fixes on rajmudramedia.com.",
   });
 }
 
@@ -169,7 +169,7 @@ export function newsletterWelcome(): Rendered {
       { type: "p", text: "A couple of emails a month at most. Reply \"unsubscribe\" any time and we'll take you off the list.", muted: true },
       { type: "button", href: `${site.url}/blog`, label: "Read the latest posts" },
     ],
-    footnote: "You're receiving this because you subscribed at timewheel.co.in.",
+    footnote: "You're receiving this because you subscribed at rajmudramedia.com.",
   });
 }
 
@@ -193,7 +193,7 @@ export function academyInterest(o: { name: string; program: string; programUrl: 
       "If you have a question, just reply to this email. A person reads every reply.",
     ],
     signature: ["Thanks,", "Rajmudra Digital Marketing Academy", "Rajmudra Media, Nagpur"],
-    footnote: "You're getting this because you registered on timewheel.co.in/academy. We only use your email for Academy updates; reply \"remove me\" and we'll delete your details.",
+    footnote: "You're getting this because you registered on rajmudramedia.com/academy. We only use your email for Academy updates; reply \"remove me\" and we'll delete your details.",
   });
 }
 
@@ -311,7 +311,7 @@ export function teamLead(l: LeadEmail): Rendered {
     blocks: [{ type: "p", text: `via ${l.source} · ${l.when}`, muted: true }, ...blocks],
     signoff: false,
     help: false,
-    footnote: `Submitted on timewheel.co.in. Reply to this email to reach ${l.name}.`,
+    footnote: `Submitted on rajmudramedia.com. Reply to this email to reach ${l.name}.`,
   });
 }
 
@@ -347,7 +347,7 @@ export function teamAcademyInterest(o: {
     blocks: [...callouts, { type: "rows", rows }],
     signoff: false,
     help: false,
-    footnote: `Submitted on timewheel.co.in/academy. Reply to this email to reach ${o.name}.`,
+    footnote: `Submitted on rajmudramedia.com/academy. Reply to this email to reach ${o.name}.`,
   });
 }
 
@@ -370,6 +370,6 @@ export function teamPayment(o: { name: string; email: string; phone: string | nu
     ],
     signoff: false,
     help: false,
-    footnote: "Paid via Zoho Payments on timewheel.co.in.",
+    footnote: "Paid via Zoho Payments on rajmudramedia.com.",
   });
 }

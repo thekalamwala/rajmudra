@@ -10,7 +10,7 @@ import { PageMotif } from "@/components/desi";
 
 const TITLE = "Sitemap | Rajmudra";
 const DESC =
-  "Every page on timewheel.co.in in one place: services, products, case studies, blog posts, Academy programs, careers, community and legal pages.";
+  "Every page on rajmudramedia.com in one place: services, products, case studies, blog posts, Academy programs, careers, community and legal pages.";
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },

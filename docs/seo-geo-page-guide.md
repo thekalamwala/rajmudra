@@ -119,11 +119,11 @@ Checklist:
 
 ### B. Automated score (run the geo skill on the built page)
 ```
-/geo citability https://timewheel.co.in/<slug>
+/geo citability https://rajmudramedia.com/<slug>
 ```
 Then, for the full page grade:
 ```
-/geo page https://timewheel.co.in/<slug>
+/geo page https://rajmudramedia.com/<slug>
 ```
 - [ ] Citability score ≥ 70, if lower, fix the flagged passages and re-run
 - [ ] Schema section reports no missing/invalid blocks

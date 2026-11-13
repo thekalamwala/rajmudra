@@ -30,7 +30,7 @@ const bricolage = Bricolage_Grotesque({
   weight: ["600", "700", "800"],
 });
 
-const siteUrl = "https://timewheel.co.in";
+const siteUrl = "https://rajmudramedia.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

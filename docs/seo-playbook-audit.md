@@ -1,6 +1,6 @@
 # Timewheel vs the SEO / AEO / GEO playbook (2026-10-10)
 
-Audit of timewheel.co.in against `docs/seo-aeo-geo-playbook.md`. Only §0, §1
+Audit of rajmudramedia.com against `docs/seo-aeo-geo-playbook.md`. Only §0, §1
 (the seven hard lessons) and §2.1 (intent) of the playbook are in the repo so
 far, so this covers those. It builds on `GEO-AUDIT-REPORT.md` (2026-10-07),
 whose open items (Wikidata entity, Bing/IndexNow, directories) still stand and

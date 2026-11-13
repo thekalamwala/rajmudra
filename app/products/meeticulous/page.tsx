@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/products/meeticulous" },
 };
 
-const PAGE_URL = "https://timewheel.co.in/products/meeticulous";
+const PAGE_URL = "https://rajmudramedia.com/products/meeticulous";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -41,7 +41,7 @@ const jsonLd = {
       author: {
         "@type": "Organization",
         name: "Rajmudra",
-        url: "https://timewheel.co.in",
+        url: "https://rajmudramedia.com",
       },
       offers: {
         "@type": "AggregateOffer",

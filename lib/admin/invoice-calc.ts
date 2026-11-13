@@ -51,7 +51,7 @@ export const SELLER = {
   cin: "U62012OD2026PTC052654",
   email: "namaskar@rajmudramedia.com",
   phone: "+91 79041 09359",
-  website: "timewheel.co.in",
+  website: "rajmudramedia.com",
 };
 
 /** SAC 998314: IT design and development services. 998361: advertising services. */

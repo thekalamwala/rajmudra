@@ -184,7 +184,7 @@ export function PostForm({
               required
               className="field-sizing-content w-full resize-none rounded-[4px] border border-transparent bg-transparent px-1 py-1 text-3xl font-black leading-tight tracking-tight text-gray-900 outline-none placeholder:text-gray-300 hover:border-gray-200 focus:border-gray-300 focus:bg-white"
             />
-            <p className="mt-1 truncate px-1 text-xs text-gray-500">timewheel.co.in/blog/<span className="text-gray-800">{effectiveSlug || "post-url"}</span></p>
+            <p className="mt-1 truncate px-1 text-xs text-gray-500">rajmudramedia.com/blog/<span className="text-gray-800">{effectiveSlug || "post-url"}</span></p>
           </div>
 
           <div className="overflow-hidden rounded-[5px] border border-gray-200 bg-white">

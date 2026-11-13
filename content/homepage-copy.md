@@ -4,7 +4,7 @@
 - H1: **Let's build on systems you control forever**
 - Sub: We help creators, consultants, agencies, & growing businesses manage bookings, payments, events, & communities without depending on fragmented SaaS tools, platform commissions, or rented infrastructure.
 - CTA1: Explore the ecosystem
-- CTA2: Book A Demo → https://timewheel.co.in/book-a-demo
+- CTA2: Book A Demo → https://rajmudramedia.com/book-a-demo
 - Badge: Built for businesses replacing dependency with ownership
 
 ## Value props — "Built with ownership-first systems for modern businesses"
