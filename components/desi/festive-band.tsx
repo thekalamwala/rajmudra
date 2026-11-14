@@ -12,6 +12,8 @@ type Props = {
   height?: number;
   /** flip vertically — use on the BOTTOM edge of a band so arches point up into it */
   flip?: boolean;
+  /** drop the outer gold rule (the line on the far edge, away from the section) */
+  trim?: boolean;
   className?: string;
 };
 
@@ -23,7 +25,7 @@ const CREAM = "#fbf4e6";
 const ART_W = 40;
 const ART_H = 24;
 
-export function FestiveBand({ height = 22, flip, className }: Props) {
+export function FestiveBand({ height = 22, flip, trim, className }: Props) {
   const id = useId().replace(/:/g, "");
   const s = height / ART_H; // uniform scale from authored units to px
   const tileW = ART_W * s;
@@ -38,8 +40,8 @@ export function FestiveBand({ height = 22, flip, className }: Props) {
         <defs>
           <pattern id={`fb-${id}`} width={tileW} height={height} patternUnits="userSpaceOnUse">
             <g transform={`scale(${s})`}>
-              {/* gold rules top & bottom */}
-              <rect x="0" y="0" width={ART_W} height="2.4" fill={GOLD} />
+              {/* gold rules top & bottom — `trim` drops the outer (art-top) one */}
+              {!trim && <rect x="0" y="0" width={ART_W} height="2.4" fill={GOLD} />}
               <rect x="0" y={ART_H - 2.4} width={ART_W} height="2.4" fill={GOLD} />
               {/* magenta outer arch */}
               <path d={`M4 ${B} A 16 15 0 0 1 36 ${B} Z`} fill={MAGENTA} />

@@ -30,7 +30,7 @@ const pillars: {
     icon: Coins,
     title: "Zero platform commissions",
     body: "Keep what you earn. No per-transaction cuts skimmed by a middleman platform.",
-    color: "var(--desi-magenta)",
+    color: "var(--desi-marigold)",
   },
   {
     icon: Boxes,
@@ -59,13 +59,16 @@ export function PoweredBy() {
         paths.forEach((path, i) => {
           const len = path.getTotalLength();
           gsap.set(path, { strokeDasharray: `28 ${len}`, strokeDashoffset: 0 });
-          gsap.to(path, {
-            strokeDashoffset: -(len + 28),
-            duration: 2.6,
-            ease: "none",
-            repeat: -1,
-            delay: i * 0.5,
-          });
+          // the 28px pulse reaches the endpoint flower near the end of the cycle;
+          // flash the flower's glow halo as it arrives, then let it fade.
+          const arrive = 2.6 * Math.max(0, (len - 28) / (len + 28));
+          const glow = ref.current?.querySelector(`.pb-node-${i} .pb-glow`);
+          const tl = gsap.timeline({ repeat: -1, delay: i * 0.5 });
+          tl.to(path, { strokeDashoffset: -(len + 28), duration: 2.6, ease: "none" }, 0);
+          if (glow) {
+            tl.to(glow, { opacity: 0.8, duration: 0.16, ease: "power2.out" }, arrive)
+              .to(glow, { opacity: 0, duration: 0.55, ease: "power2.in" }, arrive + 0.16);
+          }
         });
       });
       gsap.from(".pb-card", {
@@ -82,8 +85,6 @@ export function PoweredBy() {
 
   return (
     <section ref={ref} className="relative isolate overflow-hidden text-white">
-      <FestiveBand height={20} />
-
       <div
         className="relative px-6 py-16 md:py-20"
         style={{ background: "radial-gradient(120% 90% at 85% 0%, #ff7a2e 0%, transparent 55%), linear-gradient(145deg, #ff6a14 0%, var(--desi-orange) 55%, #e84800 100%)" }}
@@ -107,7 +108,8 @@ export function PoweredBy() {
 
           {/* foundation hub + connectors */}
           <div className="relative mt-6">
-            <div className="relative">
+            {/* animated wiring diagram — cramped on narrow screens, so desktop-only */}
+            <div className="relative hidden md:block">
               {/* foundation label */}
               <div className="absolute left-1/2 top-0 z-10 -translate-x-1/2">
                 <span className="rounded-full bg-white px-4 py-1.5 text-xs font-bold uppercase tracking-wide text-[var(--desi-orange)] shadow-sm">
@@ -132,15 +134,19 @@ export function PoweredBy() {
                   style={{ filter: `drop-shadow(0 0 6px ${t.color})` }}
                 />
               ))}
-              {/* endpoint flowers */}
-              {[200, 600, 1000].map((x, i) => (
-                <g key={x} transform={`translate(${x} 136)`}>
-                  {Array.from({ length: 6 }).map((_, p) => (
-                    <ellipse key={p} cx={0} cy={-7} rx={3} ry={5} transform={`rotate(${p * 60})`} fill={traces[i].color} />
-                  ))}
-                  <circle r={3.4} fill="#fff" stroke={traces[i].color} strokeWidth={1.6} />
-                </g>
-              ))}
+              {/* endpoint flowers — each glows as its pulse lands */}
+              {[200, 600, 1000].map((x, i) => {
+                const c = traces[i].color;
+                return (
+                  <g key={x} className={`pb-node pb-node-${i}`} transform={`translate(${x} 136)`}>
+                    <circle className="pb-glow" r={13} fill={c} opacity={0} style={{ filter: "blur(5px)" }} />
+                    {Array.from({ length: 6 }).map((_, p) => (
+                      <ellipse key={p} cx={0} cy={-7} rx={3} ry={5} transform={`rotate(${p * 60})`} fill={c} />
+                    ))}
+                    <circle r={3.4} fill="#fff" stroke={c} strokeWidth={1.6} />
+                  </g>
+                );
+              })}
               </svg>
             </div>
 
@@ -153,14 +159,16 @@ export function PoweredBy() {
                   style={{ ["--a" as string]: p.color }}
                 >
                   <span aria-hidden className="absolute inset-x-0 top-0 h-1.5" style={{ background: p.color }} />
-                  <span
-                    className="grid size-11 place-items-center rounded-xl"
-                    style={{ background: "color-mix(in srgb, var(--a) 14%, transparent)", color: p.color }}
-                  >
-                    <p.icon className="size-5" />
-                  </span>
-                  <h3 className="mt-5 text-lg font-bold">{p.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{p.body}</p>
+                  <div className="flex items-center gap-4">
+                    <span
+                      className="grid size-14 shrink-0 place-items-center rounded-2xl"
+                      style={{ background: "color-mix(in srgb, var(--a) 15%, transparent)", color: p.color, boxShadow: "inset 0 0 0 1px color-mix(in srgb, var(--a) 30%, transparent)" }}
+                    >
+                      <p.icon className="size-7" strokeWidth={1.6} />
+                    </span>
+                    <h3 className="font-display text-xl font-extrabold leading-tight">{p.title}</h3>
+                  </div>
+                  <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{p.body}</p>
                 </div>
               ))}
             </div>
@@ -168,7 +176,7 @@ export function PoweredBy() {
         </div>
       </div>
 
-      <FestiveBand height={20} flip />
+      <FestiveBand height={20} flip trim />
     </section>
   );
 }

@@ -11,8 +11,6 @@ import { MandalaSeal, FestiveBand, Flower } from "@/components/desi";
 export function FinalCta() {
   return (
     <section className="relative isolate overflow-hidden text-white">
-      <FestiveBand height={22} />
-
       <div className="desi-indigo-panel relative px-6 py-24 md:py-28">
         {/* printed-poster dot texture */}
         <div
@@ -65,7 +63,7 @@ export function FinalCta() {
         </div>
       </div>
 
-      <FestiveBand height={22} flip />
+      <FestiveBand height={22} flip trim />
     </section>
   );
 }

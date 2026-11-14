@@ -11,5 +11,6 @@ export { CornerLeaves, CornerLeaf } from "./corner-leaves";
 export { WarliDancers, WarliVillage, WarliBorder } from "./warli";
 export { Jaali } from "./jaali";
 export { FlowerDivider } from "./flower-divider";
+export { WaveDivider } from "./wave-divider";
 export { FestiveBand } from "./festive-band";
 export { Flower } from "./festive-objects";
