@@ -60,7 +60,7 @@ function ProductTile({
       }}
       style={{ flexGrow: expanded ? 2.35 : 1, borderColor: accent }}
       className={cn(
-        "group/tile relative flex h-[42rem] min-w-0 cursor-pointer flex-col overflow-hidden rounded-[20px] border-2 bg-card p-6 pb-8 text-left transition-all duration-500 ease-out focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand md:h-[34rem] md:basis-0 md:p-7 md:pb-8",
+        "group/tile relative flex h-[38rem] min-w-0 cursor-pointer flex-col overflow-hidden rounded-[20px] border-2 bg-card p-6 pb-8 text-left transition-all duration-500 ease-out focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand md:h-[29rem] md:basis-0 md:p-7 md:pb-8",
         expanded
           ? "shadow-[0_30px_70px_-40px_rgba(23,23,23,0.5)]"
           : "hover:-translate-y-1 hover:shadow-[0_24px_50px_-42px_rgba(23,23,23,0.55)]",
@@ -87,15 +87,8 @@ function ProductTile({
       />
 
       <div className="relative flex items-start justify-between">
-        <span
-          className="grid size-12 shrink-0 place-items-center rounded-2xl transition-transform duration-500 group-hover/tile:scale-105"
-          style={{
-            backgroundColor: `${accent}1f`,
-            color: accent,
-            boxShadow: `inset 0 0 0 1px ${accent}33`,
-          }}
-        >
-          <Icon className="size-6" />
+        <span className="font-mono text-xs font-bold uppercase tracking-[0.25em] text-muted-foreground/70">
+          {String(index + 1).padStart(2, "0")}
         </span>
 
         <span className="grid size-9 place-items-center rounded-full border border-ink/10 bg-background/60 text-ink/70 backdrop-blur transition-colors duration-300 group-hover/tile:border-ink/25 group-hover/tile:text-ink">
@@ -105,15 +98,26 @@ function ProductTile({
         </span>
       </div>
 
-      <div className="relative mt-6">
-        <span className="font-mono text-xs font-bold uppercase tracking-[0.25em] text-muted-foreground/70">
-          {String(index + 1).padStart(2, "0")}
-        </span>
-        <div className="mt-2 flex items-center gap-1.5">
-          <h3 className="font-display text-2xl font-black tracking-tight text-foreground">{name}</h3>
-          <ArrowUpRight className="size-5 text-muted-foreground transition-transform duration-300 group-hover/tile:-translate-y-0.5 group-hover/tile:translate-x-0.5" />
+      <div className="relative mt-5">
+        <div className="flex items-center gap-4">
+          <span
+            className="grid size-12 shrink-0 place-items-center rounded-2xl transition-transform duration-500 group-hover/tile:scale-105"
+            style={{
+              backgroundColor: `${accent}1f`,
+              color: accent,
+              boxShadow: `inset 0 0 0 1px ${accent}33`,
+            }}
+          >
+            <Icon className="size-6" />
+          </span>
+          <div className="min-w-0">
+            <div className="flex items-center gap-1.5">
+              <h3 className="font-display text-2xl font-black tracking-tight text-foreground">{name}</h3>
+              <ArrowUpRight className="size-5 shrink-0 text-muted-foreground transition-transform duration-300 group-hover/tile:-translate-y-0.5 group-hover/tile:translate-x-0.5" />
+            </div>
+            <p className="mt-1 text-sm text-muted-foreground">{tagline}</p>
+          </div>
         </div>
-        <p className="mt-1.5 text-sm text-muted-foreground">{tagline}</p>
 
         {/* information — six blocks, revealed on the widened tile */}
         <div
@@ -133,16 +137,18 @@ function ProductTile({
                         key={f.title}
                         className="rounded-xl border border-border/70 bg-secondary/40 p-3"
                       >
-                        <span
-                          className="grid size-8 place-items-center rounded-lg"
-                          style={{ backgroundColor: `${accent}1f`, color: accent }}
-                        >
-                          <FeatureIcon className="size-4" weight="bold" />
-                        </span>
-                        <p className="mt-2.5 text-xs font-bold leading-tight text-foreground">
-                          {f.title}
-                        </p>
-                        <p className="mt-1 text-xs leading-snug text-foreground/60">
+                        <div className="flex items-center gap-2">
+                          <span
+                            className="grid size-8 shrink-0 place-items-center rounded-lg"
+                            style={{ backgroundColor: `${accent}1f`, color: accent }}
+                          >
+                            <FeatureIcon className="size-4" weight="bold" />
+                          </span>
+                          <p className="text-xs font-bold leading-tight text-foreground">
+                            {f.title}
+                          </p>
+                        </div>
+                        <p className="mt-2 text-xs leading-snug text-foreground/60">
                           {f.description}
                         </p>
                       </div>

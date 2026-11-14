@@ -8,7 +8,7 @@ import { SocialProof } from "@/components/home/social-proof";
 import { Testimonials } from "@/components/home/testimonials";
 import { Faq } from "@/components/home/faq";
 import { FinalCta } from "@/components/home/final-cta";
-import { FestiveBand } from "@/components/desi";
+import { WaveDivider } from "@/components/desi";
 import { JsonLd } from "@/components/json-ld";
 import { homeLd, faqLd } from "@/lib/jsonld";
 import { homeFaq } from "@/lib/home-faq";
@@ -16,11 +16,10 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = { alternates: { canonical: site.url } };
 
-// The signature festive band as the seam between two sections (never mid-section)
-// — the same temple-arch lace that frames the social posters, so every break on
-// the page reads like a poster edge.
+// A quiet seam between two sections (never mid-section) — a single wave line
+// with a central flower, in place of the louder festive temple-arch band.
 function Seam() {
-  return <FestiveBand height={16} className="my-2 opacity-95" />;
+  return <WaveDivider className="mx-auto my-6 w-full max-w-5xl px-6" />;
 }
 
 export default function Home() {
